@@ -918,6 +918,7 @@ Count the occurrences of a character in a string.
 const countOccurrences = (str, char) => str.split(char).length - 1; 
 console.log(countOccurrences("hello world", "l")); 
 // Output: 3 
+</pre>
 
 101. Find the Median of an Array of Numbers
 Find the median of an array of numbers. 
@@ -929,6 +930,7 @@ return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mi
 }; 
 console.log(median([1, 3, 5, 7, 9])); 
 // Output: 5 
+</pre>
 
 102. Remove Duplicates from a String
 Remove duplicate characters from a string. 
@@ -936,6 +938,7 @@ Remove duplicate characters from a string.
 const removeDuplicatesFromString = (str) => [...new Set(str.split(''))].join(''); 
 console.log(removeDuplicatesFromString("hello")); 
 // Output: "helo" 
+</pre>
 
 103. Find the Mode of an Array of Numbers
 Calculate the mode, the most frequently occurring number(s), from an array of numbers. It identifies the number(s) with the highest frequency and returns them in an array. 
@@ -948,6 +951,7 @@ return Object.keys(frequency).filter(num => frequency[num] === maxFrequency).map
 }; 
 console.log(mode([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])); 
 // Output: [4] 
+</pre>
 
 104. Check if a Number is a Harshad Number (Niven Number)
 A Harshad number, also known as a Niven number, is an integer divisible by the sum of its digits. The isHarshadNumber function determines whether a given number meets this criterion. It calculates the sum of the digits of the number, and then checks if the number itself is divisible by this sum. 
@@ -1052,6 +1056,7 @@ console.log(reverseWords("Hello, world!"));
 
 114. Calculate the Sum of Cubes of an Array
 The sumOfCubes function computes the sum of the cubes of all numbers in an array. It employs the reduce method to iterate through the array, accumulating the sum of cubes by raising each value to the power of 3 and adding it to the accumulator. 
+<pre>
 const sumOfCubes = (arr) => arr.reduce((acc, val) => acc + val ** 3, 0); 
 console.log(sumOfCubes([1, 2, 3, 4, 5])); 
 // Output: 225 
@@ -1113,14 +1118,14 @@ console.log(rectanglePerimeter(5, 10));
 The longestCommonPrefix function finds the longest common prefix among an array of strings. It starts by assuming the first string in the array as the initial common prefix. 
 <pre>
 const longestCommonPrefix = (strs) => { 
-if (strs.length === 0) return ''; 
-let prefix = strs[0]; 
-for (let i = 1; i < strs.length; i++) { 
-while (!strs[i].startsWith(prefix)) { 
-prefix = prefix.slice(0, prefix.length - 1); 
-} 
-} 
-return prefix; 
+  if (strs.length === 0) return ''; 
+  let prefix = strs[0]; 
+  for (let i = 1; i < strs.length; i++) { 
+    while (!strs[i].startsWith(prefix)) { 
+      prefix = prefix.slice(0, prefix.length - 1); 
+    } 
+  } 
+  return prefix; 
 }; 
 console.log(longestCommonPrefix(['apple', 'apricot', 'appetizer'])); 
 // Output: "app" 
@@ -1138,11 +1143,11 @@ console.log(getASCIIValue('A'));
 The firstNonRepeatedChar function identifies the first non-repeated character within a given string. It accomplishes this by iterating through the string, building a character count object, and then using the find method to locate the first character with a count of 1. 
 <pre>
 const firstNonRepeatedChar = (str) => { 
-const charCount = {}; 
-for (const char of str) { 
-charCount[char] = (charCount[char] || 0) + 1; 
-} 
-return str.split('').find((char) => charCount[char] === 1); 
+  const charCount = {}; 
+  for (const char of str) { 
+    charCount[char] = (charCount[char] || 0) + 1; 
+  } 
+  return str.split('').find((char) => charCount[char] === 1); 
 }; 
 console.log(firstNonRepeatedChar('abacabad')); 
 // Output: "c" 
@@ -1153,9 +1158,9 @@ The sortByProperty function arranges an array of objects based on a specified pr
 <pre>
 const sortByProperty = (arr, prop) => arr.sort((a, b) => a[prop] - b[prop]); 
 const people = [ 
-{ name: 'Alice', age: 25 }, 
-{ name: 'Bob', age: 20 }, 
-{ name: 'Charlie', age: 30 } 
+  { name: 'Alice', age: 25 }, 
+  { name: 'Bob', age: 20 }, 
+  { name: 'Charlie', age: 30 } 
 ]; 
 console.log(sortByProperty(people, 'age')); 
 // Output: [{ name: 'Bob', age: 20 }, { name: 'Alice', age: 25 }, { name: 'Charlie', age: 30 }] 
@@ -1183,13 +1188,13 @@ console.log(isAnagram('hello', 'world'));
 The factors function calculates and returns an array of all the factors of a given number. Factors are the positive integers that evenly divide the input number. 
 <pre>
 const factors = (num) => { 
-const result = []; 
-for (let i = 1; i <= num; i++) { 
-if (num % i === 0) { 
-result.push(i); 
-} 
-} 
-return result; 
+  const result = []; 
+  for (let i = 1; i <= num; i++) { 
+    if (num % i === 0) { 
+      result.push(i); 
+    } 
+  } 
+  return result; 
 }; 
 console.log(factors(12)); 
 // Output: [1, 2, 3, 4, 6, 12] 
@@ -1199,9 +1204,9 @@ console.log(factors(12));
 The isNeonNumber function determines whether a given number is a neon number. A neon number is a number where the sum of the digits of its square is equal to the number itself. 
 <pre>
 const isNeonNumber = (num) => { 
-const squared = num ** 2; 
-const digitSum = [...String(squared)].map(Number).reduce((sum, digit) => sum + digit, 0); 
-return squared === digitSum; 
+  const squared = num ** 2; 
+  const digitSum = [...String(squared)].map(Number).reduce((sum, digit) => sum + digit, 0); 
+  return squared === digitSum; 
 }; 
 console.log(isNeonNumber(9)); 
 // Output: true 
@@ -1213,12 +1218,12 @@ console.log(isNeonNumber(12));
 The powerSet function generates the power set of a given set, which includes all possible subsets of the set, including the empty set and the set itself. 
 <pre>
 const powerSet = (set) => { 
-const result = [[]]; 
-for (const item of set) { 
-const subsets = result.map((subset) => [...subset, item]); 
-result.push(...subsets); 
-} 
-return result; 
+  const result = [[]]; 
+  for (const item of set) { 
+    const subsets = result.map((subset) => [...subset, item]); 
+    result.push(...subsets); 
+  } 
+  return result; 
 }; 
 console.log(powerSet([1, 2, 3])); 
 // Output: [ [], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3] ] 
@@ -1228,9 +1233,9 @@ console.log(powerSet([1, 2, 3]));
 The isDisariumNumber function determines whether a given number is a disarium number. 
 <pre>
 const isDisariumNumber = (num) => { 
-const digits = [...String(num)].map(Number); 
-const sumOfPowers = digits.reduce((sum, digit, index) => sum + digit ** (index + 1), 0); 
-return sumOfPowers === num; 
+  const digits = [...String(num)].map(Number); 
+  const sumOfPowers = digits.reduce((sum, digit, index) => sum + digit ** (index + 1), 0); 
+  return sumOfPowers === num; 
 }; 
 console.log(isDisariumNumber(89)); 
 // Output: true 
@@ -1260,8 +1265,8 @@ console.log(consecutiveNumbers(1, 5));
 The isPronicNumber function determines whether a given number is a pronic number (also known as an oblong number or rectangular number). 
 <pre>
 const isPronicNumber = (num) => { 
-const n = Math.floor(Math.sqrt(num)); 
-return n * (n + 1) === num; 
+  const n = Math.floor(Math.sqrt(num)); 
+  return n * (n + 1) === num; 
 }; 
 console.log(isPronicNumber(6)); 
 // Output: true 
@@ -1275,8 +1280,8 @@ console.log(isPronicNumber(7));
 The isPangram function checks whether a given string is a pangram, which is a sentence that contains every letter of the alphabet at least once. 
 <pre>
 const isPangram = (str) => { 
-const letters = new Set(str.toLowerCase().match(/[a-z]/g)); 
-return letters.size === 26; 
+  const letters = new Set(str.toLowerCase().match(/[a-z]/g)); 
+  return letters.size === 26; 
 }; 
 console.log(isPangram("The quick brown fox jumps over the lazy dog")); 
 // Output: true 
@@ -1304,8 +1309,8 @@ console.log(binaryToDecimalWithParseInt("1101"));
 The averageOfOddNumbers function calculates the average of odd numbers within a given array. It does so by filtering the odd numbers from the array, then computing their sum and dividing by the count of odd numbers. 
 <pre>
 const averageOfOddNumbers = (arr) => { 
-const oddNumbers = arr.filter(num => num % 2 !== 0); 
-return oddNumbers.reduce((sum, num) => sum + num, 0) / oddNumbers.length; 
+  const oddNumbers = arr.filter(num => num % 2 !== 0); 
+  return oddNumbers.reduce((sum, num) => sum + num, 0) / oddNumbers.length; 
 }; 
 console.log(averageOfOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // Output: 5 
 </pre>
@@ -1314,12 +1319,12 @@ console.log(averageOfOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // Output: 5
 The countLetters function calculates the count of each letter in a given string, considering both uppercase and lowercase versions as the same letter. 
 <pre>
 const countLetters = (str) => { 
-const letters = str.toLowerCase().match(/[a-z]/g); 
-const letterCount = {}; 
-for (const letter of letters) { 
-letterCount[letter] = (letterCount[letter] || 0) + 1; 
-} 
-return letterCount; 
+  const letters = str.toLowerCase().match(/[a-z]/g); 
+  const letterCount = {}; 
+  for (const letter of letters) { 
+    letterCount[letter] = (letterCount[letter] || 0) + 1; 
+  } 
+  return letterCount; 
 }; 
 console.log(countLetters("Hello, World!")); 
 // Output: { h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1 } 
@@ -1329,13 +1334,13 @@ console.log(countLetters("Hello, World!"));
 The secsToDaysHoursMinsSecs function converts a given number of seconds into days, hours, minutes, and remaining seconds. 
 <pre>
 const secsToDaysHoursMinsSecs = (seconds) => { 
-const days = Math.floor(seconds / 86400); 
-seconds %= 86400; 
-const hours = Math.floor(seconds / 3600); 
-seconds %= 3600; 
-const minutes = Math.floor(seconds / 60); 
-const remainingSecs = seconds % 60; 
-return `${days} days, ${hours} hours, ${minutes} minutes, and ${remainingSecs} seconds`; 
+  const days = Math.floor(seconds / 86400); 
+  seconds %= 86400; 
+  const hours = Math.floor(seconds / 3600); 
+  seconds %= 3600; 
+  const minutes = Math.floor(seconds / 60); 
+  const remainingSecs = seconds % 60; 
+  return `${days} days, ${hours} hours, ${minutes} minutes, and ${remainingSecs} seconds`; 
 }; 
 console.log(secsToDaysHoursMinsSecs(100000)); 
 // Output: "1 days, 3 hours, 46 minutes, and 40 seconds" 
@@ -1355,15 +1360,15 @@ console.log(isPrimeFactor(20, 3));
 The largestPrimeFactor function calculates the largest prime factor of a given number. 
 <pre>
 const largestPrimeFactor = (num) => { 
-let factor = 2; 
-while (factor <= num) { 
-if (num % factor === 0) { 
-num /= factor; 
-} else { 
-factor++; 
-} 
-} 
-return factor; 
+  let factor = 2; 
+  while (factor <= num) { 
+    if (num % factor === 0) { 
+      num /= factor; 
+    } else { 
+    factor++; 
+    } 
+  } 
+  return factor; 
 }; 
 console.log(largestPrimeFactor(48)); 
 // Output: 3 
@@ -1393,9 +1398,9 @@ console.log(sumOfDigits(12345));
 The median function calculates the median of an array of numbers. The median is the middle value of a dataset when it is ordered. 
 <pre>
 const median = (arr) => { 
-const sorted = arr.sort((a, b) => a - b); 
-const mid = Math.floor(sorted.length / 2); 
-return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid]; 
+  const sorted = arr.sort((a, b) => a - b); 
+  const mid = Math.floor(sorted.length / 2); 
+  return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid]; 
 }; 
 console.log(median([1, 3, 5, 7, 9])); 
 // Output: 5 
@@ -1413,12 +1418,12 @@ console.log(gcd(48, 18));
 The isHappyNumber function checks if a given number is a "happy number" or not. A happy number is a number where the sequence of repeatedly summing the squares of its digits eventually reaches the number 1. 
 <pre>
 const isHappyNumber = (num) => { 
-const seen = new Set(); 
-while (num !== 1 && !seen.has(num)) { 
-seen.add(num); 
-num = [...String(num)].reduce((sum, digit) => sum + digit ** 2, 0); 
-} 
-return num === 1; 
+  const seen = new Set(); 
+  while (num !== 1 && !seen.has(num)) { 
+    seen.add(num); 
+    num = [...String(num)].reduce((sum, digit) => sum + digit ** 2, 0); 
+  } 
+  return num === 1; 
 }; 
 console.log(isHappyNumber(19)); 
 // Output: true 
@@ -1430,20 +1435,20 @@ console.log(isHappyNumber(4));
 The firstNPrimes function generates an array of the first n prime numbers. 
 <pre>
 const isPrime = (num) => { 
-if (num <= 1) return false; 
-for (let i = 2; i <= Math.sqrt(num); i++) { 
-if (num % i === 0) return false; 
-} 
-return true; 
+  if (num <= 1) return false; 
+  for (let i = 2; i <= Math.sqrt(num); i++) { 
+    if (num % i === 0) return false; 
+  } 
+  return true; 
 }; 
 const firstNPrimes = (n) => { 
-const primes = []; 
-let num = 2; 
-while (primes.length < n) { 
-if (isPrime(num)) primes.push(num); 
-num++; 
-} 
-return primes; 
+  const primes = []; 
+  let num = 2; 
+  while (primes.length < n) { 
+    if (isPrime(num)) primes.push(num); 
+      num++; 
+  } 
+  return primes; 
 }; 
 console.log(firstNPrimes(5)); 
 // Output: [2, 3, 5, 7, 11] 
@@ -1495,8 +1500,8 @@ The isStrongNumber function checks if a number is a strong number. A strong numb
 <pre>
 const factorial = (num) => (num === 0 ? 1 : num * factorial(num - 1)); 
 const isStrongNumber = (num) => { 
-const sumOfFactorials = [...String(num)].reduce((sum, digit) => sum + factorial(Number(digit)), 0); 
-return sumOfFactorials === num; 
+  const sumOfFactorials = [...String(num)].reduce((sum, digit) => sum + factorial(Number(digit)), 0); 
+  return sumOfFactorials === num; 
 }; 
 console.log(isStrongNumber(145)); 
 // Output: true 
@@ -1532,12 +1537,12 @@ console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 The gcdIterative function calculates the greatest common divisor (GCD) of two numbers using an iterative approach. It employs the Euclidean algorithm to iteratively find the GCD. 
 <pre>
 const gcdIterative = (num1, num2) => { 
-while (num2 !== 0) { 
-const temp = num2; 
-num2 = num1 % num2; 
-num1 = temp; 
-} 
-return num1; 
+  while (num2 !== 0) { 
+    const temp = num2; 
+    num2 = num1 % num2; 
+    num1 = temp; 
+  } 
+  return num1; 
 }; 
 console.log(gcdIterative(48, 18)); 
 // Output: 6 
@@ -1556,17 +1561,17 @@ The isSmithNumber function checks whether a given number is a Smith number.
 <pre>
 const sumOfDigits = (num) => [...String(num)].reduce((sum, digit) => sum + Number(digit), 0); 
 const sumOfPrimeFactors = (num) => { 
-let factor = 2; 
-let sum = 0; 
-while (num > 1) { 
-if (num % factor === 0) { 
-sum += sumOfDigits(factor); 
-num /= factor; 
-} else { 
-factor++; 
-} 
-} 
-return sum; 
+  let factor = 2; 
+  let sum = 0; 
+  while (num > 1) { 
+    if (num % factor === 0) { 
+      sum += sumOfDigits(factor); 
+      num /= factor; 
+    } else { 
+      factor++; 
+    } 
+  } 
+  return sum; 
 }; 
 const isSmithNumber = (num) => sumOfDigits(num) === sumOfPrimeFactors(num); 
 console.log(isSmithNumber(666)); 
@@ -1614,11 +1619,11 @@ console.log(sumOfNaturals(10));
 The isPerfectNumber function checks whether a given number is a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding itself). 
 <pre>
 const isPerfectNumber = (num) => { 
-let sum = 0; 
-for (let i = 1; i <= num / 2; i++) { 
-if (num % i === 0) sum += i; 
-} 
-return sum === num; 
+  let sum = 0; 
+  for (let i = 1; i <= num / 2; i++) { 
+    if (num % i === 0) sum += i; 
+  } 
+  return sum === num; 
 }; 
 console.log(isPerfectNumber(28)); 
 // Output: true 
@@ -1630,11 +1635,11 @@ console.log(isPerfectNumber(12));
 The factors function calculates the factors of a given number, excluding 1 and the number itself. It iterates through the numbers from 2 up to one less than the given number, checking if the given number is divisible by each of those numbers. 
 <pre>
 const factors = (num) => { 
-const result = []; 
-for (let i = 2; i < num; i++) { 
-if (num % i === 0) result.push(i); 
-} 
-return result; 
+  const result = []; 
+  for (let i = 2; i < num; i++) { 
+    if (num % i === 0) result.push(i); 
+  } 
+  return result; 
 }; 
 console.log(factors(12)); 
 // Output: [2, 3, 4, 6] 
@@ -1670,12 +1675,12 @@ console.log(randomArrayInRange(1, 100, 5));
 The isMagicNumber function checks whether a given number is a magic number. A magic number is a number that eventually reaches the value 1 when the sum of its digits is repeatedly calculated. 
 <pre>
 const isMagicNumber = (num) => { 
-let sum = 0; 
-while (num > 0) { 
-sum += num % 10; 
-num = Math.floor(num / 10); 
-} 
-return sum === 1; 
+  let sum = 0; 
+  while (num > 0) { 
+    sum += num % 10; 
+    num = Math.floor(num / 10); 
+  } 
+  return sum === 1; 
 }; 
 console.log(isMagicNumber(19)); 
 // Output: true 
@@ -1733,17 +1738,17 @@ console.log(isValidPassword("password123"));
 The fibonacci function calculates the Nth Fibonacci number using an iterative approach. 
 <pre>
 const fibonacci = (n) => { 
-if (n === 1) return 0; 
-if (n === 2) return 1; 
-let prev1 = 0; 
-let prev2 = 1; 
-let result; 
-for (let i = 3; i <= n; i++) { 
-result = prev1 + prev2; 
-prev1 = prev2; 
-prev2 = result; 
-} 
-return result; 
+  if (n === 1) return 0; 
+  if (n === 2) return 1; 
+  let prev1 = 0; 
+  let prev2 = 1; 
+  let result; 
+  for (let i = 3; i <= n; i++) { 
+    result = prev1 + prev2; 
+    prev1 = prev2; 
+    prev2 = result; 
+  } 
+  return result; 
 }; 
 console.log(fibonacci(7)); // Output: 8 
 </pre>
@@ -1806,19 +1811,19 @@ console.log(trianglePerimeter(5, 10, 7));
 The isVampireNumber function checks if a given number is a vampire number. 
 <pre>
 const isVampireNumber = (num) => { 
-const numStr = String(num); 
-const numLen = numStr.length; 
-const numDigits = [...numStr]; 
-const numFactors = getFactors(num); 
-for (const factor1 of numFactors) { 
-const factor2 = num / factor1; 
-if (factor1 % 10 === 0 && factor2 % 10 === 0) continue; 
-const factorStr = String(factor1) + String(factor2); 
-if (factorStr.length === numLen && areAnagrams(numDigits, [...factorStr])) { 
-return true; 
-} 
-} 
-return false; 
+  const numStr = String(num); 
+  const numLen = numStr.length; 
+  const numDigits = [...numStr]; 
+  const numFactors = getFactors(num); 
+  for (const factor1 of numFactors) { 
+    const factor2 = num / factor1; 
+    if (factor1 % 10 === 0 && factor2 % 10 === 0) continue; 
+    const factorStr = String(factor1) + String(factor2); 
+    if (factorStr.length === numLen && areAnagrams(numDigits, [...factorStr])) { 
+      return true; 
+    } 
+  } 
+  return false; 
 }; 
 console.log(isVampireNumber(1260)); // Output: true 
 console.log(isVampireNumber(1250)); // Output: false 
@@ -1828,8 +1833,8 @@ console.log(isVampireNumber(1250)); // Output: false
 sumOfDigitsRaisedToPower calculates the sum of digits raised to the power of their respective positions. 
 <pre>
 const sumOfDigitsRaisedToPower = (num) => { 
-const digits = [...String(num)].map(Number); 
-return digits.reduce((sum, digit, index) => sum + digit ** (index + 1), 0); 
+  const digits = [...String(num)].map(Number); 
+  return digits.reduce((sum, digit, index) => sum + digit ** (index + 1), 0); 
 }; 
 console.log(sumOfDigitsRaisedToPower(12345)); 
 // Output: 115 
@@ -1904,13 +1909,13 @@ console.log(isValidUSPhoneNumber("1-800-ABC-DEFG"));
 The sumOfDigitsRaisedToPowerUpToThousand function calculates the sum of numbers where each digit raised to the power of its respective position is equal to the number itself. 
 <pre>
 const sumOfDigitsRaisedToPowerUpToThousand = () => { 
-let sum = 0; 
-for (let i = 1; i <= 1000; i++) { 
-if (sumOfDigitsRaisedToPower(i) === i) { 
-sum += i; 
-} 
-} 
-return sum; 
+  let sum = 0; 
+  for (let i = 1; i <= 1000; i++) { 
+    if (sumOfDigitsRaisedToPower(i) === i) { 
+      sum += i; 
+    } 
+  } 
+  return sum; 
 }; 
 console.log(sumOfDigitsRaisedToPowerUpToThousand()); 
 // Output: 443839 
@@ -1920,8 +1925,8 @@ console.log(sumOfDigitsRaisedToPowerUpToThousand());
 The isCarolNumber function checks if a given number is a Carol number. 
 <pre>
 const isCarolNumber = (num) => { 
-const carolPrime = (2 ** num) - 1; 
-return isPrime(num) && isPerfectSquare(carolPrime); 
+  const carolPrime = (2 ** num) - 1; 
+  return isPrime(num) && isPerfectSquare(carolPrime); 
 }; 
 console.log(isCarolNumber(7)); 
 // Output: true 
@@ -2002,15 +2007,15 @@ console.log(ellipseArea(5, 10));
 Check if a given number is a Leyland number. 
 <pre>
 const isLeylandNumber = (num) => { 
-let found = false; 
-for (let x = 2; x <= Math.floor(Math.pow(num, 1 / 3)) && !found; x++) { 
-for (let y = x + 1; x * y <= num && !found; y++) { 
-if (Math.pow(x, y) + Math.pow(y, x) === num) { 
-found = true; 
-} 
-} 
-} 
-return found; 
+  let found = false; 
+  for (let x = 2; x <= Math.floor(Math.pow(num, 1 / 3)) && !found; x++) { 
+    for (let y = x + 1; x * y <= num && !found; y++) { 
+      if (Math.pow(x, y) + Math.pow(y, x) === num) { 
+        found = true; 
+      } 
+    } 
+  } 
+  return found; 
 }; 
 console.log(isLeylandNumber(17)); 
 // Output: true 
@@ -2024,11 +2029,11 @@ console.log(isLeylandNumber(100));
 Generate a random Universally Unique Identifier (UUID). 
 <pre>
 const randomUUID = () => { 
-return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) { 
-const r = Math.random() * 16 | 0; 
-const v = c === "x" ? r : (r & 0x3 | 0x8); 
-return v.toString(16); 
-}); 
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) { 
+    const r = Math.random() * 16 | 0; 
+    const v = c === "x" ? r : (r & 0x3 | 0x8); 
+    return v.toString(16); 
+  }); 
 }; 
 console.log(randomUUID()); 
 // Output: "a0f768f5-6bf2-4f6b-a512-c9121ea1b44a" 
@@ -2068,12 +2073,12 @@ console.log(isValidMACAddress("00:1A:2B:3C:4D"));
 Convert an RGB color value to its corresponding HSL representation (Hue, Saturation, Lightness). 
 <pre>
 const rgbToHSL = (r, g, b) => { 
-[r, g, b] = [r, g, b].map(val => val / 255); 
-const [max, min] = [Math.max(r, g, b), Math.min(r, g, b)]; 
-let h = (max !== min) ? ((max === r ? g - b : (max === g ? b - r : r - g)) / (max - min) + (max === g ? 2 : (max === b ? 4 : 0))) / 6 : 0; 
-let s = (max !== min) ? (l => l > 0.5 ? (max - min) / (2 - max - min) : (max - min) / (max + min))(l) : 0; 
-let l = (max + min) / 2; 
-return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) }; 
+  [r, g, b] = [r, g, b].map(val => val / 255); 
+  const [max, min] = [Math.max(r, g, b), Math.min(r, g, b)]; 
+  let h = (max !== min) ? ((max === r ? g - b : (max === g ? b - r : r - g)) / (max - min) + (max === g ? 2 : (max === b ? 4 : 0))) / 6 : 0; 
+  let s = (max !== min) ? (l => l > 0.5 ? (max - min) / (2 - max - min) : (max - min) / (max + min))(l) : 0; 
+  let l = (max + min) / 2; 
+  return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) }; 
 }; 
 console.log(rgbToHSL(255, 0, 0)); // Output: { h: 0, s: 100, l: 50 } 
 console.log(rgbToHSL(0, 255, 0)); // Output: { h: 120, s: 100, l: 50 } 
@@ -2084,9 +2089,9 @@ console.log(rgbToHSL(0, 0, 255)); // Output: { h: 240, s: 100, l: 50 }
 Check if a given number is a pandigital number. 
 <pre>
 const isPandigitalNumber = (num) => { 
-const numStr = String(num); 
-const digits = new Set(numStr); 
-return digits.size === numStr.length && !digits.has('0') && digits.size === Math.max(...numStr) - '0'; 
+  const numStr = String(num); 
+  const digits = new Set(numStr); 
+  return digits.size === numStr.length && !digits.has('0') && digits.size === Math.max(...numStr) - '0'; 
 }; 
 console.log(isPandigitalNumber(123456789)); 
 // Output: true 
@@ -2100,16 +2105,16 @@ console.log(isPandigitalNumber(1023456789));
 Calculate the sum of proper divisors of a given number. 
 <pre>
 const sumOfProperDivisors = (num) => { 
-let sum = 0; 
-for (let i = 1; i <= Math.sqrt(num); i++) { 
-if (num % i === 0) { 
-sum += i; 
-if (num / i !== i) { 
-sum += num / i; 
-} 
-} 
-} 
-return sum - num; 
+  let sum = 0; 
+  for (let i = 1; i <= Math.sqrt(num); i++) { 
+    if (num % i === 0) { 
+      sum += i; 
+      if (num / i !== i) { 
+        sum += num / i; 
+      } 
+    } 
+  } 
+  return sum - num; 
 }; 
 console.log(sumOfProperDivisors(28)); 
 // Output: 28 
@@ -2158,13 +2163,13 @@ console.log(productOfDigits(12345));
 Check if a given number is a practical number. 
 <pre>
 const isPracticalNumber = (num) => { 
-const factors = primeFactors(num); 
-for (let i = 2; i <= factors.length; i++) { 
-if (sumOfArray(combinations(factors, i)) !== num) { 
-return false; 
-} 
-} 
-return true; 
+  const factors = primeFactors(num); 
+  for (let i = 2; i <= factors.length; i++) { 
+    if (sumOfArray(combinations(factors, i)) !== num) { 
+      return false; 
+    } 
+  } 
+  return true; 
 }; 
 console.log(isPracticalNumber(6)); 
 // Output: true 
@@ -2186,8 +2191,8 @@ console.log(sumOfCubes(5));
 Check if a given number is a strange number. 
 <pre>
 const isStrangeNumber = (num) => { 
-const factors = primeFactors(num); 
-return factors.every((factor) => sumOfDigits(factor) === sumOfDigits(num)); 
+  const factors = primeFactors(num); 
+  return factors.every((factor) => sumOfDigits(factor) === sumOfDigits(num)); 
 }; 
 console.log(isStrangeNumber(18)); 
 // Output: true 
@@ -2201,8 +2206,8 @@ console.log(isStrangeNumber(20));
 Check if a given number is a Tau number. 
 <pre>
 const isTauNumber = (num) => { 
-const factors = primeFactors(num); 
-return factors.some((factor) => sumOfDigits(factor) === sumOfDigits(num)); 
+  const factors = primeFactors(num); 
+  return factors.some((factor) => sumOfDigits(factor) === sumOfDigits(num)); 
 }; 
 console.log(isTauNumber(15)); 
 // Output: true 
@@ -2216,12 +2221,12 @@ console.log(isTauNumber(25));
 Generate a random alphanumeric string of a given length. 
 <pre>
 const randomAlphanumericString = (length) => { 
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; 
-let result = ''; 
-for (let i = 0; i < length; i++) { 
-result += characters.charAt(Math.floor(Math.random() * characters.length)); 
-} 
-return result; 
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; 
+  let result = ''; 
+  for (let i = 0; i < length; i++) { 
+    result += characters.charAt(Math.floor(Math.random() * characters.length)); 
+  } 
+  return result; 
 }; 
 console.log(randomAlphanumericString(8)); 
 // Output: "Yw83XmLb" 
