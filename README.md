@@ -907,7 +907,8 @@ console.log(lcm(6, 8)); // Output: 24
 99. Find the Longest Word in a String
 Find the longest word in a string. 
 <pre>
-const findLongestWord = (str) => str.split(' ').reduce((longest, word) => word.length > longest.length ? word : longest, ''); 
+const findLongestWord = (str) => str.split(' ').reduce((longest, word) 
+  => word.length > longest.length ? word : longest, ''); 
 console.log(findLongestWord("Hello, how are you doing?")); 
 // Output: "doing?" 
 </pre>
@@ -941,7 +942,8 @@ console.log(removeDuplicatesFromString("hello"));
 </pre>
 
 103. Find the Mode of an Array of Numbers
-Calculate the mode, the most frequently occurring number(s), from an array of numbers. It identifies the number(s) with the highest frequency and returns them in an array. 
+Calculate the mode, the most frequently occurring number(s), from an array of numbers. 
+It identifies the number(s) with the highest frequency and returns them in an array. 
 <pre>
 const mode = (arr) => { 
 const frequency = {}; 
@@ -954,7 +956,10 @@ console.log(mode([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]));
 </pre>
 
 104. Check if a Number is a Harshad Number (Niven Number)
-A Harshad number, also known as a Niven number, is an integer divisible by the sum of its digits. The isHarshadNumber function determines whether a given number meets this criterion. It calculates the sum of the digits of the number, and then checks if the number itself is divisible by this sum. 
+A Harshad number, also known as a Niven number, is an integer divisible by the sum of its 
+digits. The isHarshadNumber function determines whether a given number meets this criterion. 
+It calculates the sum of the digits of the number, and then checks if the number itself is 
+divisible by this sum. 
 <pre>
 const isHarshadNumber = (num) => num % [...String(num)].reduce((sum, digit) => sum + Number(digit), 0) === 0; 
 console.log(isHarshadNumber(18)); 
@@ -964,7 +969,10 @@ console.log(isHarshadNumber(21));
 </pre>
 
 105. Convert Binary Number to Decimal (without parseInt)
-This function performs the conversion of a binary number to its equivalent decimal representation, all without utilizing the parseInt function. The process involves splitting the binary number's digits, reversing them, and using a reduce operation to calculate the decimal value by considering each digit's position and value. 
+This function performs the conversion of a binary number to its equivalent decimal 
+representation, all without utilizing the parseInt function. The process involves 
+splitting the binary number's digits, reversing them, and using a reduce operation 
+to calculate the decimal value by considering each digit's position and value. 
 <pre>
 const binaryToDecimalWithoutParseInt = (binary) => binary.split('').reverse().reduce((dec, bit, index) => dec + bit * (2 ** index), 0); 
 console.log(binaryToDecimalWithoutParseInt("1101")); 
@@ -972,7 +980,9 @@ console.log(binaryToDecimalWithoutParseInt("1101"));
 </pre>
 
 106. Check if an Array is Sorted in Descending Order
-This function determines if an array is sorted in descending order. It iterates through the array and verifies that each element is either greater than or equal to the preceding element, ensuring a descending order. 
+This function determines if an array is sorted in descending order. It iterates through 
+the array and verifies that each element is either greater than or equal to the preceding 
+element, ensuring a descending order. 
 <pre>
 const isSortedDescending = (arr) => arr.every((el, i) => i === 0 || el <= arr[i - 1]); 
 console.log(isSortedDescending([5, 4, 3, 2, 1])); 
@@ -982,7 +992,9 @@ console.log(isSortedDescending([1, 5, 3, 8, 2]));
 </pre>
 
 107. Find the Average of Even Numbers in an Array
-This function computes the average of even numbers present in an array. It first filters out the even numbers from the array, then calculates the sum of these even numbers, and finally divides the sum by the count of even numbers to obtain the average. 
+This function computes the average of even numbers present in an array. It first filters 
+out the even numbers from the array, then calculates the sum of these even numbers, and 
+finally divides the sum by the count of even numbers to obtain the average. 
 <pre>
 const averageOfEvenNumbers = (arr) => { 
 const evenNumbers = arr.filter(num => num % 2 === 0); 
@@ -993,7 +1005,9 @@ console.log(averageOfEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 </pre>
 
 108. Capitalize the First Letter of Each Word in a String
-This function transforms a string by capitalizing the first letter of each word within it. It employs a regular expression to locate the first character of each word (defined as a word boundary followed by a letter), and then replaces it with its uppercase version. 
+This function transforms a string by capitalizing the first letter of each word within 
+it. It employs a regular expression to locate the first character of each word (defined 
+as a word boundary followed by a letter), and then replaces it with its uppercase version. 
 <pre>
 const capitalizeWords = (str) => str.replace(/\b\w/g, char => char.toUpperCase()); 
 console.log(capitalizeWords("hello world")); 
@@ -1001,7 +1015,9 @@ console.log(capitalizeWords("hello world"));
 </pre>
 
 109. Check if an Array is a Subset of Another Array
-The isSubset function determines if one array is a subset of another array. It achieves this by verifying that every element in the first array (arr1) is present in the second array (arr2). 
+The isSubset function determines if one array is a subset of another array. It 
+achieves this by verifying that every element in the first array (arr1) is present in 
+the second array (arr2). 
 <pre>
 const isSubset = (arr1, arr2) => arr1.every(item => arr2.includes(item)); 
 console.log(isSubset([1, 2, 3], [2, 3, 4, 5, 6])); 
@@ -1011,7 +1027,10 @@ console.log(isSubset([1, 2, 3], [2, 3, 1, 5, 6]));
 </pre>
 
 110. Find the Minimum and Maximum Numbers in an Array
-The minMax function calculates both the minimum and maximum values within an array. It achieves this by employing the Math.min and Math.max functions alongside the spread operator to extract the elements' values from the input array. The function returns an object containing both the minimum and maximum values. 
+The minMax function calculates both the minimum and maximum values within an array. 
+It achieves this by employing the Math.min and Math.max functions alongside the 
+spread operator to extract the elements' values from the input array. The function 
+returns an object containing both the minimum and maximum values. 
 <pre>
 const minMax = (arr) => ({ 
 min: Math.min(...arr), 
@@ -1039,7 +1058,9 @@ console.log(isNarcissisticNumber(123));
 </pre>
 
 112. Remove Null and Undefined Values from an Array
-The removeNullAndUndefined function eliminates null and undefined values from an array by utilizing the filter method. It returns a new array containing only the non-null and non-undefined elements. 
+The removeNullAndUndefined function eliminates null and undefined values from an array by 
+utilizing the filter method. It returns a new array containing only the non-null and 
+non-undefined elements. 
 <pre>
 const removeNullAndUndefined = (arr) => arr.filter(item => item !== null && item !== undefined); 
 console.log(removeNullAndUndefined([1, null, 2, 3, undefined, 4, null])); 
@@ -1047,7 +1068,8 @@ console.log(removeNullAndUndefined([1, null, 2, 3, undefined, 4, null]));
 </pre>
 
 113. Reverse the Order of Words in a String
-The reverseWords function takes a string as input and returns a new string where the order of words has been reversed. 
+The reverseWords function takes a string as input and returns a new string where the order 
+of words has been reversed. 
 <pre>
 const reverseWords = (str) => str.split(' ').reverse().join(' '); 
 console.log(reverseWords("Hello, world!")); 
@@ -1055,7 +1077,9 @@ console.log(reverseWords("Hello, world!"));
 </pre>
 
 114. Calculate the Sum of Cubes of an Array
-The sumOfCubes function computes the sum of the cubes of all numbers in an array. It employs the reduce method to iterate through the array, accumulating the sum of cubes by raising each value to the power of 3 and adding it to the accumulator. 
+The sumOfCubes function computes the sum of the cubes of all numbers in an array. It 
+employs the reduce method to iterate through the array, accumulating the sum of cubes 
+by raising each value to the power of 3 and adding it to the accumulator. 
 <pre>
 const sumOfCubes = (arr) => arr.reduce((acc, val) => acc + val ** 3, 0); 
 console.log(sumOfCubes([1, 2, 3, 4, 5])); 
@@ -1063,7 +1087,10 @@ console.log(sumOfCubes([1, 2, 3, 4, 5]));
 </pre>
 
 115. Shuffle the Characters of a String
-The shuffleString function rearranges the characters of a given string in a random order. It does so by first splitting the string into an array of characters, then using the sort method with a random comparison function. Finally, the shuffled characters are rejoined to form a new string. 
+The shuffleString function rearranges the characters of a given string in a random 
+order. It does so by first splitting the string into an array of characters, then 
+using the sort method with a random comparison function. Finally, the shuffled 
+characters are rejoined to form a new string. 
 <pre>
 const shuffleString = (str) => str.split('').sort(() => 0.5 - Math.random()).join(''); 
 console.log(shuffleString("hello")); 
@@ -1071,7 +1098,9 @@ console.log(shuffleString("hello"));
 </pre>
 
 116. Find the Nth Fibonacci Number (recursive)
-The fibonacci function calculates the Nth Fibonacci number using a recursive approach. It determines the Fibonacci number by summing the previous two Fibonacci numbers until it reaches the base cases of 0 and 1. 
+The fibonacci function calculates the Nth Fibonacci number using a recursive approach. 
+It determines the Fibonacci number by summing the previous two Fibonacci numbers until 
+it reaches the base cases of 0 and 1. 
 <pre>
 const fibonacci = (n) => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2)); 
 console.log(fibonacci(7)); 
@@ -1079,7 +1108,9 @@ console.log(fibonacci(7));
 </pre>
 
 117. Count the Words in a String
-The countWords function determines the number of words in a given string. It accomplishes this by splitting the string using a regular expression that matches one or more whitespace characters, and then counting the resulting array's length. 
+The countWords function determines the number of words in a given string. It accomplishes 
+this by splitting the string using a regular expression that matches one or more whitespace 
+characters, and then counting the resulting array's length. 
 <pre>
 const countWords = (str) => str.split(/\s+/).length; 
 console.log(countWords("Hello, how are you doing?")); 
@@ -1107,7 +1138,8 @@ console.log(isTriangularNumber(7));
 </pre>
 
 119. Calculate the Perimeter of a Rectangle
-The rectanglePerimeter function calculates the perimeter of a rectangle by summing twice the width and twice the height of the rectangle. 
+The rectanglePerimeter function calculates the perimeter of a rectangle by summing 
+twice the width and twice the height of the rectangle. 
 <pre>
 const rectanglePerimeter = (width, height) => 2 * (width + height); 
 console.log(rectanglePerimeter(5, 10)); 
@@ -1115,7 +1147,8 @@ console.log(rectanglePerimeter(5, 10));
 </pre>
 
 120. Find the Longest Common Prefix in an Array of Strings
-The longestCommonPrefix function finds the longest common prefix among an array of strings. It starts by assuming the first string in the array as the initial common prefix. 
+The longestCommonPrefix function finds the longest common prefix among an array of 
+strings. It starts by assuming the first string in the array as the initial common prefix. 
 <pre>
 const longestCommonPrefix = (strs) => { 
   if (strs.length === 0) return ''; 
@@ -1132,7 +1165,9 @@ console.log(longestCommonPrefix(['apple', 'apricot', 'appetizer']));
 </pre>
 
 121. Get the ASCII Value of a Character
-The getASCIIValue function retrieves the ASCII value of a given character. It employs the charCodeAt method, which returns the ASCII code of the character at the specified index (0 in this case). 
+The getASCIIValue function retrieves the ASCII value of a given character. It employs 
+the charCodeAt method, which returns the ASCII code of the character at the specified 
+index (0 in this case). 
 <pre>
 const getASCIIValue = (char) => char.charCodeAt(0); 
 console.log(getASCIIValue('A')); 
@@ -1140,7 +1175,10 @@ console.log(getASCIIValue('A'));
 </pre>
 
 122. Find the First Non-Repeated Character in a String
-The firstNonRepeatedChar function identifies the first non-repeated character within a given string. It accomplishes this by iterating through the string, building a character count object, and then using the find method to locate the first character with a count of 1. 
+The firstNonRepeatedChar function identifies the first non-repeated character within 
+a given string. It accomplishes this by iterating through the string, building a 
+character count object, and then using the find method to locate the first character 
+with a count of 1. 
 <pre>
 const firstNonRepeatedChar = (str) => { 
   const charCount = {}; 
@@ -1154,7 +1192,9 @@ console.log(firstNonRepeatedChar('abacabad'));
 </pre>
 
 123. Sort an Array of Objects by a Property Value
-The sortByProperty function arranges an array of objects based on a specified property's value. It employs the sort method with a custom comparison function that compares the property values of two objects. 
+The sortByProperty function arranges an array of objects based on a specified property's 
+value. It employs the sort method with a custom comparison function that compares the 
+property values of two objects. 
 <pre>
 const sortByProperty = (arr, prop) => arr.sort((a, b) => a[prop] - b[prop]); 
 const people = [ 
@@ -1167,7 +1207,8 @@ console.log(sortByProperty(people, 'age'));
 </pre>
 
 124. Calculate the Exponential of a Number
-The exponential function calculates the result of raising a given base to a specified exponent using the exponentiation operator (**). 
+The exponential function calculates the result of raising a given base to a specified 
+exponent using the exponentiation operator (**). 
 <pre>
 const exponential = (base, exponent) => base ** exponent; 
 console.log(exponential(2, 3)); 
@@ -1175,7 +1216,9 @@ console.log(exponential(2, 3));
 </pre>
 
 125. Check if a String is an Anagram of Another String
-The isAnagram function determines whether two given strings are anagrams of each other. An anagram is a word or phrase formed by rearranging the letters of another, using all the original letters exactly once. 
+The isAnagram function determines whether two given strings are anagrams of each 
+other. An anagram is a word or phrase formed by rearranging the letters of another, 
+using all the original letters exactly once. 
 <pre>
 const isAnagram = (str1, str2) => str1.split('').sort().join('') === str2.split('').sort().join(''); 
 console.log(isAnagram('listen', 'silent')); 
@@ -1185,7 +1228,8 @@ console.log(isAnagram('hello', 'world'));
 </pre>
 
 126. Find the Factors of a Number
-The factors function calculates and returns an array of all the factors of a given number. Factors are the positive integers that evenly divide the input number. 
+The factors function calculates and returns an array of all the factors of a given 
+number. Factors are the positive integers that evenly divide the input number. 
 <pre>
 const factors = (num) => { 
   const result = []; 
@@ -1201,7 +1245,9 @@ console.log(factors(12));
 </pre>
 
 127. Check if a Number is a Neon Number
-The isNeonNumber function determines whether a given number is a neon number. A neon number is a number where the sum of the digits of its square is equal to the number itself. 
+The isNeonNumber function determines whether a given number is a neon number. A neon 
+number is a number where the sum of the digits of its square is equal to the number 
+itself. 
 <pre>
 const isNeonNumber = (num) => { 
   const squared = num ** 2; 
@@ -1246,7 +1292,8 @@ console.log(isDisariumNumber(23));
 </pre>
 
 130. Remove Vowels from a String
-The removeVowels function eliminates all vowels (both uppercase and lowercase) from a given string using the replace method along with a regular expression. 
+The removeVowels function eliminates all vowels (both uppercase and lowercase) from a 
+given string using the replace method along with a regular expression. 
 <pre>
 const removeVowels = (str) => str.replace(/[aeiouAEIOU]/g, ''); 
 console.log(removeVowels("Hello, World!")); 
@@ -1254,7 +1301,8 @@ console.log(removeVowels("Hello, World!"));
 </pre>
 
 131. Generate an Array of Consecutive Numbers
-The consecutiveNumbers function generates an array of consecutive numbers within a specified range. 
+The consecutiveNumbers function generates an array of consecutive numbers within a 
+specified range. 
 <pre>
 const consecutiveNumbers = (start, end) => Array.from({ length: end - start + 1 }, (_, i) => start + i); 
 console.log(consecutiveNumbers(1, 5)); 
@@ -1262,7 +1310,8 @@ console.log(consecutiveNumbers(1, 5));
 </pre>
 
 132. Check if a Number is a Pronic Number
-The isPronicNumber function determines whether a given number is a pronic number (also known as an oblong number or rectangular number). 
+The isPronicNumber function determines whether a given number is a pronic number (also 
+known as an oblong number or rectangular number). 
 <pre>
 const isPronicNumber = (num) => { 
   const n = Math.floor(Math.sqrt(num)); 
@@ -1277,7 +1326,8 @@ console.log(isPronicNumber(7));
 </pre>
 
 133. Check if a String is a Pangram
-The isPangram function checks whether a given string is a pangram, which is a sentence that contains every letter of the alphabet at least once. 
+The isPangram function checks whether a given string is a pangram, which is a sentence 
+that contains every letter of the alphabet at least once. 
 <pre>
 const isPangram = (str) => { 
   const letters = new Set(str.toLowerCase().match(/[a-z]/g)); 
@@ -1298,7 +1348,8 @@ console.log(reverseSentence("Hello, how are you doing?"));
 </pre>
 
 135. Calculate the Hypotenuse of a Right-Angled Triangle
-The binaryToDecimalWithParseInt function converts a binary number to a decimal number using the built-in parseInt function with the base parameter set to 2. 
+The binaryToDecimalWithParseInt function converts a binary number to a decimal number 
+using the built-in parseInt function with the base parameter set to 2. 
 <pre>
 const binaryToDecimalWithParseInt = (binary) => parseInt(binary, 2); 
 console.log(binaryToDecimalWithParseInt("1101")); 
@@ -1306,7 +1357,9 @@ console.log(binaryToDecimalWithParseInt("1101"));
 </pre>
 
 136. Find the Average of Odd Numbers in an Array
-The averageOfOddNumbers function calculates the average of odd numbers within a given array. It does so by filtering the odd numbers from the array, then computing their sum and dividing by the count of odd numbers. 
+The averageOfOddNumbers function calculates the average of odd numbers within a 
+given array. It does so by filtering the odd numbers from the array, then computing 
+their sum and dividing by the count of odd numbers. 
 <pre>
 const averageOfOddNumbers = (arr) => { 
   const oddNumbers = arr.filter(num => num % 2 !== 0); 
@@ -1316,7 +1369,8 @@ console.log(averageOfOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // Output: 5
 </pre>
 
 137. Count the Letters in a String (case-insensitive)
-The countLetters function calculates the count of each letter in a given string, considering both uppercase and lowercase versions as the same letter. 
+The countLetters function calculates the count of each letter in a given string, 
+considering both uppercase and lowercase versions as the same letter. 
 <pre>
 const countLetters = (str) => { 
   const letters = str.toLowerCase().match(/[a-z]/g); 
@@ -1331,7 +1385,8 @@ console.log(countLetters("Hello, World!"));
 </pre>
 
 138. Convert Seconds to Days, Hours, Minutes, and Seconds
-The secsToDaysHoursMinsSecs function converts a given number of seconds into days, hours, minutes, and remaining seconds. 
+The secsToDaysHoursMinsSecs function converts a given number of seconds into days, 
+hours, minutes, and remaining seconds. 
 <pre>
 const secsToDaysHoursMinsSecs = (seconds) => { 
   const days = Math.floor(seconds / 86400); 
@@ -1395,7 +1450,8 @@ console.log(sumOfDigits(12345));
 </pre>
 
 143. Calculate the Median of an Array of Numbers
-The median function calculates the median of an array of numbers. The median is the middle value of a dataset when it is ordered. 
+The median function calculates the median of an array of numbers. The median is the 
+middle value of a dataset when it is ordered. 
 <pre>
 const median = (arr) => { 
   const sorted = arr.sort((a, b) => a - b); 
@@ -1407,7 +1463,8 @@ console.log(median([1, 3, 5, 7, 9]));
 </pre>
 
 144. Find the Greatest Common Divisor (GCD) of Two Numbers (Recursive)
-The gcd function calculates the greatest common divisor (GCD) of two given numbers using a recursive approach. 
+The gcd function calculates the greatest common divisor (GCD) of two given numbers 
+using a recursive approach. 
 <pre>
 const gcd = (num1, num2) => (num2 === 0 ? num1 : gcd(num2, num1 % num2)); 
 console.log(gcd(48, 18)); 
@@ -1415,7 +1472,9 @@ console.log(gcd(48, 18));
 </pre>
 
 145. Check if a Number is a Happy Number
-The isHappyNumber function checks if a given number is a "happy number" or not. A happy number is a number where the sequence of repeatedly summing the squares of its digits eventually reaches the number 1. 
+The isHappyNumber function checks if a given number is a "happy number" or not. A 
+happy number is a number where the sequence of repeatedly summing the squares of 
+its digits eventually reaches the number 1. 
 <pre>
 const isHappyNumber = (num) => { 
   const seen = new Set(); 
@@ -1455,7 +1514,8 @@ console.log(firstNPrimes(5));
 </pre>
 
 147. Calculate the Volume of a Sphere
-The sphereVolume function calculates the volume of a sphere given its radius. It uses the formula (4/3) * π * r^3, where r is the radius of the sphere. 
+The sphereVolume function calculates the volume of a sphere given its radius. It uses 
+the formula (4/3) * π * r^3, where r is the radius of the sphere. 
 <pre>
 const sphereVolume = (radius) => (4 / 3) * Math.PI * radius ** 3; 
 console.log(sphereVolume(5)); 
@@ -1463,9 +1523,12 @@ console.log(sphereVolume(5));
 </pre>
 
 148. Find the Longest Word in a Sentence
-The longestWord function determines the longest word in a given sentence. It does this by splitting the sentence into words using spaces as separators and then using the reduce method to compare the length of each word and keep track of the longest one. 
+The longestWord function determines the longest word in a given sentence. It does this 
+by splitting the sentence into words using spaces as separators and then using the 
+reduce method to compare the length of each word and keep track of the longest one. 
 <pre>
-const longestWord = (sentence) => sentence.split(' ').reduce((longest, word) => (word.length > longest.length ? word : longest), ''); 
+const longestWord = (sentence) => sentence.split(' ').reduce((longest, word) 
+  => (word.length > longest.length ? word : longest), ''); 
 console.log(longestWord("The quick brown fox jumped over the lazy dog")); 
 // Output: "jumped" 
 </pre>
@@ -1488,15 +1551,19 @@ console.log(isArmstrongNumber(123));
 </pre>
 
 150. Find the Length of the Longest Word in a Sentence
-The longestWordLength function calculates the length of the longest word in a given sentence. It splits the sentence into words using spaces as separators, and then uses the reduce method to find the maximum length among all the words. 
+The longestWordLength function calculates the length of the longest word in a given 
+sentence. It splits the sentence into words using spaces as separators, and then uses 
+the reduce method to find the maximum length among all the words. 
 <pre>
-const longestWordLength = (sentence) => sentence.split(' ').reduce((longest, word) => Math.max(longest, word.length), 0); 
+const longestWordLength = (sentence) => sentence.split(' ').reduce((longest, word) 
+  => Math.max(longest, word.length), 0); 
 console.log(longestWordLength("The quick brown fox jumped over the lazy dog")); 
 // Output: 6 
 </pre>
 
 151. Check if a Number is a Strong Number
-The isStrongNumber function checks if a number is a strong number. A strong number is a number whose sum of factorials of its digits is equal to the number itself. 
+The isStrongNumber function checks if a number is a strong number. A strong number is a 
+number whose sum of factorials of its digits is equal to the number itself. 
 <pre>
 const factorial = (num) => (num === 0 ? 1 : num * factorial(num - 1)); 
 const isStrongNumber = (num) => { 
@@ -1518,7 +1585,8 @@ console.log(reverseArray([1, 2, 3, 4, 5]));
 </pre>
 
 153. Find the Area of a Rectangle
-The rectangleArea function calculates the area of a rectangle given its length and width using the formula: length * width. 
+The rectangleArea function calculates the area of a rectangle given its length and width 
+using the formula: length * width. 
 <pre>
 const rectangleArea = (length, width) => length * width; 
 console.log(rectangleArea(5, 10)); 
@@ -1526,7 +1594,9 @@ console.log(rectangleArea(5, 10));
 </pre>
 
 154. Calculate the Sum of Even Numbers in an Array
-The sumOfEvenNumbers function calculates the sum of even numbers within an array. It first filters the array to keep only the even numbers, and then uses the reduce method to compute their sum. 
+The sumOfEvenNumbers function calculates the sum of even numbers within an array. It 
+first filters the array to keep only the even numbers, and then uses the reduce method 
+to compute their sum. 
 <pre>
 const sumOfEvenNumbers = (arr) => arr.filter(num => num % 2 === 0).reduce((sum, num) => sum + num, 0); 
 console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); 
@@ -1534,7 +1604,9 @@ console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 </pre>
 
 155. Find the Greatest Common Divisor (GCD) of Two Numbers (Iterative)
-The gcdIterative function calculates the greatest common divisor (GCD) of two numbers using an iterative approach. It employs the Euclidean algorithm to iteratively find the GCD. 
+The gcdIterative function calculates the greatest common divisor (GCD) of two numbers 
+using an iterative approach. It employs the Euclidean algorithm to iteratively find 
+the GCD. 
 <pre>
 const gcdIterative = (num1, num2) => { 
   while (num2 !== 0) { 
@@ -1583,7 +1655,8 @@ console.log(isSmithNumber(123));
 </pre>
 
 158. Convert Decimal Number to Octal
-The decimalToOctal function converts a decimal (base 10) number to its octal (base 8) representation using the .toString() method with the base argument set to 8. 
+The decimalToOctal function converts a decimal (base 10) number to its octal (base 8) 
+representation using the .toString() method with the base argument set to 8. 
 <pre>
 const decimalToOctal = (num) => num.toString(8); 
 console.log(decimalToOctal(27)); 
@@ -1591,14 +1664,16 @@ console.log(decimalToOctal(27));
 </pre>
 
 159. Find the LCM of Two Numbers
-The lcm function calculates the least common multiple (LCM) of two given numbers using the formula: (num1 * num2) / gcd(num1, num2). 
+The lcm function calculates the least common multiple (LCM) of two given numbers using 
+the formula: (num1 * num2) / gcd(num1, num2). 
 <pre>
 const lcm = (num1, num2) => (num1 * num2) / gcd(num1, num2); 
 console.log(lcm(24, 36)); // Output: 72 
 </pre>
 
 160. Check if a String is a Valid Phone Number (North American Format)
-The isValidPhoneNumber function checks whether a given string is a valid phone number in the North American format "XXX-XXX-XXXX", where X represents a digit. 
+The isValidPhoneNumber function checks whether a given string is a valid phone number 
+in the North American format "XXX-XXX-XXXX", where X represents a digit. 
 <pre>
 const isValidPhoneNumber = (phone) => /^\d{3}-\d{3}-\d{4}$/.test(phone); 
 console.log(isValidPhoneNumber("555-123-4567")); 
@@ -1608,7 +1683,8 @@ console.log(isValidPhoneNumber("123-4567"));
 </pre>
 
 161. Find the Sum of the First N Natural Numbers
-The sumOfNaturals function calculates the sum of the first N natural numbers using the formula: (n * (n + 1)) / 2. 
+The sumOfNaturals function calculates the sum of the first N natural numbers using the 
+formula: (n * (n + 1)) / 2. 
 <pre>
 const sumOfNaturals = (n) => (n * (n + 1)) / 2; 
 console.log(sumOfNaturals(10)); 
@@ -1616,7 +1692,9 @@ console.log(sumOfNaturals(10));
 </pre>
 
 162. Check if a Number is a Perfect Number
-The isPerfectNumber function checks whether a given number is a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding itself). 
+The isPerfectNumber function checks whether a given number is a perfect number. A 
+perfect number is a positive integer that is equal to the sum of its proper divisors 
+(excluding itself). 
 <pre>
 const isPerfectNumber = (num) => { 
   let sum = 0; 
@@ -1632,7 +1710,9 @@ console.log(isPerfectNumber(12));
 </pre>
 
 163. Find the Factors of a Number (excluding 1 and the number itself)
-The factors function calculates the factors of a given number, excluding 1 and the number itself. It iterates through the numbers from 2 up to one less than the given number, checking if the given number is divisible by each of those numbers. 
+The factors function calculates the factors of a given number, excluding 1 and the 
+number itself. It iterates through the numbers from 2 up to one less than the given 
+number, checking if the given number is divisible by each of those numbers. 
 <pre>
 const factors = (num) => { 
   const result = []; 
@@ -1646,7 +1726,8 @@ console.log(factors(12));
 </pre>
 
 164. Calculate the Area of a Triangle given the Base and Height
-The triangleArea function calculates the area of a triangle using the formula: 0.5 * base * height. 
+The triangleArea function calculates the area of a triangle using the formula: 0.5 
+* base * height. 
 <pre>
 const triangleArea = (base, height) => 0.5 * base * height; 
 console.log(triangleArea(5, 10)); 
@@ -1654,7 +1735,8 @@ console.log(triangleArea(5, 10));
 </pre>
 
 165. Check if a String is a Valid Social Security Number (SSN)
-The isValidSSN function checks whether a given string is a valid Social Security Number (SSN) in the format "XXX-XX-XXXX", where X represents a digit. 
+The isValidSSN function checks whether a given string is a valid Social Security Number 
+(SSN) in the format "XXX-XX-XXXX", where X represents a digit. 
 <pre>
 const isValidSSN = (ssn) => /^\d{3}-\d{2}-\d{4}$/.test(ssn); 
 console.log(isValidSSN("123-45-6789")); 
@@ -1664,15 +1746,20 @@ console.log(isValidSSN("123-45-678"));
 </pre>
 
 166. Generate an Array of Random Numbers within a Range
-The randomArrayInRange function generates an array of random numbers within a specified range and of a specified length. It uses the Array.from method with a mapping function to create the desired array. 
+The randomArrayInRange function generates an array of random numbers within a specified 
+range and of a specified length. It uses the Array.from method with a mapping function 
+to create the desired array. 
 <pre>
-const randomArrayInRange = (min, max, length) => Array.from({ length }, () => Math.floor(Math.random() * (max - min + 1)) + min); 
+const randomArrayInRange = (min, max, length) => Array.from({ length }, () 
+  => Math.floor(Math.random() * (max - min + 1)) + min); 
 console.log(randomArrayInRange(1, 100, 5)); 
 // Output: [34, 87, 19, 56, 72] 
 </pre>
 
 167. Check if a Number is a Magic Number
-The isMagicNumber function checks whether a given number is a magic number. A magic number is a number that eventually reaches the value 1 when the sum of its digits is repeatedly calculated. 
+The isMagicNumber function checks whether a given number is a magic number. A magic 
+number is a number that eventually reaches the value 1 when the sum of its digits is 
+repeatedly calculated. 
 <pre>
 const isMagicNumber = (num) => { 
   let sum = 0; 
@@ -1717,15 +1804,19 @@ console.log(isValidDate("02-08-2023"));
 </pre>
 
 171. Find the Smallest Common Multiple of an Array of Numbers
-In this code, the gcd function calculates the greatest common divisor using the Euclidean algorithm. The lcmArray function then calculates the least common multiple (LCM) of an array of numbers by reducing the array and applying the formula (lcm * num) / gcd(lcm, num). 
+In this code, the gcd function calculates the greatest common divisor using the Euclidean 
+algorithm. The lcmArray function then calculates the least common multiple (LCM) of an 
+array of numbers by reducing the array and applying the formula (lcm * num) / gcd(lcm, num). 
 <pre>
 const lcmArray = (arr) => arr.reduce((lcm, num) => (lcm * num) / gcd(lcm, num)); 
 console.log(lcmArray([2, 3, 4, 5])); 
 // Output: 60 
 </pre>
 
-172. Check if a String is a Valid Password (At least 8 characters, with a digit and special character)
-The isValidPassword function uses a regular expression to validate a password. The regular expression requires that the password contains at least one letter ([A-Za-z]), one digit (\d), and one special character ([@$!%*?&]). 
+172. Check if a String is a Valid Password (At least 8 characters, with a digit and 
+special character) The isValidPassword function uses a regular expression to validate 
+a password. The regular expression requires that the password contains at least one 
+letter ([A-Za-z]), one digit (\d), and one special character ([@$!%*?&]). 
 <pre>
 const isValidPassword = (password) => /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password); 
 console.log(isValidPassword("P@ssw0rd")); 
@@ -1764,7 +1855,9 @@ console.log(isDeficientNumber(28));
 </pre>
 
 175. Calculate the Distance between Two Points in 2D
-The distanceBetweenPoints function calculates the Euclidean distance between two points in a 2D plane. Given the coordinates of two points (x1, y1) and (x2, y2), it uses the formula sqrt((x2 - x1)^2 + (y2 - y1)^2) to compute the distance between them. 
+The distanceBetweenPoints function calculates the Euclidean distance between two points 
+in a 2D plane. Given the coordinates of two points (x1, y1) and (x2, y2), it uses the 
+formula sqrt((x2 - x1)^2 + (y2 - y1)^2) to compute the distance between them. 
 <pre>
 const distanceBetweenPoints = (x1, y1, x2, y2) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2); 
 console.log(distanceBetweenPoints(0, 0, 3, 4)); 
@@ -1782,7 +1875,9 @@ console.log(isAbundantNumber(28));
 </pre>
 
 177. Calculate the Volume of a Cube
-The cubeVolume function calculates the volume of a cube based on its side length. The formula for the volume of a cube is side^3, where side is the length of one side of the cube. 
+The cubeVolume function calculates the volume of a cube based on its side length. The 
+formula for the volume of a cube is side^3, where side is the length of one side of 
+the cube. 
 <pre>
 const cubeVolume = (side) => side ** 3; 
 console.log(cubeVolume(5)); 
@@ -1800,7 +1895,9 @@ console.log(isValidCreditCard("1234-5678-9012-3456"));
 </pre>
 
 179. Calculate the Perimeter of a Triangle
-The trianglePerimeter function calculates the perimeter of a triangle given its three side lengths. It simply adds up the lengths of all three sides and returns the result as the perimeter of the triangle. 
+The trianglePerimeter function calculates the perimeter of a triangle given its three 
+side lengths. It simply adds up the lengths of all three sides and returns the result 
+as the perimeter of the triangle. 
 <pre>
 const trianglePerimeter = (side1, side2, side3) => side1 + side2 + side3; 
 console.log(trianglePerimeter(5, 10, 7)); 
@@ -1841,7 +1938,8 @@ console.log(sumOfDigitsRaisedToPower(12345));
 </pre>
 
 182. Check if a Number is a Duck Number
-The isDuckNumber function checks whether a given number is a duck number. A duck number is a number that contains the digit "0" but does not start with "0". 
+The isDuckNumber function checks whether a given number is a duck number. A duck number 
+is a number that contains the digit "0" but does not start with "0". 
 <pre>
 const isDuckNumber = (num) => String(num).includes('0') && String(num)[0] !== '0'; 
 console.log(isDuckNumber(1023)); 
@@ -1853,13 +1951,15 @@ console.log(isDuckNumber(12345));
 183. Generate a Random Password
 The randomPassword function generates a random password of the specified length. 
 <pre>
-const randomPassword = (length) => Array.from({ length }, () => Math.random().toString(36).charAt(2)).join(''); 
+const randomPassword = (length) => Array.from({ length }, () 
+  => Math.random().toString(36).charAt(2)).join(''); 
 console.log(randomPassword(8)); 
 // Output: "3klS0p9x" 
 </pre>
 
 184. Calculate the Area of a Trapezoid
-The trapezoidArea function calculates the area of a trapezoid using the formula: 0.5 * (base1 + base2) * height. 
+The trapezoidArea function calculates the area of a trapezoid using the formula: 0.5 
+* (base1 + base2) * height. 
 <pre>
 const trapezoidArea = (base1, base2, height) => 0.5 * (base1 + base2) * height; 
 console.log(trapezoidArea(4, 8, 6)); 
@@ -1886,7 +1986,9 @@ console.log(isKaprekarNumber(45));
 </pre>
 
 186. Calculate the Volume of a Cone
-The coneVolume function calculates the volume of a cone using its base radius and height. It applies the formula for the volume of a cone: V = (1/3) * π * r² * h, where r is the radius of the base and h is the height of the cone. 
+The coneVolume function calculates the volume of a cone using its base radius and height. 
+It applies the formula for the volume of a cone: V = (1/3) * π * r² * h, where r is the 
+radius of the base and h is the height of the cone. 
 <pre>
 const coneVolume = (radius, height) => (1 / 3) * Math.PI * radius ** 2 * height; 
 console.log(coneVolume(5, 10)); 
@@ -1906,7 +2008,8 @@ console.log(isValidUSPhoneNumber("1-800-ABC-DEFG"));
 </pre>
 
 188. Find the Sum of Digits Raised to the Power of their Respective Position (Up to 1000)
-The sumOfDigitsRaisedToPowerUpToThousand function calculates the sum of numbers where each digit raised to the power of its respective position is equal to the number itself. 
+The sumOfDigitsRaisedToPowerUpToThousand function calculates the sum of numbers where 
+each digit raised to the power of its respective position is equal to the number itself. 
 <pre>
 const sumOfDigitsRaisedToPowerUpToThousand = () => { 
   let sum = 0; 
@@ -1937,9 +2040,11 @@ console.log(isCarolNumber(6));
 </pre>
 
 190. Check if a Number is a Catalan Number
-The isCatalanNumber function checks if a given number is a Catalan number. It first ensures that the input number is a non-negative integer. 
+The isCatalanNumber function checks if a given number is a Catalan number. It first 
+ensures that the input number is a non-negative integer. 
 <pre>
-const isCatalanNumber = (num) => num >= 0 && Number.isInteger(num) && num === ((factorial(2 * num)) / (factorial(num + 1) * factorial(num))); 
+const isCatalanNumber = (num) => num >= 0 && Number.isInteger(num) && num 
+  === ((factorial(2 * num)) / (factorial(num + 1) * factorial(num))); 
 console.log(isCatalanNumber(5)); 
 // Output: true 
 console.log(isCatalanNumber(10)); 
@@ -1983,7 +2088,8 @@ console.log(circleSectorArea(5, 90));
 195. Calculate the Area of a Regular Polygon
 Calculate the area of a regular polygon given the side length and the number of sides. 
 <pre>
-const regularPolygonArea = (sideLength, numOfSides) => (numOfSides * sideLength ** 2) / (4 * Math.tan(Math.PI / numOfSides)); 
+const regularPolygonArea = (sideLength, numOfSides) => (numOfSides * sideLength ** 2) 
+  / (4 * Math.tan(Math.PI / numOfSides)); 
 console.log(regularPolygonArea(5, 6)); 
 // Output: 64.9519052838329 
 </pre>
@@ -2075,7 +2181,8 @@ Convert an RGB color value to its corresponding HSL representation (Hue, Saturat
 const rgbToHSL = (r, g, b) => { 
   [r, g, b] = [r, g, b].map(val => val / 255); 
   const [max, min] = [Math.max(r, g, b), Math.min(r, g, b)]; 
-  let h = (max !== min) ? ((max === r ? g - b : (max === g ? b - r : r - g)) / (max - min) + (max === g ? 2 : (max === b ? 4 : 0))) / 6 : 0; 
+  let h = (max !== min) ? ((max === r ? g - b : (max === g ? b - r : r - g)) / (max - min) 
+    + (max === g ? 2 : (max === b ? 4 : 0))) / 6 : 0; 
   let s = (max !== min) ? (l => l > 0.5 ? (max - min) / (2 - max - min) : (max - min) / (max + min))(l) : 0; 
   let l = (max + min) / 2; 
   return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) }; 
@@ -2288,7 +2395,8 @@ console.log(circleCircumference(5));
 220. Find the Shortest Word in a String
 Find the shortest word in a given string. 
 <pre>
-const shortestWord = (str) => str.split(' ').reduce((shortest, word) => (word.length < shortest.length ? word : shortest), ''); 
+const shortestWord = (str) => str.split(' ').reduce((shortest, word) 
+  => (word.length < shortest.length ? word : shortest), ''); 
 console.log(shortestWord("This is a test sentence")); 
 // Output: "a" 
 </pre>
@@ -2504,7 +2612,8 @@ console.log(isValidIPAddress("invalid ip"));
 242. Reverse a String (Using Recursion)
 Reverse a string using a recursive approach. 
 <pre>
-const reverseStringRecursive = str => str === '' ? '' : reverseStringRecursive(str.substr(1)) + str.charAt(0); 
+const reverseStringRecursive = str => str === '' ? '' : reverseStringRecursive(str.substr(1)) 
+  + str.charAt(0); 
 console.log(reverseStringRecursive('hello')); // Output: 'olleh' 
 </pre>
 
@@ -2518,7 +2627,8 @@ console.log(countOccurrences([1, 2, 1, 3, 2, 4, 1])); // Output: { '1': 3, '2': 
 244. Check if Two Arrays are Equal (Shallow Comparison)
 Check if two arrays are equal through a shallow comparison of their elements. 
 <pre>
-const arraysAreEqual = (arr1, arr2) => arr1.length === arr2.length && arr1.every((val, index) => val === arr2[index]); 
+const arraysAreEqual = (arr1, arr2) => arr1.length === arr2.length && arr1.every((val, index) 
+  => val === arr2[index]); 
 console.log(arraysAreEqual([1, 2, 3], [1, 2, 3])); // Output: true 
 console.log(arraysAreEqual([1, 2, 3], [1, 2, 4])); // Output: false 
 </pre>
@@ -2552,7 +2662,8 @@ console.log(sumSquares([1, 2, 3, 4, 5])); // Output: 55
 </pre>
 
 249. Check if a String is a Palindrome (Ignoring Non-Alphanumeric Characters)
-Check if a given string is a palindrome, ignoring non-alphanumeric characters and considering case-insensitivity. 
+Check if a given string is a palindrome, ignoring non-alphanumeric characters and 
+considering case-insensitivity. 
 <pre>
 const isPalindromeIgnoringNonAlphaNumeric = str => { 
 const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); 
@@ -2612,14 +2723,16 @@ console.log(countVowels('Hello, how are you?')); // Output: 7
 255. Check if a Number is a Tribonacci Number (Alternative Approach)
 Check if a given number is a Tribonacci number using an alternative approach. 
 <pre>
-const isTribonacciNumberAlt = num => [0, 0, 1].concat([...Array(num)]).slice(3).map((_, i, arr) => arr[i - 3] + arr[i - 2] + arr[i - 1]).includes(num); 
+const isTribonacciNumberAlt = num => [0, 0, 1].concat([...Array(num)]).slice(3).map((_, i, arr) 
+  => arr[i - 3] + arr[i - 2] + arr[i - 1]).includes(num); 
 console.log(isTribonacciNumberAlt(21)); // Output: true 
 </pre>
 
 256. Calculate the Fibonacci Sequence (Up to N Terms)
 Generate the Fibonacci sequence up to a given number of terms n. 
 <pre>
-const fibonacciSequence = n => [...Array(n)].reduce((fibSeq, _, i) => fibSeq.concat(i > 1 ? fibSeq[i - 1] + fibSeq[i - 2] : i), [0, 1]); 
+const fibonacciSequence = n => [...Array(n)].reduce((fibSeq, _, i) 
+  => fibSeq.concat(i > 1 ? fibSeq[i - 1] + fibSeq[i - 2] : i), [0, 1]); 
 console.log(fibonacciSequence(10)); 
 // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
 </pre>
@@ -2637,11 +2750,14 @@ Check if a given string is an isogram, meaning it has no repeating characters (c
 const isIsogram = str => new Set(str.toLowerCase()).size === str.length; 
 console.log(isIsogram('hello')); // Output: false 
 console.log(isIsogram('world')); // Output: true 
+</pre>
 
 259. Calculate the Hamming Distance of Two Strings (Equal Length)
-Calculate the Hamming distance between two equal-length strings, which is the count of differing characters at corresponding positions. 
+Calculate the Hamming distance between two equal-length strings, which is the count of 
+differing characters at corresponding positions. 
 <pre>
-const hammingDistance = (str1, str2) => [...str1].reduce((distance, char, i) => distance + (char !== str2[i]), 0); 
+const hammingDistance = (str1, str2) => [...str1].reduce((distance, char, i) => distance 
+  + (char !== str2[i]), 0); 
 console.log(hammingDistance('karolin', 'kathrin')); // Output: 3 
 </pre>
 
