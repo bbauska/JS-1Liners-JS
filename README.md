@@ -672,6 +672,7 @@ console.log(currentMonth());
 </pre>
 76. Calculate the Mean of an Array of Numbers
 Calculate the mean (average) of a given array of numbers. 
+<pre>
 const mean = (arr) => arr.reduce((acc, val) => acc + val, 0) / arr.length; 
 console.log(mean([1, 2, 3, 4, 5])); 
 // Output: 3 
@@ -707,6 +708,7 @@ console.log(lastNElements([1, 2, 3, 4, 5], 3));
 const degToRad = (degrees) => degrees * (Math.PI / 180); 
 console.log(degToRad(90)); 
 // Output: 1.5707963267948966 
+</pre>
 
 80. Check if a String is a Valid URL
 Check if a given string is a valid URL. 
