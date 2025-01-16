@@ -370,7 +370,7 @@ console.log(currentYear());  // Output: 2023 (depending on the current year)
 <h4 id="42">42. Generate a Random Number between 1 and 10</h4>
 <p>Generate a random integer between 1 and 10 (inclusive).</p>
 <pre>
-const random1To10 = () => Math.floor(Math.random() * 10) + 1; 
+const random1To10 = () => Math.floor(Math.random() * 10) + 1;
 
 console.log(random1To10());  // Output: Random number between 1 and 10 (inclusive)
 </pre>
@@ -388,7 +388,7 @@ console.log(isEmptyString("Hello, world!"));  // Output: false
 <p>Check if an object contains a specific property.</p>
 <pre>
 const hasProperty = (obj, prop) => prop in obj;
-const person = { name: "John", age: 30 }; 
+const person = { name: "John", age: 30 };
 
 console.log(hasProperty(person, "name"));  // Output: true
 console.log(hasProperty(person, "gender")); // Output: false
@@ -428,7 +428,7 @@ const students = [
   { name: "Alice", score: 80 },
   { name: "Bob", score: 95 },
   { name: "Charlie", score: 70 }
-]; 
+];
 
 console.log(findMaxValue(students, "score"));  // Output: 95
 </pre>
