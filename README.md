@@ -1,123 +1,134 @@
-# JS-1Liners-JS
-JavaScript 1 Liners worth noting.
+<h1>JS-1Liners-JS</h1>
 
-1. Convert Celsius to Fahrenheit
+<h3>JavaScript 1 Liners worth noting</h3>
 
-<p>celsiusToFahrenheit allows you to convert a temperature from Celsius to Fahrenheit. It takes a value in 
-Celsius as input and uses the formula (Celsius * 9/5) + 32 to perform the conversion.exadecimal representation.</p>
+<h4 id="1">1. Convert Celsius to Fahrenheit</h4>
+<p>celsiusToFahrenheit allows you to convert a temperature from Celsius to Fahrenheit. 
+It takes a value in Celsius as input and uses the formula (Celsius * 9/5) + 32 to 
+perform the conversion.exadecimal representation.</p>
 <pre>
-const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32; celsiusToFahrenheit(30); // Result: 86
+const celsiusToFahrenheit = (celsius) 
+  => (celsius * 9/5) + 32; celsiusToFahrenheit(30); // Result: 86
 </pre>
 
-2. Get Value of a brower Cookie
+<h4 id="2">2. Get Value of a brower Cookie</h4>
 <p>Retrieve the value of a cookie by accessing with document.cookie.</p>
 <pre>
 const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift(); 
-cookie('_ga'); 
-// Result: "GA1.2.1929736587.1601974046" 
+
+cookie('_ga');  // Result: "GA1.2.1929736587.1601974046" 
 </pre>
 
-3. Convert RGB to Hex
-<p>rgbToHex enables you to convert RGB (Red, Green, Blue) values to their corresponding hexadecimal representation.</p>
+<h4 id="3">3. Convert RGB to Hex</h4>
+<p>rgbToHex enables you to convert RGB (Red, Green, Blue) values to their corresponding 
+hexadecimal representation.</p>
 <pre>
 const rgbToHex = (r, g, b) => 
-"#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); 
-rgbToHex(0, 51, 255); 
-// Result: #0033ff 
+  "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); 
+
+rgbToHex(0, 51, 255);  // Result: #0033ff 
 </pre>
 
-4. Copy to Clipboard
+<h4 id="5">4. Copy to Clipboard</h4>
 <p>Easily copy any text to clipboard using navigator.clipboard.writeText.</p>
 <pre>
 const copyToClipboard = (text) => navigator.clipboard.writeText(text); 
+
 copyToClipboard("Hello World"); 
 </pre>
 
-5. Check if Date is Valid
+<h4 id="5">5. Check if Date is Valid</h4>
 <p>Use the following snippet to check if a given date is valid or not.</p>
 <pre>
 const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf()); 
-isDateValid("December 17, 1995 03:24:00"); 
-// Result: true 
+isDateValid("December 17, 1995 03:24:00");  // Result: true 
 </pre>
 
-7. Find the day of year
-Find which is the day by a given date. 
+<h4 id="6">6. Find the day of year</h4>
+<p>Find which is the day by a given date.</p>
 <pre>
 const dayOfYear = (date) => 
-Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24); 
-dayOfYear(new Date()); // Result: 272 
+  Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24); 
+
+dayOfYear(new Date()); // Result: 272
 </pre>
 
-7. Capitalise a String
-Javascript doesn't have an inbuilt capitalise function, so we can use the following code for the purpose. 
+<h4 id="7">7. Capitalise a String</h4>
+<p>Javascript doesn't have an inbuilt capitalise function, so we can use the following 
+code for the purpose.</p>
 <pre>
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1) 
-capitalize("follow for more") 
-// Result: Follow for more 
+
+capitalize("follow for more")  // Result: Follow for more 
 </pre>
 
-8. Find the number of days between two days
-Find the days between 2 given days using the following snippet. 
+<h4 id="8">8. Find the number of days between two days</h4>
+<p>Find the days between 2 given days using the following snippet.</p>
 <pre>
 const dayDif = (date1, date2) => Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 86400000) 
-dayDif(new Date("2020-10-21"), new Date("2021-10-22")) 
-// Result: 366 
+
+dayDif(new Date("2020-10-21"), new Date("2021-10-22"))  // Result: 366 
 </pre>
 
-9. Clear All Cookies
-You can easily clear all cookies stored in a web page by accessing the cookie using document.cookie and clearing it. 
+<h4 id="9">9. Clear All Cookies</h4>
+<p>You can easily clear all cookies stored in a web page by accessing the cookie using 
+document.cookie and clearing it.</p>
 <pre>
-const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date(0).toUTCString()};path=/`)); 
+const clearCookies = document.cookie.split(';').forEach(cookie => 
+  document.cookie = cookie.replace(/^ +/, '').replace(/=.*/, 
+  `=;expires=${new Date(0).toUTCString()};path=/`)); 
 </pre>
 
-10. Generate Random Hex
-You can generate random hex colors with Math.random and padEnd properties. 
+<h4 id="10">10. Generate Random Hex</h4>
+<p>You can generate random hex colors with Math.random and padEnd properties.</p>
 <pre>
 const randomHex = () => `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`; 
-console.log(randomHex()); 
-// Result: #92b008 
+
+console.log(randomHex());  // Result: #92b008 
 </pre>
 
-11. Get Query Params from URL
-You can easily retrieve query params from a url either by passing window.location or the raw URL goole.com?search=easy&page=3 
+<h4 id="11">11. Get Query Params from URL</h4>
+<p>You can easily retrieve query params from a url either by passing window.location or 
+the raw URL goole.com?search=easy&page=3.</p>
 <pre>
 const getParameters = (URL) => { 
-URL = JSON.parse('{"' + decodeURI(URL.split("?")[1]).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') +'"}'); 
-return JSON.stringify(URL); 
+  URL = JSON.parse('{"' + decodeURI(URL.split("?")[1]).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') +'"}');
+  return JSON.stringify(URL); 
 }; 
-getParameters(window.location) 
-// Result: { search : "easy", page : 3 } 
+
+getParameters(window.location)  // Result: { search : "easy", page : 3 } 
 </pre>
 
-12. Log Time from Date
-We can log time, in the format hour::minutes::seconds from a given date. 
+<h4 id="12">12. Log Time from Date</h4>
+<p>We can log time, in the format hour::minutes::seconds from a given date.</p>
 <pre>
 const timeFromDate = date => date.toTimeString().slice(0, 8); 
-console.log(timeFromDate(new Date(2021, 0, 10, 17, 30, 0))); 
-// Result: "17:30:00" 
+
+console.log(timeFromDate(new Date(2021, 0, 10, 17, 30, 0)));  // Result: "17:30:00" 
 </pre>
 
-13. Check if a number is even or odd
-A simple JavaScript function named "isEven" determines if a number is even or odd. It takes a "num" as input and returns true if even, false if odd. 
+<h4 id="13">13. Check if a number is even or odd</h4>
+<p>A simple JavaScript function named "isEven" determines if a number is even or odd. It 
+takes a "num" as input and returns true if even, false if odd.</p>
 <pre>
 const isEven = num => num % 2 === 0; 
-console.log(isEven(2)); 
-// Result: True 
+
+console.log(isEven(2));  // Result: True 
 </pre>
 
 14. Find Average of Numbers
 Find the average between multiple numbers using reduce method. 
 <pre>
 const average = (...args) => args.reduce((a, b) => a + b) / args.length; 
-average(1, 2, 3, 4); 
-// Result: 2.5 
+
+average(1, 2, 3, 4);  // Result: 2.5 
 </pre>
 
 15. Scroll to Top
 You can use window.scrollTo(0, 0) method to automatic scroll to top. Set both x and y as 0. 
 <pre>
 const goToTop = () => window.scrollTo(0, 0); 
+
 goToTop(); 
 </pre>
 
@@ -125,22 +136,23 @@ goToTop();
 You can easily reverse a string using split, reverse and join methods. 
 <pre>
 const reverse = str => str.split('').reverse().join(''); 
-reverse('hello world'); 
-// Result: 'dlrow olleh' 
+
+reverse('hello world');  // Result: 'dlrow olleh' 
 </pre>
 
 17. Check if array is empty
 You can check if an array if empty with this snippet. 
 <pre>
 const isNotEmpty = arr => Array.isArray(arr) && arr.length > 0; 
-isNotEmpty([1, 2, 3]); 
-// Result: true 
+
+isNotEmpty([1, 2, 3]);  // Result: true 
 </pre>
 
 18. Get Selected Text
 Get the text the user has select using inbuilt getSelection property. 
 <pre>
 const getSelectedText = () => window.getSelection().toString(); 
+
 getSelectedText(); 
 </pre>
 
@@ -148,14 +160,15 @@ getSelectedText();
 Shuffling an array is super easy with sort and random methods. 
 <pre>
 const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random()); 
-console.log(shuffleArray([1, 2, 3, 4])); 
-// Result: [ 1, 4, 3, 2 ] 
+
+console.log(shuffleArray([1, 2, 3, 4]));  // Result: [ 1, 4, 3, 2 ] 
 </pre>
 
 20. Detect Dark Mode
 Check if a user's device is in dark mode with the following code. 
 <pre>
 const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches 
+
 console.log(isDarkMode) // Result: True or False 
 </pre>
 
@@ -163,24 +176,24 @@ console.log(isDarkMode) // Result: True or False
 You can easily remove duplicates with Set in JavaScript. Its a life saver. 
 <pre>
 const removeDuplicates = (arr) => [...new Set(arr)]; 
-console.log(removeDuplicates([1, 2, 3, 3, 4, 4, 5, 5, 6])); 
-// Result: [ 1, 2, 3, 4, 5, 6 ] 
+
+console.log(removeDuplicates([1, 2, 3, 3, 4, 4, 5, 5, 6]));  // Result: [ 1, 2, 3, 4, 5, 6 ]
 </pre>
 
 22. Get the Length of a String
 getLength efficiently calculates the length of a given string using .length property. 
 <pre>
 const getLength = (str) => str.length; 
-getLength("Hello, world!"); 
-// Result: 13 
+
+getLength("Hello, world!");  // Result: 13 
 </pre>
 
 23. Calculate the Area of a Circle
 Calculate the area of a circle given its radius. 
 <pre>
 const calculateCircleArea = (radius) => Math.PI * Math.pow(radius, 2); 
-calculateCircleArea(5); 
-// Result: 78.53981633974483 
+
+calculateCircleArea(5);  // Result: 78.53981633974483 
 </pre>
 
 24. Check if a Number is Prime
@@ -378,14 +391,14 @@ console.log(hasProperty(person, "gender"));
 // Output: false 
 </pre>
 
-45. Calculate the Average of Numbers in an Array
+<h4 id="45">45. Calculate the Average of Numbers in an Array</h4>
 Calculate the average of numbers in a given array. 
 <pre>
 const average = (arr) => arr.reduce((acc, val) => acc + val, 0) / arr.length; 
 console.log(average([1, 2, 3, 4, 5])); // Output: 3 
 </pre>
 
-46. Check if a Number is a Multiple of 5
+<h4 id="46">46. Check if a Number is a Multiple of 5</h4>
 Check if a given number is a multiple of 5. 
 <pre>
 const isMultipleOf5 = (num) => num % 5 === 0; 
@@ -395,7 +408,7 @@ console.log(isMultipleOf5(7));
 // Output: false 
 </pre>
 
-47. Convert Minutes to Seconds
+<h4 id="47">47. Convert Minutes to Seconds</h4>
 Convert minutes to seconds. 
 <pre>
 const minsToSecs = (mins) => mins * 60; 
@@ -2728,7 +2741,7 @@ const isTribonacciNumberAlt = num => [0, 0, 1].concat([...Array(num)]).slice(3).
 console.log(isTribonacciNumberAlt(21)); // Output: true 
 </pre>
 
-256. Calculate the Fibonacci Sequence (Up to N Terms)
+<h4 id="256">256. Calculate the Fibonacci Sequence (Up to N Terms)</h4>
 Generate the Fibonacci sequence up to a given number of terms n. 
 <pre>
 const fibonacciSequence = n => [...Array(n)].reduce((fibSeq, _, i) 
@@ -2737,14 +2750,14 @@ console.log(fibonacciSequence(10));
 // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
 </pre>
 
-257. Find the ASCII Value of a Character
+<h4 id="257">257. Find the ASCII Value of a Character</h4>
 Get the ASCII value of a given character. 
 <pre>
 const getAsciiValue = char => char.charCodeAt(0); 
 console.log(getAsciiValue('A')); // Output: 65 
 </pre>
 
-258. Check if a String is an Isogram (No Repeating Characters)
+<h4 id="258">258. Check if a String is an Isogram (No Repeating Characters)</h4>
 Check if a given string is an isogram, meaning it has no repeating characters (case-insensitive). 
 <pre>
 const isIsogram = str => new Set(str.toLowerCase()).size === str.length; 
@@ -2752,7 +2765,7 @@ console.log(isIsogram('hello')); // Output: false
 console.log(isIsogram('world')); // Output: true 
 </pre>
 
-259. Calculate the Hamming Distance of Two Strings (Equal Length)
+<h4 id="259">259. Calculate the Hamming Distance of Two Strings (Equal Length)</h4>
 Calculate the Hamming distance between two equal-length strings, which is the count of 
 differing characters at corresponding positions. 
 <pre>
@@ -2761,7 +2774,7 @@ const hammingDistance = (str1, str2) => [...str1].reduce((distance, char, i) => 
 console.log(hammingDistance('karolin', 'kathrin')); // Output: 3 
 </pre>
 
-260. Calculate the Distance between Two Points in a 2D Plane
+<h4 id="260">260. Calculate the Distance between Two Points in a 2D Plane</h4>
 Calculate the Euclidean distance between two points in a 2D plane using the Pythagorean theorem. 
 <pre>
 const calculateDistance = ([x1, y1], [x2, y2]) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2); 
@@ -2769,7 +2782,7 @@ console.log(calculateDistance([0, 0], [3, 4]));
 // Output: 5 (Pythagorean triple: 3^2 + 4^2 = 5^2) 
 </pre>
 
-261. Check if a String is a Positive Number (No Sign or Decimal Allowed)
+<h4 id="261">261. Check if a String is a Positive Number (No Sign or Decimal Allowed)</h4>
 Check if a given string represents a positive integer without any sign or decimal point. 
 <pre>
 const isPositiveNumber = str => /^[0-9]+$/.test(str); 
