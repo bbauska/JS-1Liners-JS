@@ -9,8 +9,7 @@
 It takes a value in Celsius as input and uses the formula (Celsius * 9/5) + 32 to 
 perform the conversion.exadecimal representation.</p>
 <pre>
-const celsiusToFahrenheit = (celsius) 
-  => (celsius * 9/5) + 32;
+const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32;
 
 celsiusToFahrenheit(30); // Result: 86
 </pre>
