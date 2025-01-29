@@ -10,7 +10,9 @@ It takes a value in Celsius as input and uses the formula (Celsius * 9/5) + 32 t
 perform the conversion.exadecimal representation.</p>
 <pre>
 const celsiusToFahrenheit = (celsius) 
-  => (celsius * 9/5) + 32; celsiusToFahrenheit(30); // Result: 86
+  => (celsius * 9/5) + 32;
+
+celsiusToFahrenheit(30); // Result: 86
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="2">2. Get Value of a brower Cookie</h4>
