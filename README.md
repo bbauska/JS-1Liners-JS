@@ -14,7 +14,7 @@ const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32;
 celsiusToFahrenheit(30); // Result: 86
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="2">2. Get Value of a brower Cookie</h4>
+<h4 id="2">2. Get Value of a browser Cookie</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Retrieve the value of a cookie by accessing with document.cookie.</p>
 <pre>
@@ -61,9 +61,9 @@ const dayOfYear = (date) =>
 dayOfYear(new Date()); // Result: 272
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="7">7. Capitalise a String</h4>
+<h4 id="7">7. Capitalize a String</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Javascript doesn't have an inbuilt capitalise function, so we can use the following 
+<p>Javascript doesn't have an inbuilt capitalize function, so we can use the following 
 code for the purpose.</p>
 <pre>
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1) 
@@ -1241,8 +1241,7 @@ const longestCommonPrefix = (strs) => {
   } 
   return prefix; 
 }; 
-console.log(longestCommonPrefix(['apple', 'apricot', 'appetizer'])); 
-// Output: "app" 
+console.log(longestCommonPrefix(['apple', 'apricot', 'appetizer']));  // Output: "app" 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="121">121. Get the ASCII Value of a Character</h4>
@@ -1481,10 +1480,8 @@ console.log(secsToDaysHoursMinsSecs(100000));  // Output: "1 days, 3 hours, 46 m
 <p>The isPrimeFactor function checks if a given number is a prime factor of another number.</p>
 <pre>
 const isPrimeFactor = (num, factor) => num % factor === 0 && isPrime(factor); 
-console.log(isPrimeFactor(20, 2)); 
-// Output: true 
-console.log(isPrimeFactor(20, 3)); 
-// Output: false 
+console.log(isPrimeFactor(20, 2));  // Output: true 
+console.log(isPrimeFactor(20, 3));  // Output: false 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="140">140. Find the Largest Prime Factor of a Number</h4>
@@ -1846,8 +1843,7 @@ console.log(isMagicNumber(123));  // Output: false
 <p>The isValidIPv4 function checks whether a given string represents a valid IPv4 address.</p>
 <pre>
 const isValidIPv4 = (ip) => /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ip); 
-console.log(isValidIPv4("192.168.1.1")); 
-// Output: true 
+console.log(isValidIPv4("192.168.1.1"));  // Output: true 
 console.log(isValidIPv4("256.0.0.1"));  // Output: false 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1886,10 +1882,8 @@ letter ([A-Za-z]), one digit (\d), and one special character ([@$!%*?&]).</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 const isValidPassword = (password) => /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password); 
-console.log(isValidPassword("P@ssw0rd")); 
-// Output: true 
-console.log(isValidPassword("password123")); 
-// Output: false 
+console.log(isValidPassword("P@ssw0rd"));  // Output: true 
+console.log(isValidPassword("password123"));  // Output: false 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="173">173. Find the Nth Fibonacci Number</h4>
@@ -2139,8 +2133,7 @@ console.log(randomColorHex());  // Output: "#92b008"
 <p>Calculate the area of a circle sector given the radius and the central angle in degrees.</p>
 <pre>
 const circleSectorArea = (radius, angle) => (angle / 360) * Math.PI * radius ** 2; 
-console.log(circleSectorArea(5, 90)); 
-// Output: 11.780972450961725 
+console.log(circleSectorArea(5, 90));  // Output: 11.780972450961725 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="195">195. Calculate the Area of a Regular Polygon</h4>
@@ -2635,11 +2628,9 @@ console.log(isValidTIN("invalid tin"));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Check if a given string is a valid International Standard Book Number (ISBN).</p>
 <pre>
-const isValidISBN = (isbn) => /^(?:\d{9}[\dX]|(?:\d{3}-){2}\d{1}[\dX])$/.test(isbn); 
-console.log(isValidISBN("123456789")); 
-// Output: true 
-console.log(isValidISBN("invalid isbn")); 
-// Output: false 
+const isValidISBN = (isbn) => /^(?:\d{9}[\dX]|(?:\d{3}-){2}\d{1}[\dX])$/.test(isbn);  
+console.log(isValidISBN("123456789"));  // Output: true 
+console.log(isValidISBN("invalid isbn"));  // Output: false 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="241">241. Check if a String is a Valid IP Address</h4>
@@ -2647,10 +2638,8 @@ console.log(isValidISBN("invalid isbn"));
 <p>Check if a given string is a valid IP address.</p>
 <pre>
 const isValidIPAddress = (ip) => /^((25[0-5]|2[0-4]\d|[0-1]?\d{1,2})\.){3}(25[0-5]|2[0-4]\d|[0-1]?\d{1,2})$/.test(ip); 
-console.log(isValidIPAddress("192.168.1.1")); 
-// Output: true 
-console.log(isValidIPAddress("invalid ip")); 
-// Output: false 
+console.log(isValidIPAddress("192.168.1.1"));  // Output: true 
+console.log(isValidIPAddress("invalid ip"));  // Output: false 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="242">242. Reverse a String (Using Recursion)</h4>
@@ -2744,8 +2733,7 @@ Sort an array of objects based on a specific property value.
 <pre>
 const sortByProperty = (arr, prop) => arr.sort((a, b) => a[prop] - b[prop]); 
 const data = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 20 }, { name: 'Carol', age: 30 }]; 
-console.log(sortByProperty(data, 'age')); 
-// Output: [{ name: 'Bob', age: 20 }, { name: 'Alice', age: 25 }, { name: 'Carol', age: 30 }] 
+console.log(sortByProperty(data, 'age'));  // Output: [{ name: 'Bob', age: 20 }, { name: 'Alice', age: 25 }, { name: 'Carol', age: 30 }] 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="252">252. Reverse Words in a Sentence</h4>
@@ -2793,8 +2781,7 @@ Generate the Fibonacci sequence up to a given number of terms n.
 <pre>
 const fibonacciSequence = n => [...Array(n)].reduce((fibSeq, _, i) 
   => fibSeq.concat(i > 1 ? fibSeq[i - 1] + fibSeq[i - 2] : i), [0, 1]); 
-console.log(fibonacciSequence(10)); 
-// Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
+console.log(fibonacciSequence(10));  // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="257">257. Find the ASCII Value of a Character</h4>
@@ -2830,8 +2817,7 @@ console.log(hammingDistance('karolin', 'kathrin')); // Output: 3
 Calculate the Euclidean distance between two points in a 2D plane using the Pythagorean theorem. 
 <pre>
 const calculateDistance = ([x1, y1], [x2, y2]) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2); 
-console.log(calculateDistance([0, 0], [3, 4])); 
-// Output: 5 (Pythagorean triple: 3^2 + 4^2 = 5^2) 
+console.log(calculateDistance([0, 0], [3, 4]));  // Output: 5 (Pythagorean triple: 3^2 + 4^2 = 5^2) 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="261">261. Check if a String is a Positive Number (No Sign or Decimal Allowed)</h4>
@@ -2839,8 +2825,6 @@ console.log(calculateDistance([0, 0], [3, 4]));
 Check if a given string represents a positive integer without any sign or decimal point. 
 <pre>
 const isPositiveNumber = str => /^[0-9]+$/.test(str); 
-console.log(isPositiveNumber('123')); 
-// Output: true 
-console.log(isPositiveNumber('-123')); 
-// Output: false 
+console.log(isPositiveNumber('123'));  // Output: true 
+console.log(isPositiveNumber('-123'));  // Output: false 
 </pre>
