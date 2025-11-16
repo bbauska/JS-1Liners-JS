@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of js-1liners.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="utf-8">
 
@@ -196,7 +195,7 @@ console.log(isEven(2));  // Result: True
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="14">14. Find Average of Numbers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Find the average between multiple numbers using <b>reduce</b> method.</p>
+<p>Find the <b>average</b> between multiple numbers using <b>reduce</b> method.</p>
 <pre>
 const average = (...args) => args.reduce((a, b) => a + b) / args.length; 
 
@@ -1395,7 +1394,7 @@ console.log(sortByProperty(people, 'age'));  // Output: [{ name: 'Bob', age: 20 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="124">124. Calculate the Exponential of a Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The exponential function calculates the result of raising a given base to a specified 
+<p>The <b>exponential</b> function calculates the result of raising a given base to a specified 
 exponent using the exponentiation operator (**).</p>
 <pre>
 const exponential = (base, exponent) => base ** exponent; 
@@ -1417,8 +1416,8 @@ console.log(isAnagram('hello', 'world'));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="126">126. Find the Factors of a Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The factors function calculates and returns an array of all the factors of a given 
-number. Factors are the positive integers that evenly divide the input number.</p>
+<p>The <b>factors</b> function calculates and returns an array of all the factors of a given number. 
+Factors are the positive integers that evenly divide the input number.</p>
 <pre>
 const factors = (num) => { 
   const result = []; 
@@ -1450,7 +1449,7 @@ console.log(isNeonNumber(12));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="128">128. Find the Power Set of a Set</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The powerSet function generates the power set of a given set, which includes all possible 
+<p>The <b>powerSet</b> function generates the power set of a given set, which includes all possible 
 subsets of the set, including the empty set and the set itself.</p>
 <pre>
 const powerSet = (set) => { 
@@ -1482,7 +1481,7 @@ console.log(isDisariumNumber(23));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="130">130. Remove Vowels from a String</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The removeVowels function eliminates all vowels (both uppercase and lowercase) from a 
+<p>The <b>removeVowels</b> function eliminates all vowels (both uppercase and lowercase) from a 
 given string using the replace method along with a regular expression.</p>
 <pre>
 const removeVowels = (str) => str.replace(/[aeiouAEIOU]/g, ''); 
@@ -1550,9 +1549,9 @@ console.log(binaryToDecimalWithParseInt("1101"));  // Output: 13
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="136">136. Find the Average of Odd Numbers in an Array</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The <b>averageOfOddNumbers</b> function calculates the average of odd numbers within a 
-given array. It does so by filtering the odd numbers from the array, then computing 
-their sum and dividing by the count of odd numbers.</p>
+<p>The <b>averageOfOddNumbers</b> function calculates the average of odd numbers within a given array. 
+It does so by filtering the odd numbers from the array, then computing their sum and dividing by the 
+count of odd numbers.</p>
 <pre>
 const averageOfOddNumbers = (arr) => { 
   const oddNumbers = arr.filter(num => num % 2 !== 0); 
@@ -2008,7 +2007,7 @@ console.log(decimalToHex(255));  // Output: "ff"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="170">170. Check if a String is a Valid Date (YYYY-MM-DD Format)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isValidDate function checks whether a given string is a valid date in the format "YYYY-MM-DD".</p>
+<p>The <b>isValidDate</b> function checks whether a given string is a valid date in the format "YYYY-MM-DD".</p>
 <pre>
 const isValidDate = (date) => /^\d{4}-\d{2}-\d{2}$/.test(date); 
 
@@ -2019,7 +2018,7 @@ console.log(isValidDate("02-08-2023"));  // Output: false
 <h4 id="171">171. Find the Smallest Common Multiple of an Array of Numbers</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this code, the gcd function calculates the greatest common divisor using the Euclidean 
-algorithm. The lcmArray function then calculates the least common multiple (LCM) of an 
+algorithm. The <b>lcmArray</b> function then calculates the least common multiple (LCM) of an 
 array of numbers by reducing the array and applying the formula (lcm * num) / gcd(lcm, num).</p>
 <pre>
 const lcmArray = (arr) => arr.reduce((lcm, num) => (lcm * num) / gcd(lcm, num)); 
@@ -2028,10 +2027,11 @@ console.log(lcmArray([2, 3, 4, 5]));  // Output: 60
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="172">172. Check if a String is a Valid Password (At least 8 characters, with a digit and 
-special character) The <b>isValidPassword</b> function uses a regular expression to validate a password. 
-The regular expression requires that the password contains at least one letter ([A-Za-z]), one digit 
-(\d), and one special character ([@$!%*?&]).</h4>
+special character)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The <b>isValidPassword</b> function uses a regular expression to validate a password. The regular 
+expression requires that the password contains at least one letter ([A-Za-z]), one digit (\d), and 
+one special character ([@$!%*?&]).</h4>
 <pre>
 const isValidPassword = (password) => /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password); 
 
@@ -2062,7 +2062,7 @@ console.log(fibonacci(7)); // Output: 8
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="174">174. Check if a Number is a Deficient Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isDeficientNumber function determines whether a given number is a deficient number.</p>
+<p>The <b>isDeficientNumber</b> function determines whether a given number is a deficient number.</p>
 <pre>
 const isDeficientNumber = (num) => num > sumOfProperDivisors(num); 
 
@@ -2072,9 +2072,9 @@ console.log(isDeficientNumber(28));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="175">175. Calculate the Distance between Two Points in 2D</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The distanceBetweenPoints function calculates the Euclidean distance between two points 
-in a 2D plane. Given the coordinates of two points (x1, y1) and (x2, y2), it uses the 
-formula sqrt((x2 - x1)^2 + (y2 - y1)^2) to compute the distance between them.</p>
+<p>The <b>distanceBetweenPoints</b> function calculates the Euclidean distance between two points 
+in a 2D plane. Given the coordinates of two points (x1, y1) and (x2, y2), it uses the formula 
+sqrt((x2 - x1)^2 + (y2 - y1)^2) to compute the distance between them.</p>
 <pre>
 const distanceBetweenPoints = (x1, y1, x2, y2) => Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2); 
 
@@ -2083,7 +2083,7 @@ console.log(distanceBetweenPoints(0, 0, 3, 4));  // Output: 5
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="176">176. Check if a Number is an Abundant Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isAbundantNumber function determines whether a given number is an abundant number.</p>
+<p>The <b>isAbundantNumber</b> function determines whether a given number is an abundant number.</p>
 <pre>
 const isAbundantNumber = (num) =&gt; num &lt; sumOfProperDivisors(num); 
 
@@ -2113,9 +2113,9 @@ console.log(isValidCreditCard("1234-5678-9012-3456"));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="179">179. Calculate the Perimeter of a Triangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The trianglePerimeter function calculates the perimeter of a triangle given its three 
-side lengths. It simply adds up the lengths of all three sides and returns the result 
-as the perimeter of the triangle.</p>
+<p>The <b>trianglePerimeter</b> function calculates the perimeter of a triangle given its three side 
+lengths. It simply adds up the lengths of all three sides and returns the result as the perimeter of 
+the triangle.</p>
 <pre>
 const trianglePerimeter = (side1, side2, side3) => side1 + side2 + side3; 
 
@@ -2124,7 +2124,7 @@ console.log(trianglePerimeter(5, 10, 7));  // Output: 22
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="180">180. Check if a Number is a Vampire Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isVampireNumber function checks if a given number is a vampire number.</p>
+<p>The <b>isVampireNumber</b> function checks if a given number is a vampire number.</p>
 <pre>
 const isVampireNumber = (num) => { 
   const numStr = String(num); 
@@ -2148,7 +2148,8 @@ console.log(isVampireNumber(1250)); // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="181">181. Find the Sum of Digits Raised to the Power of their Respective Position</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>sumOfDigitsRaisedToPower calculates the sum of digits raised to the power of their respective positions.</p>
+<p><b>sumOfDigitsRaisedToPower</b> calculates the sum of digits raised to the power of their 
+respective positions.</p>
 <pre>
 const sumOfDigitsRaisedToPower = (num) => { 
   const digits = [...String(num)].map(Number); 
@@ -2160,7 +2161,7 @@ console.log(sumOfDigitsRaisedToPower(12345));  // Output: 115
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="182">182. Check if a Number is a Duck Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isDuckNumber function checks whether a given number is a duck number. A duck number 
+<p>The <b>isDuckNumber</b> function checks whether a given number is a duck number. A duck number 
 is a number that contains the digit "0" but does not start with "0".</p>
 <pre>
 const isDuckNumber = (num) => String(num).includes('0') && String(num)[0] !== '0';
@@ -2171,7 +2172,7 @@ console.log(isDuckNumber(12345));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="183">183. Generate a Random Password</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The randomPassword function generates a random password of the specified length.</p>
+<p>The <b>randomPassword</b> function generates a random password of the specified length.</p>
 <pre>
 const randomPassword = (length) => Array.from({ length }, () 
   => Math.random().toString(36).charAt(2)).join('');
@@ -2181,7 +2182,7 @@ console.log(randomPassword(8));  // Output: "3klS0p9x"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="184">184. Calculate the Area of a Trapezoid</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The trapezoidArea function calculates the area of a trapezoid using the formula: 0.5 
+<p>The <b>trapezoidArea</b> function calculates the area of a trapezoid using the formula: 0.5 
 * (base1 + base2) * height.</p>
 <pre>
 const trapezoidArea = (base1, base2, height) => 0.5 * (base1 + base2) * height; 
@@ -2191,7 +2192,7 @@ console.log(trapezoidArea(4, 8, 6));  // Output: 36
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="185">185. Check if a Number is a Kaprekar Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isKaprekarNumber function checks if a given number is a Kaprekar number.</p>
+<p>The <b>isKaprekarNumber</b> function checks if a given number is a Kaprekar number.</p>
 <pre>
 const isKaprekarNumber = (num) => { 
   const square = num ** 2; 
@@ -2220,7 +2221,7 @@ console.log(coneVolume(5, 10));  // Output: 261.79938779914943
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="187">187. Check if a String is a Valid US Phone Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isValidUSPhoneNumber function uses a regular expression to validate US phone numbers.</p>
+<p>The <b>isValidUSPhoneNumber</b> function uses a regular expression to validate US phone numbers.</p>
 <pre>
 const isValidUSPhoneNumber = (phone) => /^(?:(?:\+1\s?)?(?:\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4})$/.test(phone);
 
@@ -2231,7 +2232,7 @@ console.log(isValidUSPhoneNumber("1-800-ABC-DEFG"));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="188">188. Find the Sum of Digits Raised to the Power of their Respective Position (Up to 1000)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The sumOfDigitsRaisedToPowerUpToThousand function calculates the sum of numbers where 
+<p>The <b>sumOfDigitsRaisedToPowerUpToThousand</b> function calculates the sum of numbers where 
 each digit raised to the power of its respective position is equal to the number itself.</p>
 <pre>
 const sumOfDigitsRaisedToPowerUpToThousand = () => { 
@@ -2249,7 +2250,7 @@ console.log(sumOfDigitsRaisedToPowerUpToThousand());  // Output: 443839
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="189">189. Check if a Number is a Carol Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isCarolNumber function checks if a given number is a Carol number.</p>
+<p>The <b>isCarolNumber</b> function checks if a given number is a Carol number.</p>
 <pre>
 const isCarolNumber = (num) => { 
   const carolPrime = (2 ** num) - 1; 
@@ -2263,8 +2264,8 @@ console.log(isCarolNumber(6));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="190">190. Check if a Number is a Catalan Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isCatalanNumber function checks if a given number is a Catalan number. It first 
-ensures that the input number is a non-negative integer.</p>
+<p>The <b>isCatalanNumber</b> function checks if a given number is a Catalan number. It first ensures 
+that the input number is a non-negative integer.</p>
 <pre>
 const isCatalanNumber = (num) => num >= 0 && Number.isInteger(num) && num 
   === ((factorial(2 * num)) / (factorial(num + 1) * factorial(num)));
@@ -2275,7 +2276,7 @@ console.log(isCatalanNumber(10));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="191">191. Calculate the Volume of a Cuboid</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The cuboidVolume function calculates the volume of a cuboid given its length, width, and height.</p>
+<p>The <b>cuboidVolume</b> function calculates the volume of a cuboid given its length, width, and height.</p>
 <pre>
 const cuboidVolume = (length, width, height) => length * width * height;
 
@@ -2284,7 +2285,7 @@ console.log(cuboidVolume(5, 10, 8));  // Output: 400
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="192">192. Check if a Number is a Dudeney Number</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The isDudeneyNumber function checks if a number is a Dudeney number.</p>
+<p>The <b>isDudeneyNumber</b> function checks if a number is a Dudeney number.</p>
 <pre>
 const isDudeneyNumber = (num) => num === sumOfDigitsCube(num);
 
@@ -2294,7 +2295,7 @@ console.log(isDudeneyNumber(64));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="193">193. Generate a Random Color (Hexadecimal Format)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Generate a random color in hexadecimal format (#RRGGBB).</p>
+<p>Generate a <b>randomColor</b> in hexadecimal format (#RRGGBB).</p>
 <pre>
 const randomColorHex = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
@@ -2558,7 +2559,7 @@ console.log(isTauNumber(25));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="214">214. Generate a Random Alphanumeric String</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Generate a random alphanumeric string of a given length.</p>
+<p>Generate a <b>randomAlphanumericString</b> of a given length.</p>
 <pre>
 const randomAlphanumericString = (length) => { 
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; 
