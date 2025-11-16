@@ -91,7 +91,7 @@ const rgbToHex = (r, g, b) =>
 
 rgbToHex(0, 51, 255);  // Result: #0033ff 
 const rgbToHex = (r, g, b) => 
-  "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); 
+  "#" + ((1 &lt;&lt; 24) + (r &lt;&lt; 16) + (g &lt;&lt; 8) + b).toString(16).slice(1); 
 
 rgbToHex(0, 51, 255);  // Result: #0033ff 
 </pre>
@@ -289,8 +289,8 @@ calculateCircleArea(5);  // Result: 78.53981633974483
 <p>Determine if a given number is a prime number.</p>
 <pre>
 const isPrime = (num) => { 
-  if (num <= 1) return false; 
-  for (let i = 2; i <= Math.sqrt(num); i++) { 
+  if (num &lt;= 1) return false; 
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) { 
     if (num % i === 0) return false; 
   } 
   return true; 
@@ -437,7 +437,7 @@ stringToNumber("3.14");  // Result: 3.14
 <pre>
 const fibonacci = (n) => { 
   const result = [0, 1]; 
-  for (let i = 2; i < n; i++) { 
+  for (let i = 2; i &lt; n; i++) { 
     result.push(result[i - 1] + result[i - 2]); 
   } 
   return result; 
@@ -834,8 +834,8 @@ console.log(mean([1, 2, 3, 4, 5]));  // Output: 3
 <p>Check if a given number is a prime number.</p>
 <pre>
 const isPrime = (num) => {
-  if (num <= 1) return false; 
-  for (let i = 2; i <= Math.sqrt(num); i++) { 
+  if (num &lt;= 1) return false; 
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) { 
     if (num % i === 0) return false;
   } 
   return true; 
@@ -1136,7 +1136,7 @@ console.log(binaryToDecimalWithoutParseInt("1101"));  // Output: 13
 the array and verifies that each element is either greater than or equal to the preceding 
 element, ensuring a descending order.</p>
 <pre>
-const isSortedDescending = (arr) => arr.every((el, i) => i === 0 || el <= arr[i - 1]); 
+const isSortedDescending = (arr) =&gt; arr.every((el, i) =&gt; i === 0 || el &lt;= arr[i - 1]); 
 console.log(isSortedDescending([5, 4, 3, 2, 1]));  // Output: true 
 console.log(isSortedDescending([1, 5, 3, 8, 2]));  // Output: false 
 </pre>
@@ -1250,7 +1250,7 @@ console.log(shuffleString("hello"));  // Output: Randomly shuffled string, e.g.,
 It determines the Fibonacci number by summing the previous two Fibonacci numbers until 
 it reaches the base cases of 0 and 1.</p>
 <pre>
-const fibonacci = (n) => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2)); 
+const fibonacci = (n) =&gt; (n &lt;= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2)); 
 console.log(fibonacci(7));  // Output: 13 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1271,7 +1271,7 @@ console.log(countWords("Hello, how are you doing?"));  // Output: 5
 const isTriangularNumber = (num) => { 
   let n = 0; 
   let sum = 0; 
-  while (sum < num) { 
+  while (sum &lt; num) { 
     n++; 
     sum += n; 
   } 
@@ -1299,7 +1299,7 @@ strings. It starts by assuming the first string in the array as the initial comm
 const longestCommonPrefix = (strs) => { 
   if (strs.length === 0) return ''; 
   let prefix = strs[0]; 
-  for (let i = 1; i < strs.length; i++) { 
+  for (let i = 1; i &lt; strs.length; i++) { 
     while (!strs[i].startsWith(prefix)) { 
       prefix = prefix.slice(0, prefix.length - 1); 
     } 
@@ -1378,7 +1378,7 @@ number. Factors are the positive integers that evenly divide the input number.</
 <pre>
 const factors = (num) => { 
   const result = []; 
-  for (let i = 1; i <= num; i++) { 
+  for (let i = 1; i &lt;= num; i++) { 
     if (num % i === 0) { 
       result.push(i); 
     } 
@@ -1555,7 +1555,7 @@ console.log(isPrimeFactor(20, 3));  // Output: false
 <pre>
 const largestPrimeFactor = (num) => { 
   let factor = 2; 
-  while (factor <= num) { 
+  while (factor &lt;= num) { 
     if (num % factor === 0) { 
       num /= factor; 
     } else { 
@@ -1630,8 +1630,8 @@ console.log(isHappyNumber(4));  // Output: false
 <p>The firstNPrimes function generates an array of the first n prime numbers.</p>
 <pre>
 const isPrime = (num) => { 
-  if (num <= 1) return false; 
-  for (let i = 2; i <= Math.sqrt(num); i++) { 
+  if (num &lt;= 1) return false; 
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) { 
     if (num % i === 0) return false; 
   } 
   return true; 
@@ -1639,7 +1639,7 @@ const isPrime = (num) => {
 const firstNPrimes = (n) => { 
   const primes = []; 
   let num = 2; 
-  while (primes.length < n) { 
+  while (primes.length &lt; n) { 
     if (isPrime(num)) primes.push(num); 
       num++; 
   } 
@@ -1648,7 +1648,7 @@ const firstNPrimes = (n) => {
 console.log(firstNPrimes(5));  // Output: [2, 3, 5, 7, 11] 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="147">147. Calculate the Volume of a Sphere
+<h4 id="147">147. Calculate the Volume of a Sphere</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The sphereVolume function calculates the volume of a sphere given its radius. It uses 
 the formula (4/3) * π * r^3, where r is the radius of the sphere.</p>
@@ -1829,7 +1829,7 @@ perfect number is a positive integer that is equal to the sum of its proper divi
 <pre>
 const isPerfectNumber = (num) => { 
   let sum = 0; 
-  for (let i = 1; i <= num / 2; i++) { 
+  for (let i = 1; i &lt;= num / 2; i++) { 
     if (num % i === 0) sum += i; 
   } 
   return sum === num; 
@@ -1846,7 +1846,7 @@ number, checking if the given number is divisible by each of those numbers.</p>
 <pre>
 const factors = (num) => { 
   const result = []; 
-  for (let i = 2; i < num; i++) { 
+  for (let i = 2; i &lt; num; i++) { 
     if (num % i === 0) result.push(i); 
   } 
   return result; 
@@ -1960,7 +1960,7 @@ const fibonacci = (n) => {
   let prev1 = 0; 
   let prev2 = 1; 
   let result; 
-  for (let i = 3; i <= n; i++) { 
+  for (let i = 3; i &lt;= n; i++) { 
     result = prev1 + prev2; 
     prev1 = prev2; 
     prev2 = result; 
@@ -1993,7 +1993,7 @@ console.log(distanceBetweenPoints(0, 0, 3, 4));  // Output: 5
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The isAbundantNumber function determines whether a given number is an abundant number.</p>
 <pre>
-const isAbundantNumber = (num) => num < sumOfProperDivisors(num); 
+const isAbundantNumber = (num) =&gt; num &lt; sumOfProperDivisors(num); 
 console.log(isAbundantNumber(12));  // Output: true 
 console.log(isAbundantNumber(28));  // Output: false 
 </pre>
@@ -2133,7 +2133,7 @@ each digit raised to the power of its respective position is equal to the number
 <pre>
 const sumOfDigitsRaisedToPowerUpToThousand = () => { 
   let sum = 0; 
-  for (let i = 1; i <= 1000; i++) { 
+  for (let i = 1; i &lt;= 1000; i++) { 
     if (sumOfDigitsRaisedToPower(i) === i) { 
       sum += i; 
     } 
@@ -2231,8 +2231,8 @@ console.log(ellipseArea(5, 10));  // Output: 157.07963267948966
 <pre>
 const isLeylandNumber = (num) => { 
   let found = false; 
-  for (let x = 2; x <= Math.floor(Math.pow(num, 1 / 3)) && !found; x++) { 
-    for (let y = x + 1; x * y <= num && !found; y++) { 
+  for (let x = 2; x &lt;= Math.floor(Math.pow(num, 1 / 3)) && !found; x++) { 
+    for (let y = x + 1; x * y &lt;= num && !found; y++) { 
       if (Math.pow(x, y) + Math.pow(y, x) === num) { 
         found = true; 
       } 
@@ -2323,9 +2323,9 @@ console.log(isPandigitalNumber(1023456789));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Calculate the sum of proper divisors of a given number.</p>
 <pre>
-const sumOfProperDivisors = (num) => { 
+const sumOfProperDivisors = (num) =&gt; { 
   let sum = 0; 
-  for (let i = 1; i <= Math.sqrt(num); i++) { 
+  for (let i = 1; i &lt;= Math.sqrt(num); i++) { 
     if (num % i === 0) { 
       sum += i; 
       if (num / i !== i) { 
@@ -2381,7 +2381,7 @@ console.log(productOfDigits(12345));  // Output: 120
 <pre>
 const isPracticalNumber = (num) => { 
   const factors = primeFactors(num); 
-  for (let i = 2; i <= factors.length; i++) { 
+  for (let i = 2; i &lt;= factors.length; i++) { 
     if (sumOfArray(combinations(factors, i)) !== num) { 
       return false; 
     } 
@@ -2436,7 +2436,7 @@ console.log(isTauNumber(25));  // Output: false
 const randomAlphanumericString = (length) => { 
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; 
   let result = ''; 
-  for (let i = 0; i < length; i++) { 
+  for (let i = 0; i &lt; length; i++) { 
     result += characters.charAt(Math.floor(Math.random() * characters.length)); 
   } 
   return result; 
@@ -2448,7 +2448,8 @@ console.log(randomAlphanumericString(8));  // Output: "Yw83XmLb"
 <h4 id="215">215. Calculate the Area of a Regular Hexagon</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Calculate the area of a regular hexagon using its side length.</p>
-const regularHexagonArea = (sideLength) => (3 * Math.sqrt(3) * sideLength ** 2) / 2; 
+<pre>
+const regularHexagonArea = (sideLength) =&gt; (3 * Math.sqrt(3) * sideLength ** 2) / 2; 
 
 console.log(regularHexagonArea(5));  // Output: 64.9519052838329 
 </pre>
@@ -2501,8 +2502,8 @@ console.log(circleCircumference(5));  // Output: 31.41592653589793
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Find the shortest word in a given string.</p>
 <pre>
-const shortestWord = (str) => str.split(' ').reduce((shortest, word) 
-  => (word.length < shortest.length ? word : shortest), ''); 
+const shortestWord = (str) =&gt; str.split(' ').reduce((shortest, word) 
+  => (word.length &lt; shortest.length ? word : shortest), ''); 
 console.log(shortestWord("This is a test sentence"));  // Output: "a" 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2561,8 +2562,8 @@ console.log(isHarshadSmithNumber(10));  // Output: false
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Check if a given number is a perfect power.</p>
 <pre>
-const isPerfectPower = (num) => { 
-  for (let i = 2; i * i <= num; i++) { 
+const isPerfectPower = (num) =&gt; { 
+  for (let i = 2; i * i &lt;= num; i++) { 
     let power = 2; 
     let result = i * i; 
     while (result <= num) { 
