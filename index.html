@@ -64,7 +64,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="1">1. Convert Celsius to Fahrenheit</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>celsiusToFahrenheit allows you to convert a temperature from Celsius to Fahrenheit. It takes a 
+<p>The following <b>celsiusToFahrenheit</b> converts a temperature from Celsius to Fahrenheit. It takes a 
 value in Celsius as input and uses the formula (Celsius * 9/5) + 32 to perform the conversion.</p>
 <pre>
 const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32;
@@ -74,7 +74,7 @@ celsiusToFahrenheit(30); // Result: 86
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="2">2. Get Value of a browser Cookie</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Retrieve the value of a cookie by accessing with document.cookie.</p>
+<p>Retrieve the value of a cookie by accessing with <b>document.cookie</b>.</p>
 <pre>
 const cookie = name => `; ${document.cookie}`.split(`; ${name}=`).pop().split(';').shift(); 
 
@@ -83,16 +83,20 @@ cookie('_ga');  // Result: "GA1.2.1929736587.1601974046"
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="3">3. Convert RGB to Hex</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>rgbToHex enables you to convert RGB (Red, Green, Blue) values to their corresponding 
+<p>The <b>rgbToHex</b> enables you to convert RGB (Red, Green, Blue) values to their corresponding 
 hexadecimal representation.</p>
 <pre>
+const rgbToHex = (r, g, b) => 
+  "#" + ((1 &lt;&lt; 24) + (r &lt;&lt; 16) + (g &lt;&lt; 8) + b).toString(16).slice(1); 
+
+rgbToHex(0, 51, 255);  // Result: #0033ff 
 const rgbToHex = (r, g, b) => 
   "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); 
 
 rgbToHex(0, 51, 255);  // Result: #0033ff 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="5">4. Copy to Clipboard</h4>
+<h4 id="4">4. Copy to Clipboard</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Easily copy any text to clipboard using <b>navigator.clipboard.writeText</b>.</p>
 <pre>
@@ -103,9 +107,10 @@ copyToClipboard("Hello World");
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="5">5. Check if Date is Valid</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Use the following snippet to check if a given date is valid or not.</p>
+<p>Use the following <b>isDateValid</b> to check if a given date is valid or not.</p>
 <pre>
-const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf()); 
+const isDateValid = (...val) => !Number.isNaN(new Date(...val).valueOf());
+
 isDateValid("December 17, 1995 03:24:00");  // Result: true 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -393,19 +398,19 @@ const findMax = (arr) => Math.max(...arr);
 findMax([10, 5, 8, 20, 3]);  // Result: 20
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="35">35. Get the Current Date in DD/MM/YYYY Format</h4>
+<h4 id="35">35. Get the Current Date in MM/DD/YYYY Format</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Get the current date in the "DD/MM/YYYY" format.</p>
+<p>Get the current date in the "MM/DD/YYYY" format.</p>
 <pre>
 const getCurrentDate = () => { 
   const date = new Date(); 
-  const day = String(date.getDate()).padStart(2, '0'); 
   const month = String(date.getMonth() + 1).padStart(2, '0'); 
+  const day = String(date.getDate()).padStart(2, '0'); 
   const year = date.getFullYear(); 
-  return `${day}/${month}/${year}`; 
+  return `${month}/${day}/${year}`; 
 }; 
 
-getCurrentDate();  // Result: "02/08/2023"
+getCurrentDate();  // Result: "11/16/2025"
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="36">36. Calculate the Power of a Number</h4>
@@ -461,11 +466,11 @@ console.log(reverseArray([1, 2, 3, 4, 5]));  // Output: [5, 4, 3, 2, 1]
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="41">41. Get the Current Year</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Get the current year.</p>
+<p>Get the current year using <b>Date.getFullYear()</b>.</p>
 <pre>
 const currentYear = () => new Date().getFullYear();
 
-console.log(currentYear());  // Output: 2023 (depending on the current year)
+console.log(currentYear());  // Output: 2025 (depending on the current year)
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="42">42. Generate a Random Number between 1 and 10</h4>
