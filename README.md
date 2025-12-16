@@ -8,8 +8,8 @@
 </p>
 <!-- ![](./images/image001.jpeg) -->
 
-> Web Developer&apos;s Reference Guide
->
+# Web Developer&apos;s Reference Guide
+
 > A one-stop guide to the essentials of web development including
 > popular frameworks such as jQuery, Bootstrap, AngularJS, and Node.js
 
@@ -24,9 +24,8 @@
 <!-- ![](./images/image002.png){width="7.452318460192477e-2in" height="0.1122911198600175in"} -->
 
 > BIRMINGHAM - MUMBAI
->
+
 > Web Developer&apos;s Reference Guide
->
 
 > **Joshua Johanan** is a web developer who currently lives in South
 > Bend, Indiana. He has been a web developer for five years. He has
@@ -322,7 +321,7 @@
 >
 > [dl 18](#_bookmark18)
 >
-> **\[ i \]**
+> **&lbrack; i &rbrack;**
 >
 > *[Table of Contents]*
 | > [dt](#_bookmark19)    |                         | [19             |
@@ -407,7 +406,7 @@
 | [caption](#_bookmark39) |                         | ](#_bookmark39) |
 | > [                     |                         | [40             |
 | colgroup](#_bookmark40) |                         | ](#_bookmark40) |
-| > [tbody](#_bookmark40) | > **\[ ii \]**          | [40             |
+| > [tbody](#_bookmark40) | > **&lbrack; ii &rbrack;**          | [40             |
 |                         |                         | ](#_bookmark40) |
 
 *Table of Contents*
@@ -1332,7 +1331,7 @@ Chapter 11: [Extending JavaScript and ECMAScript 6 491](#_bookmark479)
 | [**Index**](#index-2)                         | [**767**](#index-2)  |
 +-----------------------------------------------+----------------------+
 
-> **\[ xix \]**
+> **&lbrack; xix &rbrack;**
 >
 > [www.allitebooks.com](http://www.allitebooks.org/)
 
@@ -2319,7 +2318,7 @@ Chapter 11: [Extending JavaScript and ECMAScript 6 491](#_bookmark479)
 >
 > &lt;/footer&gt;
 >
-> **\[ 13 \]**
+> **&lbrack; 13 &rbrack;**
 
 ####### [www.allitebooks.com](http://www.allitebooks.org/)
 
@@ -4926,7 +4925,7 @@ Here is an example:
 >
 > &lt;form action=\"form-process.php\"&gt;&lt;/form&gt;
 >
-> **\[ 63 \]**
+> **&lbrack; 63 &rbrack;**
 
 ####### [www.allitebooks.com](http://www.allitebooks.org/)
 
@@ -5648,7 +5647,7 @@ Here is an example:
 > You can use a regular expression in this attribute to validate the
 > input. Here is an example that will only be valid with numbers:
 >
-> &lt;input pattern=\"\[0-9\].+\" type=\"text\" /&gt;
+> &lt;input pattern=\"&lbrack;0-9&rbrack;.+\" type=\"text\" /&gt;
 
 []{#_bookmark78 .anchor}*Chapter 2*
 
@@ -6220,7 +6219,7 @@ Applications
 > select any elements with hreflang in English, and the second example
 > will select all elements in the document:
 >
-> *\[hreflang=\"en\"\] { display: block;
+> *&lbrack;hreflang=\"en\"&rbrack; { display: block;
 > background:url(flag_of_the_UK); }
 >
 > * { padding: 0; }
@@ -6232,9 +6231,9 @@ Applications
 > These selectors will match against attributes of an element. There are
 > seven different types of attribute selector and they are as follows:
 >
-> \[attribute\] \[attribute=value\] \[attribute\~=value\]
-> \[attribute\|=value\] \[attribute\^=value\] \[attribute\$=value\]
-> \[attribute*=value\]
+> &lbrack;attribute&rbrack; &lbrack;attribute=value&rbrack; &lbrack;attribute\~=value&rbrack;
+> &lbrack;attribute\|=value&rbrack; &lbrack;attribute\^=value&rbrack; &lbrack;attribute\$=value&rbrack;
+> &lbrack;attribute*=value&rbrack;
 >
 > These selectors are usually preceded by a type selector or universal
 > selector.
@@ -6245,22 +6244,22 @@ Applications
 > selector rule. Each of the selectors will act differently based on the
 > use, so they are listed with the differences here:
 
--   \[attribute\]: This matches an element that has the \[attribute\]
+-   &lbrack;attribute&rbrack;: This matches an element that has the &lbrack;attribute&rbrack;
     attribute, irrespective of the value of the attribute.
 
--   \[=\]: The value has to be an exact match.
+-   &lbrack;=&rbrack;: The value has to be an exact match.
 
--   \[\~=\]: This is used when the attribute takes a list of values. One
+-   &lbrack;\~=&rbrack;: This is used when the attribute takes a list of values. One
     of the values in the list must match.
 
--   \[\|=\]: This attribute must either be an exact match or the value
+-   &lbrack;\|=&rbrack;: This attribute must either be an exact match or the value
     must begin with the value followed immediately by a -.
 
--   \[\^=\]: This attribute matches the value that has this prefix.
+-   &lbrack;\^=&rbrack;: This attribute matches the value that has this prefix.
 
--   \[\$=\]: This attribute matches the value that has this suffix.
+-   &lbrack;\$=&rbrack;: This attribute matches the value that has this suffix.
 
--   \[*=\]: This attribute matches any substring of the value.
+-   &lbrack;*=&rbrack;: This attribute matches any substring of the value.
 
 > The best way to really show the difference between these is to use
 > some examples. We will look at the lang and href attributes. The
@@ -6290,12 +6289,12 @@ Applications
 > attribute will be yellow, any PDFs will be red, and any anchor to
 > Google will be green. Here are the preceding styles described:
 >
-> span\[lang\] { background-color: #000000; color: #ffffff; }
-> span\[lang=\"es\"\] { color: #808080; }
+> span&lbrack;lang&rbrack; { background-color: #000000; color: #ffffff; }
+> span&lbrack;lang=\"es\"&rbrack; { color: #808080; }
 >
-> span\[lang\~=\"de-at\"\] { color: #ff0000; } span\[lang\|=\"en\"\] {
-> color: #0000ff; } a\[href\^=\"https\"\] { color: #ffff00; }
-> a\[href\$=\"pdf\"\] { color: #ff0000; } a\[href*=\"google\"\] {
+> span&lbrack;lang\~=\"de-at\"&rbrack; { color: #ff0000; } span&lbrack;lang\|=\"en\"&rbrack; {
+> color: #0000ff; } a&lbrack;href\^=\"https\"&rbrack; { color: #ffff00; }
+> a&lbrack;href\$=\"pdf\"&rbrack; { color: #ff0000; } a&lbrack;href*=\"google\"&rbrack; {
 > color: #00ff00; }
 
 ### The class selectors
@@ -6569,7 +6568,7 @@ Applications
 
 -   h1 p &gt; span: a=0 b=0 c=3, 003 or 3
 
--   h1 *\[lang=\"en\"\]: a=0 b=1 c=1, 011 or 11
+-   h1 *&lbrack;lang=\"en\"&rbrack;: a=0 b=1 c=1, 011 or 11
 
 -   h1 p span.green: a=0 b=1 c=3, 013 or 13
 
@@ -6727,7 +6726,7 @@ There are two mutually exclusive link pseudo-classes, namely, :link and
 > Here is the CSS. This also highlights the fact that you can use a
 > pseudo-class, which allows use of more complex selectors:
 >
-> input\[type=\"text\"\]:focus { color: #ff0000; }
+> input&lbrack;type=\"text\"&rbrack;:focus { color: #ff0000; }
 
 #### :hover
 
@@ -7337,7 +7336,7 @@ There are two mutually exclusive link pseudo-classes, namely, :link and
 >
 > match anything:
 >
-> :lang(en) { color: #ff0000; } span\[lang\|=en\] { color: #00ff00; }
+> :lang(en) { color: #ff0000; } span&lbrack;lang\|=en&rbrack; { color: #00ff00; }
 
 ## Pseudo-elements
 
@@ -7570,7 +7569,7 @@ There are two mutually exclusive link pseudo-classes, namely, :link and
 > Quotation marks specify which characters are used as open and close
 > quotes:
 >
-> quotes: \[&lt;string&gt; &lt;string&gt;\]+
+> quotes: &lbrack;&lt;string&gt; &lt;string&gt;&rbrack;+
 
 #### Parameters
 
@@ -8451,8 +8450,8 @@ There are two mutually exclusive link pseudo-classes, namely, :link and
 
 > ![](./images/image023.png){width="0.3199496937882765in"
 > height="0.3996576990376203in"}Notice that in the second example, the
-> path to the image is not inside quotes. The quotes, single \[&apos;&apos;\] or
-> double \[\"\"\], are optional.
+> path to the image is not inside quotes. The quotes, single &lbrack;&apos;&apos;&rbrack; or
+> double &lbrack;\"\"&rbrack;, are optional.
 >
 > CSS-Tricks has a great Pen showing all these blend modes. However, I
 > forked it to improve a few things on it.
@@ -13518,13 +13517,13 @@ b.  {
 > this nested quote uses a single- character symbol, either &apos; &apos; or,
 > for example, ‹ › in French.
 >
-> This property supports two values: none and a \[string string\] value.
+> This property supports two values: none and a &lbrack;string string&rbrack; value.
 
 ##### none
 
 > No quotation marks are generated when using the content property.
 
-##### \[string string +\] value
+##### &lbrack;string string +&rbrack; value
 
 > Each string represents a pair of quotes. The first string represents
 > the outer level quotation marks and the second string represents the
@@ -17865,7 +17864,7 @@ b.  {
 >
 > /*Print the links from the content*/ \@media print {
 >
-> main a\[href\]:after { content: attr(href);
+> main a&lbrack;href&rbrack;:after { content: attr(href);
 >
 > }
 >
@@ -18361,7 +18360,7 @@ b.  {
 > \"UTF-8\";
 >
 > /*This is invalid, character encoding name should be inside single
-> \[&apos;&apos;\] or double quotes \[\"\"\]*/
+> &lbrack;&apos;&apos;&rbrack; or double quotes &lbrack;\"\"&rbrack;*/
 >
 > \@charset UTF-8;
 
@@ -19825,7 +19824,7 @@ code:
 |              |                          | > in a new thread          |
 +--------------+--------------------------+----------------------------+
 | > runCommand | > ru                     | > This runs a system       |
-|              | nCommand(cmd,\[args..\]) | > command with zero or     |
+|              | nCommand(cmd,&lbrack;args..&rbrack;) | > command with zero or     |
 |              |                          | > more command-line args   |
 +--------------+--------------------------+----------------------------+
 | > quit       | > quit()                 | > This makes Rhino exit    |
@@ -20186,7 +20185,7 @@ code:
 > and Variable Types]*
 >
 > You can also represent an escape sequence to represent a Unicode
-> character \[\"\\ u03b1\"\] as \[\"a\"\].The Unicode escape for the
+> character &lbrack;\"\\ u03b1\"&rbrack; as &lbrack;\"a\"&rbrack;.The Unicode escape for the
 > character é, for example, is \\u00E9, and the following two JavaScript
 > strings are identical:
 >
@@ -20463,13 +20462,13 @@ code:
 ##### Description
 
 > Array literals contain values inside an array. They are placed inside
-> array brackets \[\] and each element is separated by a comma (,). Just
+> array brackets &lbrack;&rbrack; and each element is separated by a comma (,). Just
 > like an object literal, an array can be empty and contain 0 elements.
 > When you create an array literal it is specified values as its element
 > and its length is specified as a number of arguments of this array.
 > Here is an example of an array literal:
 >
-> var Planets= \[\"Earth\", \"Neptune\", \"Saturn\", \"Mars\"\];
+> var Planets= &lbrack;\"Earth\", \"Neptune\", \"Saturn\", \"Mars\"&rbrack;;
 
 #### Boolean literals
 
@@ -20502,9 +20501,9 @@ code:
 >
 > -26.35689
 >
-> 18.4e2 //Equivalent to \[18.4 x 10\^2\]
+> 18.4e2 //Equivalent to &lbrack;18.4 x 10\^2&rbrack;
 >
-> -17.22E3 //Equivalent to \[17.22 x 10\^-3\]
+> -17.22E3 //Equivalent to &lbrack;17.22 x 10\^-3&rbrack;
 >
 > []{#_bookmark348 .anchor}*[JavaScript Implementations, Syntax Basics,
 > and Variable Types]*
@@ -20608,7 +20607,7 @@ code:
 > var car = new Object(); car.brand = \"Porche\"; car.model = \"2014\";
 > car.colour = \"Black\"; for (x in car) {
 >
-> console,log(x + \" \-\-- \" + car\[x\] + \"&lt;br /&gt;\");
+> console,log(x + \" \-\-- \" + car&lbrack;x&rbrack; + \"&lt;br /&gt;\");
 >
 > }
 >
@@ -21595,7 +21594,7 @@ code:
 #### Arrays
 
 > When you use an array in your script, clear that array after using it.
-> Assigning \[\] to an array is often used as a shorthand to clear it,
+> Assigning &lbrack;&rbrack; to an array is often used as a shorthand to clear it,
 > but it actually creates a new empty array and garbages the old one.
 > You can set the array length to 0, (arr.length = 0;); this will also
 > clear the array but while reusing the same array object.
@@ -21823,9 +21822,9 @@ code:
 > A bracket notation is also known as an array notation. The syntax for
 > writing a bracket notation is as follows:
 >
-> get=abc\[xyz\]; abc\[xyz\]=set;
+> get=abc&lbrack;xyz&rbrack;; abc&lbrack;xyz&rbrack;=set;
 >
-> get = abc \[1\]; // get value at array abc index 1
+> get = abc &lbrack;1&rbrack;; // get value at array abc index 1
 
 #### The dot notation
 
@@ -23623,7 +23622,7 @@ code:
 > array, this is crucial to deal with the blank indexes. Consider the
 > following example:
 >
-> var person=\[\]; Person\[1\]=\"Ali\"; Person\[20\]=\"Ahmed\";
+> var person=&lbrack;&rbrack;; Person&lbrack;1&rbrack;=\"Ali\"; Person&lbrack;20&rbrack;=\"Ahmed\";
 >
 > Alert(person.length);// it will be 21 length
 
@@ -23663,7 +23662,7 @@ code:
 > We have a comma-separated string in brackets in an array initializer;
 > for example:
 >
-> var students= \[\"Ali\",\"Ahmed\",\"Amina\"\];
+> var students= &lbrack;\"Ali\",\"Ahmed\",\"Amina\"&rbrack;;
 >
 > In JavaScript, you can also create an array using an array constructor
 > using a new keyword, which creates an array and assigns values to it;
@@ -23688,11 +23687,11 @@ code:
 > In an array initializer, there are comma separated lists of items
 > stored in a variable, for example:
 >
-> var a1=\[\]; var a2=\[2\];
+> var a1=&lbrack;&rbrack;; var a2=&lbrack;2&rbrack;;
 >
-> var a3=\[1,2,3\];
+> var a3=&lbrack;1,2,3&rbrack;;
 >
-> var a4=\[&apos;hi&apos;, \[2\]\];
+> var a4=&lbrack;&apos;hi&apos;, &lbrack;2&rbrack;&rbrack;;
 >
 > ![](./images/image092.png){width="0.3199486001749781in"
 > height="0.39964129483814526in"}When you initialize an array using an
@@ -23716,14 +23715,16 @@ code:
 > If an array constructor has only one argument then this argument will
 > initialize its new length.
 
-[]{#_bookmark408 .anchor}*Chapter 9*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+*Chapter 9*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 > If you call an array with two or more elements, the the argument will
 > initialize an array with size equal to the number of parameters.
 
 ### Reading and writing array elements
 
-> To read and write elements from an array we use square brackets \[\].
+> To read and write elements from an array we use square brackets &lbrack;&rbrack;.
 > It works as accessing object properties. Inside the brackets there
 > should be a non-negative number. The syntax for both reading and
 > writing in an array is the same. Values are also indexed in an array.
@@ -23732,13 +23733,13 @@ code:
 >
 > Consider the following example:
 >
-> var obj=\[\"abc\"\];
+> var obj=&lbrack;\"abc\"&rbrack;;
 >
-> var start=obj\[0\]; //its is for reading Document.Write(start);
+> var start=obj&lbrack;0&rbrack;; //its is for reading Document.Write(start);
 >
-> var obj\[1\]=\"hello\"; i=\"world\";
+> var obj&lbrack;1&rbrack;=\"hello\"; i=\"world\";
 >
-> Obj\[i\]=\"hello world\";//writing Document.Write(obj\[i\]);
+> Obj&lbrack;i&rbrack;=\"hello world\";//writing Document.Write(obj&lbrack;i&rbrack;);
 >
 > The output of this would be as follows:
 >
@@ -23764,13 +23765,14 @@ code:
 >
 > For(i=0;i&lt;5;i++) {
 >
-> C\[i\]=new array(); for For(j=0;j&lt;5;j++) c\[i\]\[j\]; }}
+> C&lbrack;i&rbrack;=new array(); for For(j=0;j&lt;5;j++) c&lbrack;i&rbrack;&lbrack;j&rbrack;; }}
 >
 > }
 >
-> []{#_bookmark409 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>JavaScript Expressions, Operators, Statements, and Arrays</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### Properties in an array
 
 > An array has a prototype, length, and a constructor as its properties.
@@ -23793,7 +23795,7 @@ code:
 >
 > Consider the following example:
 >
-> var num=new Array\[1,2,3\]; Document. write (num.length);
+> var num=new Array&lbrack;1,2,3&rbrack;; Document. write (num.length);
 >
 > The output will be as follows:
 >
@@ -23805,7 +23807,7 @@ code:
 > contain zero or more elements and has the following syntax where array
 > elements are separated by a comma inside square brackets.
 >
-> var fruits = \[\"Apple\", \"Banana\"\];
+> var fruits = &lbrack;\"Apple\", \"Banana\"&rbrack;;
 
 #### Prototype
 
@@ -23820,7 +23822,7 @@ code:
 > ([https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
 > [Global_Objects/Array/prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)).
 
-[]{#_bookmark410 .anchor}*Chapter 9*
+*Chapter 9*
 
 ### Array methods
 
@@ -23845,10 +23847,10 @@ code:
 
 > This takes two arrays and joins them.
 >
-> var alpha = \[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;\], var numeric = \[1, 2, 3\];
+> var alpha = &lbrack;&apos;a&apos;, &apos;b&apos;, &apos;c&apos;&rbrack;, var numeric = &lbrack;1, 2, 3&rbrack;;
 >
 > var alphaNumeric = alpha.concat(numeric); console.log(alphaNumeric);
-> // Result: \[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3\]
+> // Result: &lbrack;&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, 1, 2, 3&rbrack;
 
 #### every()
 
@@ -23871,12 +23873,13 @@ code:
 >
 > }
 >
-> \[12, 5, 8, 130, 44\].every(isBigEnough); // false
+> &lbrack;12, 5, 8, 130, 44&rbrack;.every(isBigEnough); // false
 >
-> \[12, 54, 18, 130, 44\].every(isBigEnough); // true
+> &lbrack;12, 54, 18, 130, 44&rbrack;.every(isBigEnough); // true
 >
-> []{#_bookmark411 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 #### foreach()
 
@@ -23896,20 +23899,20 @@ code:
 > The foreach() method calls the functions of each element:
 >
 > function logArrayElements(element, index, array) {
-> console.log(&apos;a\[&apos; + index + &apos;\] = &apos; + element);
+> console.log(&apos;a&lbrack;&apos; + index + &apos;&rbrack; = &apos; + element);
 >
 > }
 >
-> // Note elision, there is no member at 2 so it isn&apos;t visited \[2, 5,
-> , 9\].forEach(logArrayElements);
+> // Note elision, there is no member at 2 so it isn&apos;t visited &lbrack;2, 5,
+> , 9&rbrack;.forEach(logArrayElements);
 >
 > // logs:
 >
-> // a\[0\] = 2
+> // a&lbrack;0&rbrack; = 2
 >
-> // a\[1\] = 5
+> // a&lbrack;1&rbrack; = 5
 >
-> // a\[3\] = 9
+> // a&lbrack;3&rbrack; = 9
 
 #### join()
 
@@ -23927,7 +23930,7 @@ code:
 
 > It joins all elements into a string.
 >
-> var a = \[&apos;One&apos;, &apos;Two&apos;, &apos;Three&apos;\];
+> var a = &lbrack;&apos;One&apos;, &apos;Two&apos;, &apos;Three&apos;&rbrack;;
 >
 > var var1 = a.join(); // assigns &apos;One,Two,Three&apos; to var1 var var2 =
 > a.join(&apos;, &apos;); // assigns &apos;One, Two, Three&apos; to var2
@@ -23935,7 +23938,9 @@ code:
 > var var3 = a.join(&apos; + &apos;); // assigns &apos;One + Two + Three&apos; to var3
 > var var4 = a.join(&apos;&apos;); // assigns &apos;OneTwoThree&apos; to var4
 
-[]{#_bookmark412 .anchor}*Chapter 9*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 9
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 #### pop()
 
@@ -23954,11 +23959,11 @@ code:
 
 > It removes the last element of an array, just like a stack.
 >
-> var myColours = \[&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;\];
-> console.log(myColours); // \[&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;,
-> &apos;Green&apos;\] var popped = myColours.pop();
+> var myColours = &lbrack;&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;&rbrack;;
+> console.log(myColours); // &lbrack;&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;,
+> &apos;Green&apos;&rbrack; var popped = myColours.pop();
 >
-> console.log(myColours); // \[&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos; \]
+> console.log(myColours); // &lbrack;&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos; &rbrack;
 > console.log(popped); // &apos;Green&apos;
 
 #### push()
@@ -23977,18 +23982,19 @@ code:
 
 > This adds elements at the last index on an array.
 >
-> var sports = \[&apos;cricket&apos;, &apos;baseball&apos;\]; var total =
+> var sports = &lbrack;&apos;cricket&apos;, &apos;baseball&apos;&rbrack;; var total =
 > sports.push(&apos;football&apos;);
 >
-> console.log(sports); // \[&apos;cricket&apos;, &apos;baseball&apos;, &apos;football&apos;\]
+> console.log(sports); // &lbrack;&apos;cricket&apos;, &apos;baseball&apos;, &apos;football&apos;&rbrack;
 > console.log(total); // 3
 
 #### indexOf()
 
 > The indexOf() method returns the first index of an array.
->
-> []{#_bookmark413 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Returns
 
@@ -24002,7 +24008,7 @@ code:
 
 > It returns the first index of an array.
 >
-> var array = \[2, 5, 9\];
+> var array = &lbrack;2, 5, 9&rbrack;;
 >
 > array.indexOf(9); // 2 array.indexOf(7); // -1 if not found
 
@@ -24021,7 +24027,7 @@ code:
 
 ##### Description
 
-> var array = \[2, 5, 9, 2\];
+> var array = &lbrack;2, 5, 9, 2&rbrack;;
 >
 > array.indexOf(2); // 3 array.indexOf(7); // -1 if not found
 
@@ -24047,9 +24053,9 @@ code:
 >
 > element becomes the last element and so on.
 >
-> var myArray = \[&apos;one&apos;, &apos;two&apos;, &apos;three&apos;\]; myArray.reverse();
+> var myArray = &lbrack;&apos;one&apos;, &apos;two&apos;, &apos;three&apos;&rbrack;; myArray.reverse();
 >
-> console.log(myArray) // \[&apos;three&apos;, &apos;two&apos;, &apos;one&apos;\]
+> console.log(myArray) // &lbrack;&apos;three&apos;, &apos;two&apos;, &apos;one&apos;&rbrack;
 
 #### shift()
 
@@ -24071,11 +24077,11 @@ code:
 > In an array, it removes the very first element and returns the removed
 > element.
 >
-> var myColours = \[&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;\];
-> console.log(myColours); // \[&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;,
-> &apos;Green&apos;\] var shifted = myColours.shift();
+> var myColours = &lbrack;&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;&rbrack;;
+> console.log(myColours); // &lbrack;&apos;Yellow&apos;, &apos;Black&apos;, &apos;Blue&apos;,
+> &apos;Green&apos;&rbrack; var shifted = myColours.shift();
 >
-> console.log(myColours); // \[&apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;\]
+> console.log(myColours); // &lbrack;&apos;Black&apos;, &apos;Blue&apos;, &apos;Green&apos;&rbrack;
 > console.log(shifted); // &apos;Green&apos;
 
 #### unshift()
@@ -24090,18 +24096,19 @@ code:
 ##### Parameter
 
 > The element(s) to add in the array.
->
-> []{#_bookmark415 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Description
 
 > This method adds a new element at the beginning of the array and
 > returns the new array length:
 >
-> var arr = \[1, 2, 3\];
+> var arr = &lbrack;1, 2, 3&rbrack;;
 >
-> arr.unshift(0); // arr is \[0, 1, 2, 3\]
+> arr.unshift(0); // arr is &lbrack;0, 1, 2, 3&rbrack;
 
 #### slice()
 
@@ -24119,10 +24126,10 @@ code:
 
 > This method slices an array into a new array:
 >
-> var fruits = \[&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;,
-> &apos;Mango&apos;\]; var citrus = fruits.slice(1, 3);
+> var fruits = &lbrack;&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;,
+> &apos;Mango&apos;&rbrack;; var citrus = fruits.slice(1, 3);
 >
-> // citrus contains \[&apos;Orange&apos;,&apos;Lemon&apos;\]
+> // citrus contains &lbrack;&apos;Orange&apos;,&apos;Lemon&apos;&rbrack;
 
 #### splice()
 
@@ -24144,14 +24151,14 @@ code:
 > This method is also used to add new elements to an array by removing
 > existing elements:
 >
-> var myCars = \[&apos;Audi&apos;, &apos;BMW&apos;, &apos;Ferrari&apos;, &apos;Volkswagen&apos;\];
+> var myCars = &lbrack;&apos;Audi&apos;, &apos;BMW&apos;, &apos;Ferrari&apos;, &apos;Volkswagen&apos;&rbrack;;
 >
 > // removes 0 elements from index 2, and inserts &apos;Toyota&apos; var removed
 > = myCars.splice(2, 0, &apos;Toyota&apos;);
 >
-> // myCars is \[&apos;Audi&apos;, &apos;BMW&apos;, &apos;Toyota&apos;, &apos;Volkswagen&apos;\]
+> // myCars is &lbrack;&apos;Audi&apos;, &apos;BMW&apos;, &apos;Toyota&apos;, &apos;Volkswagen&apos;&rbrack;
 >
-> // removed is \[\], no elements removed
+> // removed is &lbrack;&rbrack;, no elements removed
 
 #### sort()
 
@@ -24170,8 +24177,8 @@ code:
 > Called as an array method, this sorts an array alphabetically (unicode
 > characters) and will not work well with numbers:
 >
-> var fruit = \[&apos;cherries&apos;, &apos;apples&apos;, &apos;bananas&apos;\]; fruit.sort();
-> // \[&apos;apples&apos;, &apos;bananas&apos;, &apos;cherries&apos;\]
+> var fruit = &lbrack;&apos;cherries&apos;, &apos;apples&apos;, &apos;bananas&apos;&rbrack;; fruit.sort();
+> // &lbrack;&apos;apples&apos;, &apos;bananas&apos;, &apos;cherries&apos;&rbrack;
 
 #### toString()
 
@@ -24184,16 +24191,17 @@ code:
 ##### Parameter
 
 > The toString() method takes a null parameter.
->
-> []{#_bookmark417 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Description
 
 > Converts the array object into a string with its elements separated by
 > commas character.
 >
-> var monthNames = \[&apos;Jan&apos;, &apos;Feb&apos;, &apos;Mar&apos;, &apos;Apr&apos;\];
+> var monthNames = &lbrack;&apos;Jan&apos;, &apos;Feb&apos;, &apos;Mar&apos;, &apos;Apr&apos;&rbrack;;
 >
 > var myVar = monthNames.toString(); // &apos;Jan,Feb,Mar,Apr&apos; to myVar.
 
@@ -24225,13 +24233,13 @@ code:
 >
 > Here is a simple example:
 >
-> var numbers = \[1, 4, 9\];
+> var numbers = &lbrack;1, 4, 9&rbrack;;
 >
 > var roots = numbers.map(Math.sqrt);
 >
 > The roots are now as follows:
 >
-> \[1, 2, 3\]
+> &lbrack;1, 2, 3&rbrack;
 
 #### array.prototype.filter()
 
@@ -24240,7 +24248,9 @@ code:
 >
 > processed by the function.
 
-[]{#_bookmark418 .anchor}*Chapter 9*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 9
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Returns
 
@@ -24259,11 +24269,11 @@ code:
 >
 > }
 >
-> var filtered = \[12, 5, 8, 130, 44\].filter(isBigEnough);
+> var filtered = &lbrack;12, 5, 8, 130, 44&rbrack;.filter(isBigEnough);
 >
 > The output is as follows:
 >
-> \[12, 130, 44\]
+> &lbrack;12, 130, 44&rbrack;
 
 #### array.prototype.reduce()
 
@@ -24287,16 +24297,17 @@ code:
 >
 > Here is a simple example:
 >
-> \[0, 1, 2, 3, 4\].reduce(function(previousValue, currentValue, index,
+> &lbrack;0, 1, 2, 3, 4&rbrack;.reduce(function(previousValue, currentValue, index,
 > array) {
 >
 > return previousValue + currentValue;
 >
 > });
->
-> []{#_bookmark419 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 > The callbacks are executed as follows:
 
 +----------+-------------+-----------+-----+-----------------+------+
@@ -24307,20 +24318,20 @@ code:
 |          |             |           |     |                 |  val |
 |          |             |           |     |                 | ue** |
 +==========+=============+===========+=====+=================+======+
-| >        | > 0         | > 1       | > 1 | > \[0, 1, 2, 3, | > 1  |
-|  **First |             |           |     | > 4\]           |      |
+| >        | > 0         | > 1       | > 1 | > &lbrack;0, 1, 2, 3, | > 1  |
+|  **First |             |           |     | > 4&rbrack;           |      |
 | > call** |             |           |     |                 |      |
 +----------+-------------+-----------+-----+-----------------+------+
-| >        | > 1         | > 2       | > 2 | > \[0, 1, 2, 3, | > 3  |
-| **Second |             |           |     | > 4\]           |      |
+| >        | > 1         | > 2       | > 2 | > &lbrack;0, 1, 2, 3, | > 3  |
+| **Second |             |           |     | > 4&rbrack;           |      |
 | > call** |             |           |     |                 |      |
 +----------+-------------+-----------+-----+-----------------+------+
-| >        | > 3         | > 3       | > 3 | > \[0, 1, 2, 3, | > 6  |
-|  **Third |             |           |     | > 4\]           |      |
+| >        | > 3         | > 3       | > 3 | > &lbrack;0, 1, 2, 3, | > 6  |
+|  **Third |             |           |     | > 4&rbrack;           |      |
 | > call** |             |           |     |                 |      |
 +----------+-------------+-----------+-----+-----------------+------+
-| >        | > 6         | > 4       | > 4 | > \[0, 1, 2, 3, | > 10 |
-| **Fourth |             |           |     | > 4\]           |      |
+| >        | > 6         | > 4       | > 4 | > &lbrack;0, 1, 2, 3, | > 10 |
+| **Fourth |             |           |     | > 4&rbrack;           |      |
 | > call** |             |           |     |                 |      |
 +----------+-------------+-----------+-----+-----------------+------+
 
@@ -24343,27 +24354,29 @@ code:
 > Here is a simple example:
 >
 > function logArrayElements(element, index, array) {
-> console.log(&apos;a\[&apos; + index + &apos;\] = &apos; + element);
+> console.log(&apos;a&lbrack;&apos; + index + &apos;&rbrack; = &apos; + element);
 >
 > }
 >
-> // Note elision, there is no member at 2 so it isn&apos;t visited \[2, 5,
-> , 9\].forEach(logArrayElements);
+> // Note elision, there is no member at 2 so it isn&apos;t visited &lbrack;2, 5,
+> , 9&rbrack;.forEach(logArrayElements);
 >
 > // logs:
 >
-> // a\[0\] = 2
+> // a&lbrack;0&rbrack; = 2
 >
-> // a\[1\] = 5
+> // a&lbrack;1&rbrack; = 5
 >
-> // a\[3\] = 9
+> // a&lbrack;3&rbrack; = 9
 
 #### array.prototype.indexOf()
 
 > The array.prototype.indexOf() method returns the first index of an
 > array.
 
-[]{#_bookmark420 .anchor}*Chapter 9*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 9
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Returns
 
@@ -24380,7 +24393,7 @@ code:
 >
 > a simple example:
 >
-> var array = \[2, 5, 9\];
+> var array = &lbrack;2, 5, 9&rbrack;;
 >
 > array.indexOf(9); // 2 array.indexOf(7); // -1 if not found
 
@@ -24404,7 +24417,7 @@ code:
 > the specified element if found within the array. Here is a simple
 > example:
 >
-> var array = \[2, 5, 9, 2\];
+> var array = &lbrack;2, 5, 9, 2&rbrack;;
 >
 > array.indexOf(2); // 3 array.indexOf(7); // -1 if not found
 
@@ -24416,9 +24429,10 @@ code:
 ##### Returns
 
 > A Boolean true or false.
->
-> []{#_bookmark421 .anchor}*[JavaScript Expressions, Operators,
-> Statements, and Arrays]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Expressions, Operators, Statements, and Arrays
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Parameter
 
@@ -24433,9 +24447,9 @@ code:
 >
 > }
 >
-> \[12, 5, 8, 130, 44\].every(isBigEnough); // false
+> &lbrack;12, 5, 8, 130, 44&rbrack;.every(isBigEnough); // false
 >
-> \[12, 54, 18, 130, 44\].every(isBigEnough); // true
+> &lbrack;12, 54, 18, 130, 44&rbrack;.every(isBigEnough); // true
 
 #### array.prototype.some()
 
@@ -24462,9 +24476,9 @@ code:
 >
 > }
 >
-> \[2, 5, 8, 1, 4\].some(isBiggerThan10); // false
+> &lbrack;2, 5, 8, 1, 4&rbrack;.some(isBiggerThan10); // false
 >
-> \[12, 5, 8, 1, 4\].some(isBiggerThan10); // true
+> &lbrack;12, 5, 8, 1, 4&rbrack;.some(isBiggerThan10); // true
 
 #### array.prototype.reduceRight()
 
@@ -24489,13 +24503,9 @@ code:
 >
 > Here is a simple example:
 >
-> var total = \[0, 1, 2, 3\].reduceRight(function(a, b) { return a + b;
->
+> var total = &lbrack;0, 1, 2, 3&rbrack;.reduceRight(function(a, b) { return a + b;
 > });
->
 > This returns the sum as 6.
->
-> []{#_bookmark422 .anchor}
 
 # JavaScript Object-Oriented
 
@@ -24528,9 +24538,10 @@ Programming
 > application, such as in an application that stores passwords. Users
 > don&apos;t have to know how their passwords are encrypted. Hence, this
 > code is encapsulated.
->
-> []{#_bookmark423 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ### Inheritance
 
@@ -24580,7 +24591,9 @@ Programming
 > In JavaScript, there are many built-in objects, such as Maths, Dates,
 > Regular Expressions, Arrays, and so on.
 
-[]{#_bookmark424 .anchor}*Chapter 10*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ### Creating objects
 
@@ -24624,15 +24637,15 @@ Programming
 >
 > var car = new Object(); car.model = \"2014\"; car.company = \"Honda\";
 > car.colour = \"White\";
->
-> []{#_bookmark425 .anchor}*[JavaScript Object-Oriented
-> Programming]*
->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 > The preceding example also creates a new car object with four
 > properties:
 >
 > varempty = new Object(); // An empty object, same as {}. vararr = new
-> Array(); // An empty array, same as \[\]. varcurrdate = new Date(); //
+> Array(); // An empty array, same as &lbrack;&rbrack;. varcurrdate = new Date(); //
 > Current Date.
 >
 > varregex = new RegExp(\"JavaScript\"); // A pattern matching object.
@@ -24675,11 +24688,13 @@ Programming
 > participating classes and their instances, their roles and
 > collaborations, and the distribution of responsibilities.*
 >
-> []{#_bookmark426 .anchor}*Each design pattern focuses on a particular
-> object-oriented design problem or*
->
-> *Chapter 10*
->
+
+Each design pattern focuses on a particular object-oriented design problem or
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 > *issue. It describes when it applies, whether or not it can be applied
 > in view of other design constraints, and the consequences and
 > trade-offs of its use. Since we must eventually implement our designs,
@@ -24723,8 +24738,10 @@ Programming
 > JavaScript as native functions. We can also create custom constructors
 > that define properties and methods for our custom object.
 >
-> []{#_bookmark427 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Description
 
@@ -24830,8 +24847,9 @@ Programming
 
 -   This supports localized functions and variables with closures
 
-> []{#_bookmark428 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ######## Disadvantages:
 
@@ -24884,7 +24902,9 @@ Programming
 
 -   Increased readability
 
-[]{#_bookmark429 .anchor}*Chapter 10*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ######## Disadvantages:
 
@@ -24937,9 +24957,10 @@ Programming
 > The observer pattern is such that if one object changes state all
 > others are notified and can update automatically. Thus this pattern
 > defines a one-to-many dependency relationship between objects.
->
-> []{#_bookmark430 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Description
 
@@ -25041,8 +25062,10 @@ Programming
 > In the prototype pattern, objects are created on the template of the
 > existing object through cloning.
 >
-> []{#_bookmark432 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ##### Description
 
@@ -25095,7 +25118,9 @@ Programming
 -   It allows bookkeeping about command executions, without interference
     from the client
 
-[]{#_bookmark433 .anchor}*Chapter 10*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ######## Disadvantages:
 
@@ -25140,10 +25165,11 @@ Programming
 > browser inconsistency to ensure that ready() is invoked at the
 > appropriate time. However, we only see a façade or a simple interface
 > layer.
->
-> []{#_bookmark434 .anchor}*[JavaScript Object-Oriented
-> Programming]*
->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 > Here are a few advantages and disadvantages of the facade pattern:
 
 ######## Advantages:
@@ -25195,7 +25221,9 @@ Programming
 > ExtJS is a JavaScript library that uses this pattern. Methods for
 > creating objects can be categorized and further sub classed.
 
-[]{#_bookmark435 .anchor}*Chapter 10*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 > Here are a few advantages and disadvantages of the factory pattern:
 
@@ -25247,9 +25275,11 @@ Programming
 > reuse of functions. In applications where functionality is shared
 > across the system, we can put the shared functions in mixins and focus
 > on the rest of the distinct functionality in our system.
->
-> []{#_bookmark436 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ######## Disadvantages:
 
@@ -25290,12 +25320,12 @@ Programming
 > /* Augment existing class with a method from another class */
 > function augment(receivingClass, givingClass) {
 >
-> /* only provide certain methods */ if(arguments\[2\]) {
+> /* only provide certain methods */ if(arguments&lbrack;2&rbrack;) {
 >
 > var i, len = arguments.length; for (i=2; i&lt;len; i++) {
 >
-> receivingClass.prototype\[arguments\[i\]\] = givingClass.
-> prototype\[arguments\[i\]\];
+> receivingClass.prototype&lbrack;arguments&lbrack;i&rbrack;&rbrack; = givingClass.
+> prototype&lbrack;arguments&lbrack;i&rbrack;&rbrack;;
 >
 > }
 >
@@ -25310,12 +25340,14 @@ Programming
 > /* check to make sure the receiving class doesn&apos;t have a method of
 > the same name as the one currently being processed */
 >
-> if (!receivingClass.prototype\[methodName\]) {
+> if (!receivingClass.prototype&lbrack;methodName&rbrack;) {
 
-[]{#_bookmark437 .anchor}*Chapter 10*
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Chapter 10
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-> receivingClass.prototype\[methodName\] = givingClass.
-> prototype\[methodName\];
+> receivingClass.prototype&lbrack;methodName&rbrack; = givingClass.
+> prototype&lbrack;methodName&rbrack;;
 >
 > }
 >
@@ -25373,9 +25405,10 @@ Programming
     property. Here is an example:
 
 > Obj.setButtonColor(value);
->
-> []{#_bookmark438 .anchor}*[JavaScript Object-Oriented
-> Programming]*
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript Object-Oriented Programming
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ### Deleting properties
 
@@ -25415,7 +25448,7 @@ Programming
 >
 > You can also use this command to achieve the same result:
 >
-> **delete author\[\"age\"\];**
+> **delete author&lbrack;\"age\"&rbrack;;**
 
 ### Testing properties
 
@@ -25569,7 +25602,7 @@ Programming
     language are called **internal properties** in JavaScript. These
     properties are purely for specification purposes. These properties
     have special names and are written inside square brackets. All
-    objects have an internal property known as \[\[Prototype\]\]. The
+    objects have an internal property known as &lbrack;&lbrack;Prototype&rbrack;&rbrack;. The
     value of this property is either null or an object, which is used
     for implementing inheritance.
 
@@ -26026,7 +26059,7 @@ Programming
 > To define an object or array in JavaScript, we use literals. Here is
 > an example:
 >
-> Varobj= {}; Varobj=\[\];
+> Varobj= {}; Varobj=&lbrack;&rbrack;;
 
 ### Classes in the ECMA5 script
 
@@ -26155,7 +26188,7 @@ height="1.25in"}
 > constructor. This idea is quite simple and easy. We use the call() and
 > apply() methods for function calling. Here is an example:
 >
-> function super() { this.name=\[\"Ali\"\];
+> function super() { this.name=&lbrack;\"Ali\"&rbrack;;
 >
 > }
 >
@@ -26196,7 +26229,7 @@ height="1.25in"}
 >
 > functionSuperType(name) { this.name = name;
 >
-> this.colors = \[&apos;yellow&apos;, &apos;purple&apos;, &apos;indigo&apos;\];
+> this.colors = &lbrack;&apos;yellow&apos;, &apos;purple&apos;, &apos;indigo&apos;&rbrack;;
 >
 > }
 >
@@ -26372,7 +26405,7 @@ height="1.25in"}
 > objects in JavaScript. At the end, the subtype will have all the
 > properties of the super type. Here is an example:
 >
-> function super(name) { this.name=\[\"Ali\"\];
+> function super(name) { this.name=&lbrack;\"Ali\"&rbrack;;
 >
 > }
 >
@@ -27204,7 +27237,7 @@ height="1.25in"}
 > To create an array in JavaScript, the elements of the collection are
 > enclosed within square brackets and separated by commas, as seen here:
 >
-> varcolors = \[\"red\", \"yellow\", \"blue\"\]
+> varcolors = &lbrack;\"red\", \"yellow\", \"blue\"&rbrack;
 >
 > An array can also be initialized using the new keyword or by
 > specifying their length between 0 and 232-1:
@@ -27215,7 +27248,7 @@ height="1.25in"}
 >
 > To access array elements, we can use an index notation:
 >
-> varlastColor = colors\[2\]; // blue
+> varlastColor = colors&lbrack;2&rbrack;; // blue
 >
 > Always remember that array elements always start with the zero index.
 > Hence, the third element in the preceding array has the index of 2.
@@ -27248,8 +27281,8 @@ height="1.25in"}
 >
 > Here is an example:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var element= sweets.Pop();
 >
@@ -27274,8 +27307,8 @@ height="1.25in"}
 >
 > Here is an example:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var element= sweets.Push(\"Lemon Meringue\");
 >
@@ -27303,8 +27336,8 @@ height="1.25in"}
 > elements of the array appear in the string and are separated by a
 > comma:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.ToString()
 >
@@ -27330,8 +27363,8 @@ height="1.25in"}
 > This is default behaviour of the array and works same as the
 > ToString() function.
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.ValueOf()
 >
@@ -27366,8 +27399,8 @@ height="1.25in"}
 > elements of the array appear in the string and are separated by the
 > delimter:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.Join(*)
 >
@@ -27406,8 +27439,8 @@ height="1.25in"}
 > specify where the new element is to be added and which elements are to
 > be removed.
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.splice(2, 0, \"Lemon Meringue\");
 >
@@ -27433,8 +27466,8 @@ height="1.25in"}
 > The sort method is used to sort an array, alphabetically. Here is an
 > example:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.Sort();
 >
@@ -27462,8 +27495,8 @@ height="1.25in"}
 > The reverse method is used to sort an array, alphabetically, in
 > reverse order. Here is an example:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.reverse();
 >
@@ -27495,8 +27528,8 @@ height="1.25in"}
 >
 > Here is an example:
 >
-> var sweets = \[\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
-> Delight\", \"Pineapple Sundae\", \"Black Forest\"\];
+> var sweets = &lbrack;\"Red Velvet\", \"Chocolate Mousse\", \"Strawberry
+> Delight\", \"Pineapple Sundae\", \"Black Forest\"&rbrack;;
 >
 > var StrSweets= sweets.slice(3);
 >
@@ -27525,10 +27558,10 @@ height="1.25in"}
 > The Concat() method is used to create a single array by joining two or
 > more arrays. Here is an example:
 >
-> var greenShades= \[\"Mint\", \"Basil\", \"Pine\", \"Emerald\"\]; var
-> BlueShades=\[\"Azure\", \"Cerulean\", \"Navy\", \"Aegan\"\];
+> var greenShades= &lbrack;\"Mint\", \"Basil\", \"Pine\", \"Emerald\"&rbrack;; var
+> BlueShades=&lbrack;\"Azure\", \"Cerulean\", \"Navy\", \"Aegan\"&rbrack;;
 >
-> var VioletShades= \[\"Lilac\", \"Orchid\", \"Mauve\", \"Wisteria\"\];
+> var VioletShades= &lbrack;\"Lilac\", \"Orchid\", \"Mauve\", \"Wisteria\"&rbrack;;
 > var CoolShades=greenShades.concat(BlueShades, VioletShades);
 >
 > Here the value of CoolShades is:
@@ -27850,7 +27883,7 @@ height="1.25in"}
 
 > The functions are shorthanded for multiple try-catch expressions. The
 > thing that is returned is the generated object wrapped in {} and not
-> in \[\]. We use this for multiple values to variables in the function.
+> in &lbrack;&rbrack;. We use this for multiple values to variables in the function.
 
 ## Scoped variables and constants
 
@@ -28214,15 +28247,15 @@ height="1.25in"}
 > let max =(a, b)=&gt; a &gt; b ?a : b;
 >
 > // Easy array filtering, mapping, \...
-> varsampleArray=\[7,4,1,0,3,5,11\];
+> varsampleArray=&lbrack;7,4,1,0,3,5,11&rbrack;;
 >
 > var sum =sampleArray.reduce((a, b)=&gt; a + b);// The answer is 29 var
-> even =sampleArray.filter(v =&gt; v %2==0);// The answer is \[4, 0\] var
-> odd =sampleArray.filter(v =&gt; v %2!=0);// The answer is \[7, 1, 3, 5,
-> 11\]
+> even =sampleArray.filter(v =&gt; v %2==0);// The answer is &lbrack;4, 0&rbrack; var
+> odd =sampleArray.filter(v =&gt; v %2!=0);// The answer is &lbrack;7, 1, 3, 5,
+> 11&rbrack;
 >
-> var double =sampleArray.map(v =&gt; v *2);// The answer is\[14, 8, 2,
-> 0, 6, 10, 22\]
+> var double =sampleArray.map(v =&gt; v *2);// The answer is&lbrack;14, 8, 2,
+> 0, 6, 10, 22&rbrack;
 >
 > An arrow function expression or a fat arrow function are shorter in
 > syntax when compared with function expressions. Arrow function is used
@@ -28430,7 +28463,7 @@ height="1.25in"}
 >
 > // Dynamic property names
 >
-> \[ &apos;property\_&apos; + (() =&gt; 20)() \]: 20
+> &lbrack; &apos;property\_&apos; + (() =&gt; 20)() &rbrack;: 20
 >
 > };
 
@@ -28530,10 +28563,10 @@ height="1.25in"}
 > All variables can be initialized and swapped at once instead of the
 > conventional way of creating a temporary variable:
 >
-> var \[ first, last \] = \[\"one\", \"hundred\"\] // initialize
+> var &lbrack; first, last &rbrack; = &lbrack;\"one\", \"hundred\"&rbrack; // initialize
 > console.log(first + \" to \" + last); // one to hundred
 >
-> \[first, last\] = \[last, first\] // variable swapping
+> &lbrack;first, last&rbrack; = &lbrack;last, first&rbrack; // variable swapping
 > console.log(first + \" to \" + last); // hundred to one
 >
 > Multiple values from a function are returned with ease using array
@@ -28542,11 +28575,11 @@ height="1.25in"}
 >
 > function dob() {
 >
-> return \[29, \"November\", 1990, \"Thursday\"\];
+> return &lbrack;29, \"November\", 1990, \"Thursday\"&rbrack;;
 >
 > }
 >
-> var \[date, month, year, day\] = dob();
+> var &lbrack;date, month, year, day&rbrack; = dob();
 >
 > console.log(\"My date of birth is on \" + date + \" \" + month); // My
 > date of birth is on 29 November
@@ -28662,7 +28695,7 @@ height="1.25in"}
 >
 > }
 >
-> varargs = \[1, 2\];
+> varargs = &lbrack;1, 2&rbrack;;
 >
 > console.log(sum(...args, ...args, 3)); // 6
 >
@@ -28747,13 +28780,13 @@ height="1.25in"}
 > Fibonacci numbers, or the Fibonacci arrangement, are the numbers in
 > the accompanying whole number succession:
 >
-> let fibonacci = { \[Symbol.iterator\]() {
+> let fibonacci = { &lbrack;Symbol.iterator&rbrack;() {
 >
 > let x = 0, y = 1; return {
 >
 > next() {
 >
-> \[x, y\] = \[y, x + y\];
+> &lbrack;x, y&rbrack; = &lbrack;y, x + y&rbrack;;
 >
 > return { done: false, value: y }
 >
@@ -28803,9 +28836,9 @@ height="1.25in"}
 >
 > let fibonacci = {
 >
-> *\[Symbol.iterator\]() { let prex = 0, cury = 1 for (;;) {
+> *&lbrack;Symbol.iterator&rbrack;() { let prex = 0, cury = 1 for (;;) {
 >
-> \[ prex, cury \] = \[ cury, prex+curv \] = \[ yield cury
+> &lbrack; prex, cury &rbrack; = &lbrack; cury, prex+curv &rbrack; = &lbrack; yield cury
 >
 > }
 >
@@ -28833,7 +28866,7 @@ height="1.25in"}
 >
 > // same as ECMAScript 5 \"𝌆\".length == 2
 >
-> // new RegExpbehaviour, opt-in &apos;u&apos; \"𝌆\".match(/./u)\[0\].length ==
+> // new RegExpbehaviour, opt-in &apos;u&apos; \"𝌆\".match(/./u)&lbrack;0&rbrack;.length ==
 > 2
 >
 > // new form \"\\u{1D306}\"==\"𝌆\"==\"\\uD834\\uDF06\"
@@ -29069,10 +29102,10 @@ height="1.25in"}
 >
 > myMap.set({},\"cone\"); varmapIter=myMap.entries();
 >
-> console.log(mapIter.next().value);// \[\"0\", \"pine\"\]
+> console.log(mapIter.next().value);// &lbrack;\"0\", \"pine\"&rbrack;
 >
-> console.log(mapIter.next().value);// \[1, \"apple\"\]
-> console.log(mapIter.next().value);// \[Object, \"cone\"\]
+> console.log(mapIter.next().value);// &lbrack;1, \"apple\"&rbrack;
+> console.log(mapIter.next().value);// &lbrack;Object, \"cone\"&rbrack;
 
 ##### Map.prototype.forEach()
 
@@ -29100,21 +29133,21 @@ height="1.25in"}
 >
 > Here is an example of this method:
 >
-> functionlogMapElements(value, key, map) { console.log(\"m\[\"+ key
-> +\"\] = \"+ value);
+> functionlogMapElements(value, key, map) { console.log(\"m&lbrack;\"+ key
+> +\"&rbrack; = \"+ value);
 >
 > }
 >
-> Map(\[\[\"foo\",3\],\[\"apple\",{}\],\[\"cone\",
-> undefined\]\]).forEach(logMapElements);
+> Map(&lbrack;&lbrack;\"foo\",3&rbrack;,&lbrack;\"apple\",{}&rbrack;,&lbrack;\"cone\",
+> undefined&rbrack;&rbrack;).forEach(logMapElements);
 >
 > // logs:
 >
-> // \"m\[pine\] = 3\"
+> // \"m&lbrack;pine&rbrack; = 3\"
 >
-> // \"m\[apple\] = \[object Object\]\"
+> // \"m&lbrack;apple&rbrack; = &lbrack;object Object&rbrack;\"
 >
-> // \"m\[cone\] = undefined\"
+> // \"m&lbrack;cone&rbrack; = undefined\"
 
 ##### Map.prototype.get()
 
@@ -29681,13 +29714,13 @@ height="1.25in"}
 >
 > varSomeClass = (function() { var key = Symbol(\"key\");
 >
-> functionSomeClass(privateData) { this\[key\] = privateData;
+> functionSomeClass(privateData) { this&lbrack;key&rbrack; = privateData;
 >
 > }
 >
 > SomeClass.prototype = { doStuff: function() {
 >
-> \... this\[key\] \...
+> \... this&lbrack;key&rbrack; \...
 >
 > }
 >
@@ -29697,7 +29730,7 @@ height="1.25in"}
 >
 > })();
 >
-> var c = new SomeClass(\"bye\") c\[\"key\"\] === undefined
+> var c = new SomeClass(\"bye\") c&lbrack;\"key\"&rbrack; === undefined
 >
 > []{#_bookmark520 .anchor}*[Extending JavaScript and ECMAScript
 > 6]*
@@ -29714,7 +29747,7 @@ height="1.25in"}
 > be subclassed. Object construction for a function named Ctor now uses
 > two phases:
 
--   Call Ctor\[@@create\] to allocate the object and install any special
+-   Call Ctor&lbrack;@@create&rbrack; to allocate the object and install any special
     behavior
 
 -   Invoke constructor on new instance to initialize it
@@ -29726,7 +29759,7 @@ height="1.25in"}
 >
 > // Pseudo-code of Array classSomeArray {
 >
-> constructor(\...args) { /* \... */ } static \[Symbol.create\]() {
+> constructor(\...args) { /* \... */ } static &lbrack;Symbol.create&rbrack;() {
 >
 > }
 >
@@ -29744,7 +29777,7 @@ height="1.25in"}
 >
 > // 2) Invoke constructor on new instance vararr = new SomeArray();
 >
-> arr\[1\] = 123;
+> arr&lbrack;1&rbrack; = 123;
 >
 > arr.length == 1
 
@@ -29792,8 +29825,8 @@ height="1.25in"}
 >
 > });
 >
-> Promise.all(\[prom1, prom2\]).then(function(values) {
-> console.log(values); // \[6000, \"Here\"\]
+> Promise.all(&lbrack;prom1, prom2&rbrack;).then(function(values) {
+> console.log(values); // &lbrack;6000, \"Here\"&rbrack;
 >
 > });
 
@@ -30019,7 +30052,7 @@ height="1.25in"}
 >
 > });
 >
-> Promise.race(\[myPromise1,myPromise2\]).then(function(value) {
+> Promise.race(&lbrack;myPromise1,myPromise2&rbrack;).then(function(value) {
 > console.log(value);// \"second\"
 >
 > // Both resolve, but myPromise2 is faster
@@ -30063,16 +30096,16 @@ height="1.25in"}
 > Array.of(1, 2, 3) // Similar to new Array(\...), but without special
 > one-arg behavior
 >
-> \[0, 0, 0\].fill(2, 1) // \[0,2,2\]
+> &lbrack;0, 0, 0&rbrack;.fill(2, 1) // &lbrack;0,2,2&rbrack;
 >
-> \[24, 14, 23, 57, 89, 75, 33\].find(x =&gt; x == 33) // 33
+> &lbrack;24, 14, 23, 57, 89, 75, 33&rbrack;.find(x =&gt; x == 33) // 33
 >
-> \[24, 14, 23, 57, 89, 75, 33\].findIndex(x =&gt; x == 14) // 1
+> &lbrack;24, 14, 23, 57, 89, 75, 33&rbrack;.findIndex(x =&gt; x == 14) // 1
 >
-> \[1, 2, 3, 4, 5\].copyWithin(3, 0) // \[1, 2, 3, 1, 2\]
+> &lbrack;1, 2, 3, 4, 5&rbrack;.copyWithin(3, 0) // &lbrack;1, 2, 3, 1, 2&rbrack;
 >
-> \[\"x\", \"y\", \"z\"\].entries() // iterator \[0, \"x\"\],
-> \[1,\"y\"\], \[2,\"z\"\] \[\"x\", \"y\", \"z\"\].keys() // iterator 0,
+> &lbrack;\"x\", \"y\", \"z\"&rbrack;.entries() // iterator &lbrack;0, \"x\"&rbrack;,
+> &lbrack;1,\"y\"&rbrack;, &lbrack;2,\"z\"&rbrack; &lbrack;\"x\", \"y\", \"z\"&rbrack;.keys() // iterator 0,
 > 1, 2
 
 ### Binary and octal literals
@@ -30107,12 +30140,12 @@ height="1.25in"}
 >
 > Here is a list of methods a reflect object has.
 
-#### Reflect.get(target, prop, \[receiver\])
+#### Reflect.get(target, prop, &lbrack;receiver&rbrack;)
 
 > *Chapter 11*
 >
 > This method allows you to get the property of an object. This method
-> is similar to property accessors syntax (object\[propertyKey\]).
+> is similar to property accessors syntax (object&lbrack;propertyKey&rbrack;).
 
 ##### Returns
 
@@ -30126,7 +30159,7 @@ height="1.25in"}
 ##### Description
 
 > The static Reflect.get() method works like getting a property from an
-> object (target\[propertyKey\]) as a function.
+> object (target&lbrack;propertyKey&rbrack;) as a function.
 >
 > An example of the get method is as follows:
 >
@@ -30134,7 +30167,7 @@ height="1.25in"}
 >
 > // Array
 >
-> Reflect.get(\[\"first\",\"second\"\],1);// \"second\", since array
+> Reflect.get(&lbrack;\"first\",\"second\"&rbrack;,1);// \"second\", since array
 > starts with 0 index
 >
 > // Proxy with a get handler var x ={p:9}; varobject=newProxy(x, {
@@ -30145,14 +30178,14 @@ height="1.25in"}
 >
 > Reflect.get(object,\"woof\");// \"woofbar\"
 
-#### Reflect.set(target, prop, value, \[receiver\])
+#### Reflect.set(target, prop, value, &lbrack;receiver&rbrack;)
 
 > This method allows you to set a property of an object. This method is
 > also similar to property accessor syntax.
 
 ##### Returns
 
-> The Reflect.set(target, prop, value, \[receiver\] returns a Boolean
+> The Reflect.set(target, prop, value, &lbrack;receiver&rbrack; returns a Boolean
 > value indicating whether property was successful or not.
 >
 > []{#_bookmark527 .anchor}*[Extending JavaScript and ECMAScript
@@ -30173,12 +30206,12 @@ height="1.25in"}
 > Reflect.set(object,\"property\",\"value\");// will return true
 > object.property;// \"value\"
 >
-> // Array vararr=\[\"cow\",\"cow\",\"cow\"\];
+> // Array vararr=&lbrack;\"cow\",\"cow\",\"cow\"&rbrack;;
 >
-> Reflect.set(arr,1,\"goat\");// will return true arr\[1\];// \"goat\"
+> Reflect.set(arr,1,\"goat\");// will return true arr&lbrack;1&rbrack;;// \"goat\"
 >
 > // It can truncate an array. Reflect.set(arr,\"length\",1);// will
-> return true arr;// \[\"goat\"\];
+> return true arr;// &lbrack;\"goat\"&rbrack;;
 >
 > // With just one argument, propertyKey and value are \"undefined\".
 > varobject={};
@@ -30251,17 +30284,17 @@ height="1.25in"}
 >
 > An example of this method is shown here:
 >
-> Reflect.apply(Math.floor, undefined,\[3.999\]);
+> Reflect.apply(Math.floor, undefined,&lbrack;3.999&rbrack;);
 >
 > // 3;
 >
-> Reflect.apply(String.fromCharCode, undefined,\[80, 97, 107, 105,
+> Reflect.apply(String.fromCharCode, undefined,&lbrack;80, 97, 107, 105,
 >
-> 115, 116, 97, 110\]);
+> 115, 116, 97, 110&rbrack;);
 >
 > // \"Pakistan\"
 >
-> Reflect.apply(\"\".charAt,\"stars\",\[2\]);
+> Reflect.apply(\"\".charAt,\"stars\",&lbrack;2&rbrack;);
 >
 > // \"a\"
 >
@@ -30292,14 +30325,14 @@ height="1.25in"}
 >
 > Using Reflect.construct():
 >
-> var d =Reflect.construct(Date,\[2015,1,5\]); dinstanceofDate;// will
+> var d =Reflect.construct(Date,&lbrack;2015,1,5&rbrack;); dinstanceofDate;// will
 > return true d.getFullYear();// 2015
 >
 > Using newTarget:
 >
 > functionmyConstructor(){}
 >
-> var result =Reflect.construct(Array,\[\],myConstructor);
+> var result =Reflect.construct(Array,&lbrack;&rbrack;,myConstructor);
 >
 > Reflect.getPrototypeOf(result);// myConstructor.prototype
 > Array.isArray(result);// will return true
@@ -30346,7 +30379,7 @@ height="1.25in"}
 >
 > // undefined
 >
-> Reflect.getOwnPropertyDescriptor(\[\],\"length\");
+> Reflect.getOwnPropertyDescriptor(&lbrack;&rbrack;,\"length\");
 >
 > // {value: 0, writable: true, enumerable: false, configurable: false}
 >
@@ -30446,7 +30479,7 @@ height="1.25in"}
 
 > The static Reflect.getPrototypeOf() method is the same technique as
 > Object. getPrototypeOf(). It gives back the model (that is, the
-> estimation of the inside \[\[Prototype\]\] property) of the
+> estimation of the inside &lbrack;&lbrack;Prototype&rbrack;&rbrack; property) of the
 > predetermined item.
 >
 > An example of this method is shown here:
@@ -30472,7 +30505,7 @@ height="1.25in"}
 ##### Description
 
 > The Reflect.setPrototypeOf method changes the prototype (that is, the
-> value of the internal \[\[Prototype\]\] property) of the specified
+> value of the internal &lbrack;&lbrack;Prototype&rbrack;&rbrack; property) of the specified
 > object.
 >
 > An example of this method is shown here:
@@ -30517,10 +30550,10 @@ height="1.25in"}
 > varobject={a:11,b:12}; Reflect.deleteProperty(object,\"a\");// will
 > return true object;// { y: 12 }
 >
-> vararr=\[11,12,13,14,15\];
+> vararr=&lbrack;11,12,13,14,15&rbrack;;
 >
-> Reflect.deleteProperty(arr,\"3\");// will return true arr;// \[11, 12,
-> 13, , 15\]
+> Reflect.deleteProperty(arr,\"3\");// will return true arr;// &lbrack;11, 12,
+> 13, , 15&rbrack;
 >
 > // Returns true if no such property exists
 > Reflect.deleteProperty({},\"bar\");// will return true
@@ -30638,12 +30671,12 @@ height="1.25in"}
 > The static Reflect.set() strategy works like setting a property on an
 > object. Here is an example of this method:
 >
-> Reflect.ownKeys({a:5,b:6,c:7}); Reflect.ownKeys(\[\]);
+> Reflect.ownKeys({a:5,b:6,c:7}); Reflect.ownKeys(&lbrack;&rbrack;);
 >
 > varsymbol=Symbol.for(\"dirt\"); varsymbolb=Symbol.for(\"sky\");
-> varobject={\[symbol\]:0,\"string\":0,\"99\":0,\"4\":0,
+> varobject={&lbrack;symbol&rbrack;:0,\"string\":0,\"99\":0,\"4\":0,
 >
-> \[symbolb\]:0,\"100\":0,\"-7\":0,\"second string\":0};
+> &lbrack;symbolb&rbrack;:0,\"100\":0,\"-7\":0,\"second string\":0};
 > Reflect.ownKeys(object);
 
 ### Tail calls
@@ -31208,7 +31241,7 @@ height="1.25in"}
 
 > This will send a signal event to a process:
 >
-> process.kill(pid, \[signal\])
+> process.kill(pid, &lbrack;signal&rbrack;)
 
 ##### Description
 
@@ -31390,8 +31423,8 @@ height="1.25in"}
 
 > This returns a file descriptor of the path passed in:
 >
-> fs.open(path, flags, \[mode\], callback) fs.openSync(path, flags,
-> \[mode\])
+> fs.open(path, flags, &lbrack;mode&rbrack;, callback) fs.openSync(path, flags,
+> &lbrack;mode&rbrack;)
 
 ##### Description
 
@@ -31485,8 +31518,8 @@ height="1.25in"}
 
 > This is a simplified version for reading a file:
 >
-> fs.readFile(filename, \[options\], callback) fs.readFileSync(filename,
-> \[options\])
+> fs.readFile(filename, &lbrack;options&rbrack;, callback) fs.readFileSync(filename,
+> &lbrack;options&rbrack;)
 
 ##### Description
 
@@ -31601,8 +31634,8 @@ height="1.25in"}
 
 > This is a simplified function to write to a file:
 >
-> fs.writeFile(filename, data, \[options\], callback)
-> fs.writeFileSync(filename, data, \[options\])
+> fs.writeFile(filename, data, &lbrack;options&rbrack;, callback)
+> fs.writeFileSync(filename, data, &lbrack;options&rbrack;)
 
 ##### Description
 
@@ -31643,8 +31676,8 @@ height="1.25in"}
 
 > This function allows us to append a file:
 >
-> fs.appendFile(filename, data, \[options\], callback)
-> fs.appendFileSync(filename, data, \[options\])
+> fs.appendFile(filename, data, &lbrack;options&rbrack;, callback)
+> fs.appendFileSync(filename, data, &lbrack;options&rbrack;)
 
 ##### Description
 
@@ -31724,7 +31757,7 @@ height="1.25in"}
 
 > This returns a string of all the paths joined together:
 >
-> path.join(\[pathString1\],\[...\])
+> path.join(&lbrack;pathString1&rbrack;,&lbrack;...&rbrack;)
 
 ##### Description
 
@@ -31742,7 +31775,7 @@ height="1.25in"}
 
 > This returns the string of the path based on the parameters:
 >
-> path.resolve(\[pathString\], \[...\])
+> path.resolve(&lbrack;pathString&rbrack;, &lbrack;...&rbrack;)
 
 ##### Description
 
@@ -31800,7 +31833,7 @@ height="1.25in"}
 
 > This returns a string of the final part of a path:
 >
-> path.basename(pathString, \[ext\])
+> path.basename(pathString, &lbrack;ext&rbrack;)
 >
 > []{#_bookmark557 .anchor}*[Server-side JavaScript --
 > NodeJS]*
@@ -32088,7 +32121,7 @@ height="1.25in"}
 > This function will remove every listener for all events or a specific
 > event:
 >
-> emitter.removeAllListeners(\[event\])
+> emitter.removeAllListeners(&lbrack;event&rbrack;)
 
 ##### Description
 
@@ -32133,7 +32166,7 @@ height="1.25in"}
 
 > This is how we fire off an event:
 >
-> emitter.emit(eventName, \[argument\], \[...\])
+> emitter.emit(eventName, &lbrack;argument&rbrack;, &lbrack;...&rbrack;)
 >
 > If we have extended an object to be an event emitter, then we will
 > want to emit some events! This is the function to do that. It will
@@ -32186,7 +32219,7 @@ height="1.25in"}
 
 > This is the object that is returned from crypto.createHash:
 >
-> hash.update(data, \[encoding\]) hash.digest(\[encoding\])
+> hash.update(data, &lbrack;encoding&rbrack;) hash.digest(&lbrack;encoding&rbrack;)
 
 ##### Description
 
@@ -32273,7 +32306,7 @@ height="1.25in"}
 
 > This returns cryptographically strong pseudo-random data:
 >
-> crypto.randomBytes(length, \[callback\])
+> crypto.randomBytes(length, &lbrack;callback&rbrack;)
 
 []{#_bookmark566 .anchor}*Chapter 12*
 
@@ -32311,7 +32344,7 @@ height="1.25in"}
 
 > This returns pseudo-random data:
 >
-> crypto.pseudoRandomBytes(length, \[calback\])
+> crypto.pseudoRandomBytes(length, &lbrack;calback&rbrack;)
 > crypto.pseudoRandomBytes(length)
 
 ##### Return Type
@@ -32366,7 +32399,7 @@ height="1.25in"}
 >
 > new Buffer(size) new Buffer(array)
 >
-> new Buffer(str, \[encoding\])
+> new Buffer(str, &lbrack;encoding&rbrack;)
 
 ##### Return value
 
@@ -32382,7 +32415,7 @@ height="1.25in"}
 > This example demonstrates initializing using an array with the hello
 > string in ASCII:
 >
-> var hello = \[72, 101, 108, 108, 111\];
+> var hello = &lbrack;72, 101, 108, 108, 111&rbrack;;
 >
 > var buffer = new Buffer(hello);
 > console.log(buffer.toString(&apos;ascii&apos;));
@@ -32393,7 +32426,7 @@ height="1.25in"}
 
 > This gets the value at the specific index in the buffer:
 >
-> buffer\[index\]
+> buffer&lbrack;index&rbrack;
 
 ##### Return Value
 
@@ -32406,13 +32439,13 @@ height="1.25in"}
 >
 > buffer:
 >
-> var buffer = new Buffer(&apos;Hello!&apos;); console.log(buffer\[0\]);
+> var buffer = new Buffer(&apos;Hello!&apos;); console.log(buffer&lbrack;0&rbrack;);
 
 #### toString
 
 > This returns the buffer as a string based on the encoding:
 >
-> buffer.toString(\[encoding\], \[start\], \[end\])
+> buffer.toString(&lbrack;encoding&rbrack;, &lbrack;start&rbrack;, &lbrack;end&rbrack;)
 
 ##### Return Value
 
@@ -32493,7 +32526,7 @@ height="1.25in"}
 
 > The following code writes to the buffer.
 >
-> buffer.write(stringToWrite, \[offset\], \[length\], \[encoding\])
+> buffer.write(stringToWrite, &lbrack;offset&rbrack;, &lbrack;length&rbrack;, &lbrack;encoding&rbrack;)
 
 []{#_bookmark570 .anchor}*Chapter 12*
 
@@ -32525,7 +32558,7 @@ height="1.25in"}
 > This function will get the length of a string in bytes based on the
 > encoding:
 >
-> buffer.byteLength(string, \[encoding\])
+> buffer.byteLength(string, &lbrack;encoding&rbrack;)
 
 ##### Return value
 
@@ -32552,10 +32585,10 @@ height="1.25in"}
 
 > This will get an unsigned integer at a certain spot in the buffer:
 >
-> buffer.readUInt8(offset, \[noAssert\]) buffer.readUInt16LE(offset,
-> \[noAssert\]) buffer.readUInt16BE(offset, \[noAssert\])
-> buffer.readUInt32LE(offset, \[noAssert\]) buffer.readUInt32BE(offset,
-> \[noAssert\])
+> buffer.readUInt8(offset, &lbrack;noAssert&rbrack;) buffer.readUInt16LE(offset,
+> &lbrack;noAssert&rbrack;) buffer.readUInt16BE(offset, &lbrack;noAssert&rbrack;)
+> buffer.readUInt32LE(offset, &lbrack;noAssert&rbrack;) buffer.readUInt32BE(offset,
+> &lbrack;noAssert&rbrack;)
 
 ##### Return Value
 
@@ -32575,20 +32608,20 @@ height="1.25in"}
 > Here is an example of setting data and then reading the data out with
 > readUInt16:
 >
-> var buffer = new Buffer(2); buffer\[0\] = 0x1;
+> var buffer = new Buffer(2); buffer&lbrack;0&rbrack; = 0x1;
 >
-> buffer\[1\] = 0x2; console.log(buffer.readUInt16LE(0));
+> buffer&lbrack;1&rbrack; = 0x2; console.log(buffer.readUInt16LE(0));
 > console.log(buffer.readUInt16BE(0));
 
 #### writeUInt
 
 > This writes an unsigned integer to a buffer:
 >
-> buffer.writeUInt8(value, offset, \[noAssert\])
-> buffer.writeUInt16LE(value, offset, \[noAssert\])
-> buffer.writeUInt16BE(value, offset, \[noAssert\])
-> buffer.writeUInt32LE(value, offset, \[noAssert\])
-> buffer.writeUInt32BE(value, offset, \[noAssert\])
+> buffer.writeUInt8(value, offset, &lbrack;noAssert&rbrack;)
+> buffer.writeUInt16LE(value, offset, &lbrack;noAssert&rbrack;)
+> buffer.writeUInt16BE(value, offset, &lbrack;noAssert&rbrack;)
+> buffer.writeUInt32LE(value, offset, &lbrack;noAssert&rbrack;)
+> buffer.writeUInt32BE(value, offset, &lbrack;noAssert&rbrack;)
 
 ##### Description
 
@@ -32627,7 +32660,7 @@ height="1.25in"}
 
 > This writes to stdout:
 >
-> console.log(message, \[...\])
+> console.log(message, &lbrack;...&rbrack;)
 
 ##### Description
 
@@ -32681,7 +32714,7 @@ height="1.25in"}
 
 > This logs to the console and includes a stack trace:
 >
-> console.trace(message, \[...\])
+> console.trace(message, &lbrack;...&rbrack;)
 
 ##### Description
 
@@ -32744,7 +32777,7 @@ height="1.25in"}
 >
 > **npm install**
 >
-> **npm install \[package\] \[@version\] \[\--save \| \--save-dev\]**
+> **npm install &lbrack;package&rbrack; &lbrack;@version&rbrack; &lbrack;\--save \| \--save-dev&rbrack;**
 >
 > []{#_bookmark575 .anchor}*[Server-side JavaScript --
 > NodeJS]*
@@ -32771,7 +32804,7 @@ height="1.25in"}
 
 > This will update a package to the newest version:
 >
-> npm update \[package\]
+> npm update &lbrack;package&rbrack;
 
 ##### Description
 
@@ -32808,7 +32841,7 @@ height="1.25in"}
 
 > This will run an arbitrary command:
 >
-> **npm run \[script\]**
+> **npm run &lbrack;script&rbrack;**
 
 ##### Description
 
@@ -32905,7 +32938,7 @@ height="1.25in"}
 
 > Use with a non-flowing readable stream:
 >
-> readable.read(\[size\])
+> readable.read(&lbrack;size&rbrack;)
 
 ###### Return value
 
@@ -32988,7 +33021,7 @@ height="1.25in"}
 > This allows you to take the output of a readable stream and send it to
 > the input of a writable stream:
 >
-> readable.pipe(writable, \[options\])
+> readable.pipe(writable, &lbrack;options&rbrack;)
 
 ###### Return Value
 
@@ -33036,7 +33069,7 @@ height="1.25in"}
 
 > This function writes to the stream:
 >
-> writable.write(chunk, \[encoding\], \[callback\])
+> writable.write(chunk, &lbrack;encoding&rbrack;, &lbrack;callback&rbrack;)
 
 ###### Return value
 
@@ -33063,7 +33096,7 @@ height="1.25in"}
 >
 > This will close the stream, and no more data can be written:
 >
-> writable.end(\[chunk\], \[encoding\], \[callback\])
+> writable.end(&lbrack;chunk&rbrack;, &lbrack;encoding&rbrack;, &lbrack;callback&rbrack;)
 
 ###### Description
 
@@ -33104,7 +33137,7 @@ height="1.25in"}
 
 > This function will create a TCP server:
 >
-> net.createServer(\[options\], \[listener\])
+> net.createServer(&lbrack;options&rbrack;, &lbrack;listener&rbrack;)
 
 #### Return value
 
@@ -33184,7 +33217,7 @@ height="1.25in"}
 
 > This starts accepting connections:
 >
-> server.listen(port, \[host\], \[backlog\], \[callback\])
+> server.listen(port, &lbrack;host&rbrack;, &lbrack;backlog&rbrack;, &lbrack;callback&rbrack;)
 
 ###### Description
 
@@ -33211,7 +33244,7 @@ height="1.25in"}
 
 > This closes the current server:
 >
-> server.close(\[callback\])
+> server.close(&lbrack;callback&rbrack;)
 
 ###### Description
 
@@ -33255,8 +33288,8 @@ height="1.25in"}
 >
 > This easily creates a connection to the specified address:
 >
-> net.connect(port, \[host\], \[connectListener\])
-> net.createConnection(port, \[host\], \[connectListener\])
+> net.connect(port, &lbrack;host&rbrack;, &lbrack;connectListener&rbrack;)
+> net.createConnection(port, &lbrack;host&rbrack;, &lbrack;connectListener&rbrack;)
 
 ##### Return value
 
@@ -33371,7 +33404,7 @@ height="1.25in"}
 
 > This creates a connection:
 >
-> socket.connect(port, \[host\], \[listener\])
+> socket.connect(port, &lbrack;host&rbrack;, &lbrack;listener&rbrack;)
 
 ###### Description
 
@@ -33396,7 +33429,7 @@ height="1.25in"}
 
 > This sends data out on the socket:
 >
-> socket.write(data, \[encoding\], \[callback\])
+> socket.write(data, &lbrack;encoding&rbrack;, &lbrack;callback&rbrack;)
 
 ###### Description
 
@@ -33429,7 +33462,7 @@ height="1.25in"}
 
 > This starts the closing process of the socket:
 >
-> socket.end(\[data\], \[encoding\])
+> socket.end(&lbrack;data&rbrack;, &lbrack;encoding&rbrack;)
 
 ###### Description
 
@@ -33469,7 +33502,7 @@ height="1.25in"}
 
 > This creates an HTTP server:
 >
-> http.createServer(\[requestListener\])
+> http.createServer(&lbrack;requestListener&rbrack;)
 
 []{#_bookmark588 .anchor}*Chapter 12*
 
@@ -33506,8 +33539,8 @@ height="1.25in"}
 > This tells the server to listen on the supplied port, path, or file
 > descriptor:
 >
-> server.listen(port, \[host\], \[callback\]) server.listen(path,
-> \[callback\]) server.listen(fd, \[callback\])
+> server.listen(port, &lbrack;host&rbrack;, &lbrack;callback&rbrack;) server.listen(path,
+> &lbrack;callback&rbrack;) server.listen(fd, &lbrack;callback&rbrack;)
 
 ##### Description
 
@@ -33543,7 +33576,7 @@ height="1.25in"}
 
 > This closes the server:
 >
-> server.close(\[callback\])
+> server.close(&lbrack;callback&rbrack;)
 
 ##### Description
 
@@ -33720,7 +33753,7 @@ height="1.25in"}
 
 > This will write the HTTP response header:
 >
-> response.WriteHead(statusCode, \[headers\])
+> response.WriteHead(statusCode, &lbrack;headers&rbrack;)
 
 ##### Description
 
@@ -33787,7 +33820,7 @@ height="1.25in"}
 
 > This is the function that writes the response body:
 >
-> response.write(chunk, \[encoding\])
+> response.write(chunk, &lbrack;encoding&rbrack;)
 
 ##### Description
 
@@ -33810,7 +33843,7 @@ height="1.25in"}
 
 > This ends the response:
 >
-> response.end(\[data\], \[encoding\])
+> response.end(&lbrack;data&rbrack;, &lbrack;encoding&rbrack;)
 
 ##### Description
 
@@ -33824,7 +33857,7 @@ height="1.25in"}
 
 > This makes a request using HTTP:
 >
-> http.request(options, \[callback\])
+> http.request(options, &lbrack;callback&rbrack;)
 
 ##### Return value
 
@@ -33880,7 +33913,7 @@ height="1.25in"}
 
 > This is the convenience method for a GET request:
 >
-> http.get(options, \[callback\])
+> http.get(options, &lbrack;callback&rbrack;)
 
 #### Return value
 
@@ -33910,7 +33943,7 @@ height="1.25in"}
 
 > This writes to the server in the request:
 >
-> request.write(data, \[encoding\])
+> request.write(data, &lbrack;encoding&rbrack;)
 
 ##### Description
 
@@ -33925,7 +33958,7 @@ height="1.25in"}
 
 > This ends the request:
 >
-> request.end(\[data\], \[encoding\])
+> request.end(&lbrack;data&rbrack;, &lbrack;encoding&rbrack;)
 
 ##### Description
 
@@ -37785,9 +37818,9 @@ JavaScript Library
 > The fadeTo() function adjusts the opacity of the target element to the
 > given value. Its syntax is as follows:
 >
-> \$(selector).fadeTo( duration, opacity \[, complete \] )
+> \$(selector).fadeTo( duration, opacity &lbrack;, complete &rbrack; )
 >
-> \$(selector).fadeTo( duration, opacity \[, easing \] \[, complete \] )
+> \$(selector).fadeTo( duration, opacity &lbrack;, easing &rbrack; &lbrack;, complete &rbrack; )
 
 ##### Parameters
 
@@ -39181,7 +39214,7 @@ JavaScript Library
 
 > Modules are the first basic building block of an Angular application:
 >
-> angular.module(moduleName, \[dependencies\], \[configFunction\])
+> angular.module(moduleName, &lbrack;dependencies&rbrack;, &lbrack;configFunction&rbrack;)
 > angular.module(moduleName)
 
 #### Parameters
@@ -39218,13 +39251,13 @@ JavaScript Library
 > Here are a few examples of creating modules:
 
 -   This creates a new module: var firstModule = angular.
-    module(&apos;firstModule&apos;, \[\]);
+    module(&apos;firstModule&apos;, &lbrack;&rbrack;);
 
 -   This retrieves a module named firstModule: var firstModule =
     angular.module(&apos;firstModule&apos;);
 
 -   This creates a module that relies on firstModule: var secondModule =
-    angular.module(&apos;secondModule&apos;, \[&apos;firstModule&apos;\]);
+    angular.module(&apos;secondModule&apos;, &lbrack;&apos;firstModule&apos;&rbrack;);
 
 ### config {#config-1}
 
@@ -39344,9 +39377,9 @@ JavaScript Library
 
 > This works with the \$route service as a spot for content:
 >
-> &lt;ng-view \[onload=&apos;&apos;\] \[autoscroll=&apos;&apos;\]/&gt;
+> &lt;ng-view &lbrack;onload=&apos;&apos;&rbrack; &lbrack;autoscroll=&apos;&apos;&rbrack;/&gt;
 >
-> &lt;element ng-view \[onload=&apos;&apos;\] \[autoscroll=&apos;&apos;\]/&gt;
+> &lt;element ng-view &lbrack;onload=&apos;&apos;&rbrack; &lbrack;autoscroll=&apos;&apos;&rbrack;/&gt;
 
 #### Parameters
 
@@ -39481,7 +39514,7 @@ JavaScript Library
 > the module, then the configuration of \$routeProvider and, finally,
 > the definition of a controller for the provider to use:
 >
-> var firstModule = angular.module(&apos;firstModule&apos;, \[&apos;ngRoute&apos;\]);
+> var firstModule = angular.module(&apos;firstModule&apos;, &lbrack;&apos;ngRoute&apos;&rbrack;);
 >
 > firstModule.config(function (\$routeProvider) {
 >
@@ -39545,13 +39578,13 @@ JavaScript Library
     rename the variable if needed. Here is the same example in the array
     format:
 
-> firstModule.controller(&apos;DIController&apos;, \[&apos;\$scope&apos;,
+> firstModule.controller(&apos;DIController&apos;, &lbrack;&apos;\$scope&apos;,
 > &apos;customService&apos;, function (newScope, custom) {
 >
 > // newScope and custom are available here console.log(newScope);
 > console.log(custom);
 >
-> }\]);
+> }&rbrack;);
 >
 > ![](./images/image146.png){width="0.417836832895888in"
 > height="0.336580271216098in"}Only the array format is minification
@@ -39582,7 +39615,7 @@ JavaScript Library
 >
 > Here is an example that gets a reference to the \$http service:
 >
-> var injector = angular.injector(\[&apos;ng&apos;\]);
+> var injector = angular.injector(&lbrack;&apos;ng&apos;&rbrack;);
 >
 > var injectTest = function (\$http) { console.log(\$http); };
 > injector.invoke(injectTest);
@@ -39647,12 +39680,12 @@ JavaScript Library
 > Controllers are created from a module reference, so they are tied to
 > modules. Here is an example of creating a simple controller:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
 > \$scope.hey = \"HEY!\"; console.log(\$scope);
 >
-> }\]);
+> }&rbrack;);
 >
 > This module can then be attached to a DOM element with ngController:
 >
@@ -39711,7 +39744,7 @@ JavaScript Library
 > a function, changeHey. It is important to note that there are no
 > references to DOM references at all in this function:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
 > \$scope.hey = \"HEY!\";
@@ -39722,7 +39755,7 @@ JavaScript Library
 
 };
 
-}\]);
+}&rbrack;);
 
 > []{#_bookmark704 .anchor}*[AngularJS -- Google&apos;s In-Demand
 > Framework]*
@@ -39998,7 +40031,7 @@ JavaScript Library
 > Here is a simple example that will return the name of the service. The
 > example also creates a dependency on \$http:
 >
-> firstModule.factory(&apos;firstFactory&apos;, \[&apos;\$http&apos;, function (\$http)
+> firstModule.factory(&apos;firstFactory&apos;, &lbrack;&apos;\$http&apos;, function (\$http)
 > { var serviceName = &apos;firstFactory&apos;;
 >
 > return {
@@ -40007,7 +40040,7 @@ JavaScript Library
 
 };
 
-}\]);
+}&rbrack;);
 
 ### Service
 
@@ -40033,7 +40066,7 @@ JavaScript Library
 >
 > new. Here is an example that depends on \$http:
 >
-> firstModule.service(&apos;firstService&apos;, \[&apos;\$http&apos;, function (\$http)
+> firstModule.service(&apos;firstService&apos;, &lbrack;&apos;\$http&apos;, function (\$http)
 > { return function (name) {
 >
 > var serviceName = name;
@@ -40044,14 +40077,14 @@ JavaScript Library
 
 };
 
-}\]);
+}&rbrack;);
 
 > []{#_bookmark710 .anchor}*[AngularJS -- Google&apos;s In-Demand
 > Framework]*
 >
 > Here is the controller that will initialize the service:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;,
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;,
 > &apos;firstService&apos;, function (\$scope, firstService) {
 >
 > var first = new firstService(&apos;First Service Name&apos;); var second = new
@@ -40059,7 +40092,7 @@ JavaScript Library
 >
 > \$scope.service = second.getName();
 >
-> }\]);
+> }&rbrack;);
 
 ### Provider
 
@@ -40116,19 +40149,19 @@ JavaScript Library
 > Next is the configuration. Notice how it is injected using
 > firstProvider:
 >
-> firstModule.config(\[&apos;firstProvider&apos;, function (firstProvider) {
+> firstModule.config(&lbrack;&apos;firstProvider&apos;, function (firstProvider) {
 > firstProvider.configSet(&apos;firstProvider123&apos;);
 >
-> }\]);
+> }&rbrack;);
 >
 > Finally, here is the controller:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, &apos;first&apos;,
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, &apos;first&apos;,
 > function (\$scope, firstProvider) {
 >
 > \$scope.test = firstProvider.getName();
 >
-> }\]);
+> }&rbrack;);
 
 ### Value {#value-2}
 
@@ -40265,18 +40298,18 @@ JavaScript Library
 >
 > Here is the factory:
 >
-> firstModule.factory(&apos;httpService&apos;, \[&apos;\$http&apos;, function (\$http) {
+> firstModule.factory(&apos;httpService&apos;, &lbrack;&apos;\$http&apos;, function (\$http) {
 > return {
 >
 > test: function () { return \$http.get(&apos;test&apos;, {params: &apos;test&apos;}); }
 >
 > }
 >
-> }\]);
+> }&rbrack;);
 >
 > This returns a promise that the controller can then use:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;,
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;,
 > &apos;httpService&apos;, function (\$scope, httpService) {
 >
 > httpService.test().success(function (data, status) {
@@ -40286,7 +40319,7 @@ JavaScript Library
 >
 > .error(function (data, status) { console.log(&apos;An error occured&apos;);});
 >
-> }\]);
+> }&rbrack;);
 
 #### POST
 
@@ -40300,7 +40333,7 @@ JavaScript Library
 > an example that uses localhost. Remember that you must be running a
 > server that responds to POST requests for this to work:
 >
-> firstModule.factory(&apos;httpService&apos;, \[&apos;\$http&apos;, function (\$http) {
+> firstModule.factory(&apos;httpService&apos;, &lbrack;&apos;\$http&apos;, function (\$http) {
 > return {
 >
 > test: function () { return
@@ -40310,7 +40343,7 @@ JavaScript Library
 >
 > }
 >
-> }\]);
+> }&rbrack;);
 
 ##### jsonp
 
@@ -40406,7 +40439,7 @@ JavaScript Library
 > function is created in the controller, but a utility function like
 > this should be put a service into production:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, &apos;\$q&apos;,
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, &apos;\$q&apos;,
 > function (\$scope, \$q) {
 >
 > function qTest(number) { console.log(\$q);
@@ -40437,7 +40470,7 @@ JavaScript Library
 >
 > \(n\) { console.log(&apos;failed!&apos;); });
 >
-> }\]);
+> }&rbrack;);
 
 ## Expressions {#expressions-2}
 
@@ -40858,8 +40891,8 @@ JavaScript Library
 
 > This binds data from the scope to elements:
 >
-> &lt;input ng-model \[ng-required ng-minlength ng-maxlength ng-pattern
-> ng-change ng-trim\]&gt;&lt;/input&gt;
+> &lt;input ng-model &lbrack;ng-required ng-minlength ng-maxlength ng-pattern
+> ng-change ng-trim&rbrack;&gt;&lt;/input&gt;
 
 ##### Parameters
 
@@ -41014,7 +41047,7 @@ JavaScript Library
 > repeated, and each span parameter statically sets the class to either
 > odd or even. You can use variables in scope as well:
 >
-> &lt;ul ng-init=\"numbers=\[1,2,3,4\]\"&gt;
+> &lt;ul ng-init=\"numbers=&lbrack;1,2,3,4&rbrack;\"&gt;
 >
 > &lt;li ng-repeat=\"number in numbers\"&gt;
 >
@@ -41067,13 +41100,13 @@ JavaScript Library
 
 > Here is an example using an unordered list. Here is the controller:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
-> \$scope.items = \[{id: 1, name: &apos;First&apos; }, {id: 2, name:
-> &apos;Second&apos;}\];
+> \$scope.items = &lbrack;{id: 1, name: &apos;First&apos; }, {id: 2, name:
+> &apos;Second&apos;}&rbrack;;
 >
-> }\]);
+> }&rbrack;);
 
 []{#_bookmark729 .anchor}*Chapter 15*
 
@@ -41118,14 +41151,14 @@ JavaScript Library
 >
 > ng-hide and use the opposite logic. Here is the controller:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
 > \$scope.count = 0;
 >
 > \$scope.increase = function () { \$scope.count++; };
 >
-> }\]);
+> }&rbrack;);
 >
 > Next is the HTML:
 >
@@ -41176,14 +41209,14 @@ JavaScript Library
 > Here is an example that jumps between even and odd. Here is the
 > controller:
 >
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
 > \$scope.count = 0;
 >
 > \$scope.increase = function () { \$scope.count++; };
 >
-> }\]);
+> }&rbrack;);
 >
 > Then comes the HTML:
 >
@@ -41603,7 +41636,7 @@ JavaScript Library
 
 > This makes a copy of an object:
 >
-> angular.copy(srcObject, \[destObject\])
+> angular.copy(srcObject, &lbrack;destObject&rbrack;)
 
 #### Parameters
 
@@ -41628,7 +41661,7 @@ JavaScript Library
 
 > This binds a function to an object:
 >
-> angular.bind(self, function, \[args..\])
+> angular.bind(self, function, &lbrack;args..&rbrack;)
 
 #### Parameters
 
@@ -41905,11 +41938,11 @@ JavaScript Library
 
 > This can create a mock response:
 >
-> \$httpBackend.when(requestType, url, \[requestParameters\],
-> \[headers\])
+> \$httpBackend.when(requestType, url, &lbrack;requestParameters&rbrack;,
+> &lbrack;headers&rbrack;)
 >
-> \$httpBackend.expect(requestType, url, \[requestParameters\],
-> \[headers\])
+> \$httpBackend.expect(requestType, url, &lbrack;requestParameters&rbrack;,
+> &lbrack;headers&rbrack;)
 >
 > \$httpBackend.respond(response)
 
@@ -41956,13 +41989,13 @@ JavaScript Library
 > Here is an example of a simple unit test for a controller. First, you
 > must create a controller and then load it in our test:
 >
-> var firstModule = angular.module(&apos;firstModule&apos;, \[&apos;ngMock&apos;\]);
-> firstModule.controller(&apos;SimpleController&apos;, \[&apos;\$scope&apos;, function
+> var firstModule = angular.module(&apos;firstModule&apos;, &lbrack;&apos;ngMock&apos;&rbrack;);
+> firstModule.controller(&apos;SimpleController&apos;, &lbrack;&apos;\$scope&apos;, function
 > (\$scope) {
 >
 > \$scope.test = &apos;HEY!&apos;;
 >
-> }\]);
+> }&rbrack;);
 >
 > You can now create the test. In the test, you must load the
 > firstModule module, inject \$controller, and create an instance of
@@ -42045,7 +42078,7 @@ JavaScript Library
 > The final testing example will test a service. First, create a
 > service:
 >
-> firstModule.factory(&apos;firstFactory&apos;, \[&apos;\$http&apos;, function (\$http)
+> firstModule.factory(&apos;firstFactory&apos;, &lbrack;&apos;\$http&apos;, function (\$http)
 > { return {
 >
 > addOne: function () {
@@ -42060,7 +42093,7 @@ JavaScript Library
 >
 > }
 >
-> }\]);
+> }&rbrack;);
 
 []{#_bookmark747 .anchor}*Chapter 15*
 
@@ -46532,7 +46565,7 @@ about [26](#_bookmark26)
 >
 > parameters [116](#_bookmark115)
 >
-> **quotes CSS property** \[string string +\] value [225](#quotes) about
+> **quotes CSS property** &lbrack;string string +&rbrack; value [225](#quotes) about
 > [225](#quotes)
 >
 > none [225](#quotes)
@@ -46598,7 +46631,7 @@ elements [80](#_bookmark79)
 > (target, prop) [544,](#_bookmark529) [545](#parameter-58)
 >
 > Reflect.getPrototypeOf(target) [546](#_bookmark531)
-> Reflect.get(target, prop, \[receiver\])
+> Reflect.get(target, prop, &lbrack;receiver&rbrack;)
 > [541](#reflect.gettarget-prop-receiver) Reflect.has(target, prop)
 > [542](#_bookmark527)
 >
@@ -46613,7 +46646,7 @@ elements [80](#_bookmark79)
 >
 > Reflect.set(target, prop, value,
 >
-> \[receiver\]) [541](#reflect.gettarget-prop-receiver)
+> &lbrack;receiver&rbrack;) [541](#reflect.gettarget-prop-receiver)
 >
 > **RegExp object**
 >
